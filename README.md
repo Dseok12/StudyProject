@@ -1,4 +1,4 @@
-# Study List
+# ✏Study List✏
 개인 프로젝트 겸 학업을 위한 깃허브
 
 <h3>웹디자인 기능사</h3>
@@ -11,4 +11,7 @@
 
 
 
-# Project List
+# 🎓Project List🎓
+<ul>
+  <li>준비중입니다.</li>
+</ul>
