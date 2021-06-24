@@ -95,7 +95,7 @@ table{
     float: left;
     width: 33.3333%;
     height: 300px;
-    line-height: 300px;
+    /* line-height: 300px; */
     text-align: center;
     background: #EEEEEE;
 }
@@ -108,6 +108,36 @@ table{
 #contents > div.cont3{
     background: #DADADA
 }
+
+
+/* tab-menu */
+/* .tab-menu {
+    padding: 10px;
+} */
+.tab-menu .tab-btn ul {
+    overflow: hidden;
+}
+.tab-menu .tab-btn li {
+    float: left;
+    width: 100px;
+    background: #9575cd;
+    text-align: center;
+    margin-right: -1px;
+}
+.tab-menu .tab-btn li.active {
+    text-decoration: underline;
+}
+.tab-menu .tab-btn li a {
+    padding: 10px;
+    display: block;
+    color: #fff;
+}
+.tab-menu .tab-cont {
+    padding: 20px;
+    background: #512da8;
+    text-align: left;
+}
+
 
 /* footer */
 #footer {
@@ -136,8 +166,29 @@ table{
     background: #4527a0;
 }
 
-
-
+/* 팝업 레이어 */
+.layer {
+    display: none;
+    position: absolute;
+    left: 50%; top: 50%;
+    width: 500px; height: 500px;
+    background: #fff;
+    border: 2px solid #000;
+    margin-left: -250px;
+    margin-top: -250px;
+    z-index: 1000;
+}
+.layer h2 {
+    padding: 20px;
+    color: #000;
+}
+.layer p{
+    padding: 20px;
+    text-align: justify;
+}
+.layer .close {
+    position: absolute; bottom: 20px; right: 20px;
+}
 
 
 
