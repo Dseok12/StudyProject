@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+table{
+    border-spacing: 0;
+}
+.clearfix::after, .clearfix::before{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
