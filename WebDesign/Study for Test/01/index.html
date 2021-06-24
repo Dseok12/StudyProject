@@ -50,9 +50,24 @@
                 <h2>이미지 슬라이드1</h2>
             </section>
             <section id="contents" class="clearfix">
-                <div class="cont1"><h3>공지사항</h3></div>
+                <div class="tab-menu">
+                    <div class="tab-btn">
+                        <ul>
+                            <li class="active"><a href="#">공지사항1</a></li>
+                            <li><a href="#">공지사항2</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-cont">
+                        <div>
+                            1. Tab Menu DESC<br>1. Tab Menu DESC<br>1. Tab Menu DESC
+                        </div>
+                        <div>
+                            2. Tab Menu DESC<br>2. Tab Menu DESC<br>2. Tab Menu DESC
+                        </div>
+                    </div>
+                </div>
                 <div class="cont2"><h3>갤러리</h3></div>
-                <div class="cont3"><h3>팝업</h3></div>
+                <div class="cont3"><h3 class="layerPopup">팝업</h3></div>
             </section>
             <footer id="footer">
                 <div class="foot1"><h3>로고</h3></div>
@@ -61,6 +76,19 @@
             </footer>
         </section>
     </div>
+    <!-- 팝업 레이어 -->
+    <div class="layer">
+        <h2>타이틀</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Tempore nesciunt nostrum eos voluptatem animi rem accusamus
+            laudantium accusantium amet eaque qui iusto maiores,
+            minus vel ab placeat neque repellat magni!
+        </p>
+        <a href="#" class="close">닫기</a>
+    </div>
+
+
     <script src="script/jquery-3.6.0.min.js"></script>
     <script src="script/index.js"></script>
 </body>
