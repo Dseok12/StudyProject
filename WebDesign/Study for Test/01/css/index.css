@@ -3,8 +3,12 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: 24px;
-    color: #333;
+    font-size: 16px;
+    color: #000;
+}
+h1, h2, h3, h4, h5, h6{
+    font-size: 16px;
+    font-weight: normal;
 }
 a{
     text-decoration: none;
@@ -21,20 +25,116 @@ table{
     clear: both;
 }
 
+/* 기본 골격 */
+#wrap{
+    width: 1000px;
+}
+#side{
+    float: left;
+    width: 200px;
+}
+#content{
+    float: left;
+    width: 800px;
+}
 
+/* header */
+#side{
+    text-align: center;
+}
+#side .logo{
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    background: #F5F5F5;
+}
+#side .nav{
+    width: 200px;
+    height: 700px;
+    background: #EEEEEE;
+}
+#side .nav li {
+    text-align: center;
+    background: #b39ddb;
+}
+#side .nav li a {
+    padding: 10px;
+    display: block;
+    color:#fff;
+    background: rgba(0,0,0,0.3);
+}
+#side .nav li a:hover {
+    background: rgba(0,0,0,0.4);
+}
+#side .nav li ul.submenu {
+    display: none;
+}
+#side .nav li ul.submenu a:hover {
+    background: rgba(0,0,0,0.2);
+}
 
+/* content */
+#content {
+    text-align: center;
+}
 
+/* banner */
+#banner{
+    width: 800px;
+    text-align: center;
+    height: 350px;
+    line-height: 350px;
+    background: #E6E5E5;
+}
 
+/* content */
+#contents{
+    width: 800px;
+}
+#contents > div{
+    float: left;
+    width: 33.3333%;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    background: #EEEEEE;
+}
+#contents > div.cont1{
+    background: #E0E0E0
+}
+#contents > div.cont2{
+    background: #EEEEEE
+}
+#contents > div.cont3{
+    background: #DADADA
+}
 
-
-
-
-
-
-
-
-
-
+/* footer */
+#footer {
+    width: 800px;
+    text-align: center;
+}
+#footer .foot1 {
+    float: left;
+    width: 200px;
+    height: 150px;
+    line-height: 150px;
+    background: #5e35b1;
+}
+#footer .foot2 {
+    float: left;
+    width: 600px;
+    height: 75px;
+    line-height: 75px;
+    background: #512da8;
+}
+#footer .foot3 {
+    float: left;
+    width: 600px;
+    height: 75px; 
+    line-height: 75px;
+    background: #4527a0;
+}
 
 
 
