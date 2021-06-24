@@ -79,12 +79,15 @@ table{
 }
 
 /* banner */
-#banner{
-    width: 800px;
-    text-align: center;
-    height: 350px;
-    line-height: 350px;
-    background: #E6E5E5;
+#banner {position: relative; width: 800px; margin: 0 auto; text-align: center; overflow: hidden; height: 350px; }
+#banner img {width: 100%; height: 350px; display: block;}
+#banner h2 {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: rgba(255,255,255,0.5);
+    border-radius: 25px;
+    padding: 10px 30px;
 }
 
 /* content */
@@ -100,13 +103,13 @@ table{
     background: #EEEEEE;
 }
 #contents > div.cont1{
-    background: #E0E0E0
+    background: #E0E0E0;
 }
 #contents > div.cont2{
-    background: #EEEEEE
+    background: #EEEEEE;
 }
 #contents > div.cont3{
-    background: #DADADA
+    background: #DADADA;
 }
 
 
@@ -120,7 +123,7 @@ table{
 .tab-menu .tab-btn li {
     float: left;
     width: 100px;
-    background: #9575cd;
+    background: #E0E0E0;
     text-align: center;
     margin-right: -1px;
 }
@@ -130,11 +133,11 @@ table{
 .tab-menu .tab-btn li a {
     padding: 10px;
     display: block;
-    color: #fff;
+    color: #000;
 }
 .tab-menu .tab-cont {
     padding: 20px;
-    background: #512da8;
+    background: #E0E0E0;
     text-align: left;
 }
 

@@ -23,9 +23,7 @@ $(".layer .close").click(function(e){
 $(document).ready(function(){
     var tabBtn = $(".tab-btn > ul > li");
     var tabCont = $(".tab-cont > div");
-    
     tabCont.hide().eq(0).show();
-    
     tabBtn.click(function(e){
         e.preventDefault();
         var target = $(this);
@@ -37,6 +35,18 @@ $(document).ready(function(){
     });
 });
 
+
+// 위아래로 전환되는 슬라이드
+var currentIndex = 0;
+setInterval(function(){
+    if(currentIndex < 2){
+        currentIndex++;
+    } else {
+        currentIndex = 0;
+    }
+    var slidePosition = currentIndex * (-350)+"px";
+    $(".slideList").animate({ top: slidePosition},400);
+},3000);
 
 
 
