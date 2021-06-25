@@ -9,6 +9,13 @@
   <li>실기시험 준비중</li>
 </ul>
 
+<h3>Languages Study</h3>
+<ul>
+  <li>React.js</li>
+  <li>Vue.js</li>
+  <li>Node.js</li>
+  <li>PHP</li>
+</ul>
 
 
 
