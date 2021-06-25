@@ -33,5 +33,5 @@
 
 # 🤷‍♂️Team Project List🤷‍♀️
 <ul>
-  <li>준비중입니다.</li>
+  <li>https://github.com/AlbalogTeam/AlbalogClient.git</li>
 </ul>
