@@ -18,11 +18,14 @@
 </ul>
 
 
+<<<<<<< HEAD
 
 
 
 
 
+=======
+>>>>>>> 7f9f5dd18b88eca06e78c6569f3a3764a9e8ee7e
 # 🎓Individual Project List🎓
 <ul>
   <li>준비중입니다.</li>
