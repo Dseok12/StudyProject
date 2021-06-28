@@ -20,10 +20,7 @@
 
 
 
-
-
-
-# 🎓Project List🎓
+# 🎓Individual Project List🎓
 <ul>
   <li>준비중입니다.</li>
 </ul>
