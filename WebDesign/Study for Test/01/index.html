@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>연습문제 - 세로형레이아웃</title>
+</head>
+<body>
+    <div id="wrap">
+        <aside id="side">
+            <h1 class="logo">로고</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Menu1</a>
+                        <ul class="submenu">
+                            <li><a href="#">SubMenu1</a></li>
+                            <li><a href="#">SubMenu2</a></li>
+                            <li><a href="#">SubMenu3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu2</a>
+                        <ul class="submenu">
+                            <li><a href="#">SubMenu1</a></li>
+                            <li><a href="#">SubMenu2</a></li>
+                            <li><a href="#">SubMenu3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu3</a>
+                        <ul class="submenu">
+                            <li><a href="#">SubMenu1</a></li>
+                            <li><a href="#">SubMenu2</a></li>
+                            <li><a href="#">SubMenu3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu4</a>
+                        <ul class="submenu">
+                            <li><a href="#">SubMenu1</a></li>
+                            <li><a href="#">SubMenu2</a></li>
+                            <li><a href="#">SubMenu3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <section id="content">
+            <section id="banner">
+                <h2>이미지가 3초에 한번씩 위아래로 전환되는 효과</h2>
+                <div class="slideList">
+                    <div class="slideImg"><img src="image/ban01.jpg" alt="이미지 설명"></div>
+                    <div class="slideImg"><img src="image/ban02.jpg" alt="이미지 설명"></div>
+                    <div class="slideImg"><img src="image/ban03.jpg" alt="이미지 설명"></div>
+                </div>
+            </section>
+            <section id="contents" class="clearfix">
+                <div class="tab-menu">
+                    <div class="tab-btn">
+                        <ul>
+                            <li class="active"><a href="#">공지사항1</a></li>
+                            <li><a href="#">공지사항2</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-cont">
+                        <div>
+                            1. Tab Menu DESC<br>1. Tab Menu DESC<br>1. Tab Menu DESC
+                        </div>
+                        <div>
+                            2. Tab Menu DESC<br>2. Tab Menu DESC<br>2. Tab Menu DESC
+                        </div>
+                    </div>
+                </div>
+                <div class="cont2"><h3>갤러리</h3></div>
+                <div class="cont3"><h3 class="layerPopup">팝업</h3></div>
+            </section>
+            <footer id="footer">
+                <div class="foot1"><h3>로고</h3></div>
+                <div class="foot2"><h3>하단 메뉴</h3></div>
+                <div class="foot3"><h3>Copyright</h3></div>
+            </footer>
+        </section>
+    </div>
+    <!-- 팝업 레이어 -->
+    <div class="layer">
+        <h2>타이틀</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Tempore nesciunt nostrum eos voluptatem animi rem accusamus
+            laudantium accusantium amet eaque qui iusto maiores,
+            minus vel ab placeat neque repellat magni!
+        </p>
+        <a href="#" class="close">닫기</a>
+    </div>
+
+
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/index.js"></script>
+</body>
+</html>
