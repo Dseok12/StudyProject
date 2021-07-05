@@ -29,6 +29,8 @@
 - 월간내일 웹진
 - 보령제약 보령 브링 웹진
   
+</details>
+
 <details>
 <summary>API활용</summary>
 
