@@ -21,7 +21,8 @@
 <ul>
   <li>HTML/CSS</li>
   <li>SCSS</li>
-  <li>오픈소스를 이용한 제이쿼리</li>
+  <li>오픈소스를 이용한 제이쿼리</li>\
+  <li>GitHub</li>
 </ul>
 
 
