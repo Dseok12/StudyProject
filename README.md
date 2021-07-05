@@ -34,6 +34,8 @@
 
 - 한국만화영상진흥원 뉴스레터 API를 활용하여 카카오톡/페이스북 공유하기  
 
+  
+</details>
 
 # 🎓Individual Project List🎓
 <ul>
