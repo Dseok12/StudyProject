@@ -19,6 +19,24 @@
 
 
 
+# Company Work
+<details>
+<summary>퍼블리싱</summary>
+
+### Implements
+- 고용노동부 희망나무 웹진
+- LX공간정보 웹진
+- 강동경희대학교병원 웹진
+- 월간내일 웹진
+- 보령제약 보령 브링 웹진
+  
+<details>
+<summary>API활용</summary>
+
+### Implements
+- 한국만화영상진흥원 뉴스레터 API를 활용하여 카카오톡/페이스북 공유하기  
+
+
 # 🎓Individual Project List🎓
 <ul>
   <li>준비중입니다.</li>
