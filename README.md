@@ -18,9 +18,11 @@
 </ul>
 
 <h3>실무에서 바로 활용가능</h3>
-- HTML/CSS
-- SCSS
-- 오픈소스를 이용한 제이쿼리
+<ul>
+  <li>HTML/CSS</li>
+  <li>SCSS</li>
+  <li>오픈소스를 이용한 제이쿼리</li>
+</ul>
 
 
 # Company Work
