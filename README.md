@@ -17,6 +17,10 @@
   <li>PHP</li>
 </ul>
 
+<h3>실무에서 바로 활용가능</h3>
+- HTML/CSS
+- SCSS
+- 오픈소스를 이용한 제이쿼리
 
 
 # Company Work
