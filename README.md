@@ -20,9 +20,12 @@
 <h3>실무에서 바로 활용가능</h3>
 <ul>
   <li>HTML/CSS</li>
-  <li>SCSS</li>
-  <li>오픈소스를 이용한 제이쿼리</li>
-  <li>GitHub</li>
+  <li>SCSS 사용 가능</li>
+  <li>오픈소스를 이용한 제이쿼리 사용 가능</li>
+  <li>GitHub 사용 가능</li>
+  <li>React.js의 퍼블리싱 가능</li>
+  <li>뉴스레터 보내기</li>
+  <li>카카오톡 공유하기 API 사용 가능</li>
 </ul>
 
 
