@@ -2,6 +2,7 @@
 /* COMMON */
 body{
     font-family: 'Nanum Gothic', sans-serif;
+    height: 5000px;
 }
 img{
     display: block;
@@ -17,8 +18,11 @@ img{
 
 /* HEADER */
 header{
+    width: 100%;
     background-color: #f6f5f0;
     border-bottom: 1px solid #c8c8c8;
+    position: fixed;
+    top: 0;
 }
 header > .inner{
     height: 120px;
@@ -186,7 +190,22 @@ header .main-menu .item .item__contents .contents__texture p{
     color: #669900;
     margin: 4px 0 14px;
 }
-
+header .badges{
+    position: absolute;
+    top: 132px;
+    right: 12px;
+}
+header .badges .badge{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
 
 
 
