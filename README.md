@@ -17,7 +17,48 @@
   <li>PHP</li>
 </ul>
 
+<h3>실무에서 바로 활용가능</h3>
+<ul>
+  <li>HTML/CSS</li>
+  <li>SCSS 사용 가능</li>
+  <li>오픈소스를 이용한 제이쿼리 사용 가능</li>
+  <li>GitHub 사용 가능</li>
+  <li>React.js의 퍼블리싱 가능</li>
+  <li>뉴스레터 보내기</li>
+  <li>카카오톡 공유하기 API 사용 가능</li>
+  <li>부트스트랩 난이도 중급으로 사용 가능</li>
+</ul>
 
+
+# Company Work
+<details>
+<summary>퍼블리싱</summary>
+
+- 근로복지공단 희망나무 웹진(유지·보수)
+- LX공간정보 웹진(리뉴얼)
+- 강동경희대학교병원 웹진(리뉴얼)
+- 고용노동부 월간내일 웹진(유지·보수)
+- 보령제약 보령 브링 웹진(유지·보수)
+  
+</details>
+
+<details>
+<summary>API활용</summary>
+
+- 한국만화영상진흥원 뉴스레터 API를 활용하여 카카오톡/페이스북 공유하기
+
+</details>
+<details>
+<summary>뉴스레터 보내기 및 퍼블리싱</summary>
+
+- 한국만화영상진흥원
+- 한국만화축제영상진흥원
+- 보령제약 뉴스레터
+- 공간정보 뉴스레터
+- 희망나무 뉴스레터(근로복지공단)
+
+  
+</details>
 
 # 🎓Individual Project List🎓
 <ul>
