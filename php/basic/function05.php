@@ -73,14 +73,15 @@ echo MESSAGE;
 
 
 
-
 /*
-    Callbacks (Don't need 'use).
+    Callbacks (Don't need 'use').
 */
 
+$foo5 = function () {
+    return MESSAGE;
+};
 
-
-
+echo $foo5();
 
 
 
