@@ -126,9 +126,9 @@ header .main-menu{
     z-index: 1;
     display: flex;
 }
-header .main-menu .item{
+/* header .main-menu .item{
 
-}
+} */
 header .main-menu .item .item__name{
     padding: 10px 20px 34px 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -209,7 +209,37 @@ header .badges .badge{
 
 
 
+/* VISUAL */
+.visual{
+    margin-top: 120px;
+    background-image: url("../images/visual_bg.jpg");
+    background-position: center;
+}
+.visual .inner{
+    height: 646px;
+    background-color: orange;
+}
+.visual .title{
 
+}
+.visual .title .btn{
+
+}
+.visual .cup1.image{
+    
+}
+.visual .cup1.text{
+
+}
+.visual .cup2.image{
+    
+}
+.visual .cup2.text{
+
+}
+.visual .spoon{
+
+}
 
 
 
