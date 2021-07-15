@@ -6,6 +6,11 @@
     margin: 0 auto;
 }
 
+$notebook: "screen and (max-width:1200px)";
+$tablet: "screen and (max-width:992px)";
+$tablet02: "screen and (max-width:800px)";
+$phone: "screen and (max-width:650px)";
+
 .btn_top {
     position: fixed;
     right: 2%;
@@ -412,26 +417,6 @@ header{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 푸터 시작 */
 .footer{
     margin-top: 140px;
@@ -467,12 +452,367 @@ header{
 /* 푸터 끝 */
 
 
+/* 반응형 1200px 시작 */
+@media #{$notebook} {
+    header{
+        .inner{
+            width: 100%;
+            nav{
+                display: none;
+            }
+        }
+        .ham_menu{
+            display: block;
+        }
+    }
+    .pc_menu{
+        position: absolute;
+        top: 0;right: 10%;
+    }
+    /* 섹션1 제목부분 시작 */
+    .section01{
+        .contents{
+            margin-left: 4%;
+            li{
+                width: 30%;
+                font-size: 13px;
+                margin-left: 8%;
+                img{
+                    width: 20%;
+                }
+            }
+        }
+        .box-text01{
+            top: -0.5%;
+        }
+    }
+    /* 섹션2 제목 시작 */
+    .section02{
+        .box-text01{
+            top: 2.2%;
+            z-index: 12;
+        }
+    }
+    /* 섹션3 제목 시작 */
+    .section03{
+        .box-text02{
+            top: -0.5%;
+        }
+    }
+    /* 섹션1 콘텐츠 부분 위치 조정 시작 */
+    .img_box{
+        width: 30%;
+    }
+    .img_box p{
+        width: 100%;
+    }
+    /* 섹션1 콘텐츠 부분 위치 조정 끝 */
+
+    /* 섹션2 콘텐츠 부분 위치 조정 시작 */
+    .section02 .contents{
+        margin-left: 4%;
+    }
+    .section02 .contents > li{
+        width: 30%;
+        font-size: 13px;
+        margin-left: 8%;
+    }
+    .section02 .contents > li > img{
+        width: 20%;
+    }
+    .img_box{
+        width: 30%;
+    }
+    .img_box p{
+        width: 100%;
+    }
+    /* 섹션2 콘텐츠 부분 위치 조정 끝 */
+
+    /* 섹션3 콘텐츠 부분 위치 조정 시작 */
+    .section03 .contents{
+        margin-left: 4%;
+    }
+    .section03 .contents > li{
+        width: 30%;
+        font-size: 13px;
+        margin-left: 8%;
+    }
+    .section03 .contents > li > img{
+        width: 20%;
+    }
+    .img_box{
+        width: 30%;
+    }
+    .img_box p{
+        width: 100%;
+    }
+    /* 섹션3 콘텐츠 부분 위치 조정 끝 */
+}
 
 
+/* 반응형 992px 시작 */
+@media #{$tablet} {
+    .pc_menu{
+        position: absolute;
+        top: 0;right: 8%;
+    }
+    /* 섹션1 제목부분 시작 */
+    .section01 .box-text01{
+        top: -0.5%;
+    }
+    .inner{
+        h1{
+            margin-left: 3%;
+        }
+    }
+    /* 섹션2 제목 시작 */
+    .section02{
+        .box-text01{
+            top: 1.3%;
+            z-index: 12;
+        }
+    }
+    /* 섹션3 제목 시작 */
+    .section03 {
+        .box-text02{
+            top: -0.5%;
+            z-index: 12;
+        }
+    }
+    
+    /* 섹션1 콘텐츠 부분 위치 조정 시작 */
+    .section01{
+        .contents{
+            li{
+                width: 318px;
+                font-size: 13px;
+                margin-left: 1%;
+                img{
+                    width: 318px;
+                    height: auto;
+                }
+                .img_box{
+                    width: 318px;
+                    height: auto;
+                    top: -3%;
+                }
+            }
+        }
+    }
+    /* 섹션1 콘텐츠 부분 위치 조정 끝 */
 
+    /* 섹션2 콘텐츠 부분 위치 조정 시작 */
+    .section02 .contents > li{
+        width: 318px;
+        font-size: 13px;
+        margin-left: 1%;
+    }
+    .section02 .contents li img{
+        width: 318px;
+        height: 275px;
+    }
+    .section02 .contents li .img_box{
+        width: 318px;
+        height: 275px;
+        top: -3%;
+    }
+    /* 섹션2 콘텐츠 부분 위치 조정 끝 */
 
-
-
+    /* 섹션3 콘텐츠 부분 위치 조정 시작 */
+    .section03 .contents > li{
+        width: 318px;
+        font-size: 13px;
+        margin-left: 1%;
+    }
+    .section03 .contents li img{
+        width: 318px;
+        height: 275px;
+    }
+    .section03 .contents li .img_box{
+        width: 318px;
+        height: 275px;
+        top: -3%;
+    }
+    /* 섹션3 콘텐츠 부분 위치 조정 끝 */
+}
+@media #{$tablet02}{
+        /* 아코디언메뉴 시작 */
+        .ham_menu{
+            display: block;
+            position: absolute;
+            top: 0;right: 0;
+            width: 35px;
+            margin-top: 4%;
+            margin-right: 6%;
+            cursor: pointer;
+        }
+        .ham_menu .line1{
+            display: block;
+            height: 4px;
+            margin-top: 7px;
+            background-color: black;
+        }
+        .ham_menu .line2{
+            display: block;
+            height: 4px;
+            margin-top: 7px;
+            background-color: black;
+        }
+        .ham_menu .line3{
+            display: block;
+            height: 4px;
+            margin-top: 7px;
+            background-color: black;
+        }
+        .acco >li{
+            list-style: none;
+        }
+        .acco{
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+        .acco > li{
+            width: 100%;
+            height: auto;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 40px;
+            border-bottom: 1px solid #666;
+            text-align: center;
+        }
+        .acco > li a {
+            display: block;
+        }
+        .acco > li a:hover{
+            background: #f9f9f9;
+        }
+        .acco .sub {
+            width: 100%;
+            height: auto;
+        }
+        .sub li{
+            background-color: #f9f9f9;
+            line-height:35px;
+            border-bottom: 1px solid #666;
+        }
+        .sub li:last-child{
+            border-bottom: 0;
+        }
+        /* 아코디언 끝!!!!!!!!!!!!!! */
+}
+/* 반응형 650px(모바일) 시작 */
+@media #{$phone} {
+        /* header Start!!!!!!! */
+        header{
+            width: 100%;
+            height: 90px;
+            background-color: #fff;
+            border-bottom: 1px solid #000;
+            .inner{
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                h1{
+                    display: inline-block;
+                    a{
+                        display: block;
+                    }
+                }
+            }
+        }
+        /* 섹션1 제목부분 시작 */
+        .section01{
+            .box-text01{
+                top: -0.5%;
+            }
+            .contents{
+                li{
+                    width: 100%;
+                    font-size: 13px;
+                    margin-left: -1%;
+                    img{
+                        width: 100%;
+                        height: 296px;
+                    }
+                    .img_box{
+                        width: 100%;
+                        height: 296px;
+                        p{
+                            width: 100%;
+                            height: 296px;
+                            left: -440px;
+                        }
+                    }
+                    .img_box:hover{
+                        p{
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+        /* 섹션2 제목 시작 */
+        .section02{
+            .box-text01{
+                top: 1.3%;
+                z-index: 12;
+            }
+        }
+        /* 섹션3 제목 시작 */
+        .section03{
+            .box-text02{
+                top: -0.5%;
+            }
+        }
+        /* 섹션2 콘텐츠 부분 위치 조정 시작 */
+        .section02 .contents > li{
+            width: 100%;
+            font-size: 13px;
+            margin-left: -1%;
+        }
+        .section02 .contents li img{
+            width: 100%;
+            height: 296px;
+        }
+        .section02 .contents li .img_box{
+            width: 100%;
+            height: 296px;
+        }
+        .section02 .contents li .img_box p{
+            width: 100%;
+            height: 296px;
+            left: -440px;
+        }
+        .section02 .contents li .img_box:hover p{
+            left: 0;
+        }
+        /* 섹션2 콘텐츠 부분 위치 조정 끝 */
+    
+        /* 섹션3 콘텐츠 부분 위치 조정 시작 */
+        .section03 .contents > li{
+            width: 100%;
+            font-size: 13px;
+            margin-left: -1%;
+        }
+        .section03 .contents li img{
+            width: 100%;
+            height: 296px;
+        }
+        .section03 .contents li .img_box{
+            width: 100%;
+            height: 296px;
+        }
+        .section03 .contents li .img_box p{
+            width: 100%;
+            height: 296px;
+            left: -440px;
+        }
+        .section03 .contents li .img_box:hover p{
+            left: 0;
+        }
+        /* 섹션3 콘텐츠 부분 위치 조정 끝 */
+}
 
 
 
