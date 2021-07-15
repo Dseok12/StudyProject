@@ -70,5 +70,5 @@
 
 # 🤷‍♂️Team Project List🤷‍♀️
 <ul>
-  <li>https://github.com/AlbalogTeam/AlbalogClient.git -> Forntend Part</li>
+  <li>준비중입니다.</li>
 </ul>
