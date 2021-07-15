@@ -513,15 +513,23 @@ header .ham_menu {
   header .ham_menu {
     display: block;
   }
-  .drop_box {
+  .pc_menu {
     position: absolute;
     top: 0;
     right: 10%;
   }
-  .header_inner {
-    width: 100%;
-  }
   /* 섹션1 제목부분 시작 */
+  .section01 .contents {
+    margin-left: 4%;
+  }
+  .section01 .contents li {
+    width: 30%;
+    font-size: 13px;
+    margin-left: 8%;
+  }
+  .section01 .contents li img {
+    width: 20%;
+  }
   .section01 .box-text01 {
     top: -0.5%;
   }
@@ -535,17 +543,6 @@ header .ham_menu {
     top: -0.5%;
   }
   /* 섹션1 콘텐츠 부분 위치 조정 시작 */
-  .section01 .contents {
-    margin-left: 4%;
-  }
-  .section01 .contents > li {
-    width: 30%;
-    font-size: 13px;
-    margin-left: 8%;
-  }
-  .section01 .contents > li > img {
-    width: 20%;
-  }
   .img_box {
     width: 30%;
   }
@@ -595,7 +592,7 @@ header .ham_menu {
 
 /* 반응형 992px 시작 */
 @media screen and (max-width: 992px) {
-  .drop_box {
+  .pc_menu {
     position: absolute;
     top: 0;
     right: 8%;
@@ -604,7 +601,7 @@ header .ham_menu {
   .section01 .box-text01 {
     top: -0.5%;
   }
-  .header_inner h1 {
+  .inner h1 {
     margin-left: 3%;
   }
   /* 섹션2 제목 시작 */
@@ -618,7 +615,7 @@ header .ham_menu {
     z-index: 12;
   }
   /* 섹션1 콘텐츠 부분 위치 조정 시작 */
-  .section01 .contents > li {
+  .section01 .contents li {
     width: 318px;
     font-size: 13px;
     margin-left: 1%;
@@ -667,47 +664,99 @@ header .ham_menu {
   /* 섹션3 콘텐츠 부분 위치 조정 끝 */
 }
 
-/* 반응형 650px 시작 */
+@media screen and (max-width: 800px) {
+  /* 아코디언메뉴 시작 */
+  .ham_menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    margin-top: 4%;
+    margin-right: 6%;
+    cursor: pointer;
+  }
+  .ham_menu .line1 {
+    display: block;
+    height: 4px;
+    margin-top: 7px;
+    background-color: black;
+  }
+  .ham_menu .line2 {
+    display: block;
+    height: 4px;
+    margin-top: 7px;
+    background-color: black;
+  }
+  .ham_menu .line3 {
+    display: block;
+    height: 4px;
+    margin-top: 7px;
+    background-color: black;
+  }
+  .acco > li {
+    list-style: none;
+  }
+  .acco {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  .acco > li {
+    width: 100%;
+    height: auto;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 40px;
+    border-bottom: 1px solid #666;
+    text-align: center;
+  }
+  .acco > li a {
+    display: block;
+  }
+  .acco > li a:hover {
+    background: #f9f9f9;
+  }
+  .acco .sub {
+    width: 100%;
+    height: auto;
+  }
+  .sub li {
+    background-color: #f9f9f9;
+    line-height: 35px;
+    border-bottom: 1px solid #666;
+  }
+  .sub li:last-child {
+    border-bottom: 0;
+  }
+  /* 아코디언 끝!!!!!!!!!!!!!! */
+}
+
+/* 반응형 650px(모바일) 시작 */
 @media screen and (max-width: 650px) {
   /* header Start!!!!!!! */
-  .header {
+  header {
     width: 100%;
     height: 90px;
     background-color: #fff;
     border-bottom: 1px solid #000;
   }
-  .header .header_inner {
+  header .inner {
     width: 100%;
     height: auto;
     margin: 0 auto;
   }
-  .header .header_inner h1 {
+  header .inner h1 {
     display: inline-block;
   }
-  .header .header_inner > h1 > a {
+  header .inner h1 a {
     display: block;
-    text-indent: -9999px;
-    width: 150px;
-    height: 80px;
-    margin-top: 3%;
-    background: url("../../../../../img/logo-top.png") no-repeat;
-    background-size: 130px;
   }
   /* 섹션1 제목부분 시작 */
   .section01 .box-text01 {
     top: -0.5%;
   }
-  /* 섹션2 제목 시작 */
-  .section02 .box-text01 {
-    top: 1.3%;
-    z-index: 12;
-  }
-  /* 섹션3 제목 시작 */
-  .section03 .box-text02 {
-    top: -0.5%;
-  }
-  /* 섹션1 콘텐츠 부분 위치 조정 시작 */
-  .section01 .contents > li {
+  .section01 .contents li {
     width: 100%;
     font-size: 13px;
     margin-left: -1%;
@@ -728,7 +777,15 @@ header .ham_menu {
   .section01 .contents li .img_box:hover p {
     left: 0;
   }
-  /* 섹션1 콘텐츠 부분 위치 조정 끝 */
+  /* 섹션2 제목 시작 */
+  .section02 .box-text01 {
+    top: 1.3%;
+    z-index: 12;
+  }
+  /* 섹션3 제목 시작 */
+  .section03 .box-text02 {
+    top: -0.5%;
+  }
   /* 섹션2 콘텐츠 부분 위치 조정 시작 */
   .section02 .contents > li {
     width: 100%;
