@@ -12,6 +12,7 @@
 <h3>Languages Study(공부중)</h3>
 <ul>
   <li>React.js</li>
+  <li>JAVA</li>
   <li>Vue.js</li>
   <li>Node.js</li>
   <li>PHP</li>
