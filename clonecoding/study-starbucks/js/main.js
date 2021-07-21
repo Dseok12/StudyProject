@@ -17,6 +17,7 @@ searchInputEl.addEventListener('blur', function(){
 // 스크롤시 특정 요소 사라지게하기
 
 const badgeEl = document.querySelector('header .badges');
+const toTopEl = document.querySelector('#to-top');
 
 window.addEventListener('scroll', _.throttle(function(){
     console.log(window.scrollY)
@@ -28,7 +29,7 @@ window.addEventListener('scroll', _.throttle(function(){
             display: 'none'
         });
         // 버튼 보이기
-        gsap.to('#to-top', .2, {
+        gsap.to(toTopEl, .2, {
             x: 0
         });
     } else {
@@ -37,14 +38,13 @@ window.addEventListener('scroll', _.throttle(function(){
             display: 'block'
         });
         // 버튼 숨기기
-        gsap.to('#to-top', .2, {
+        gsap.to(toTopEl, .2, {
             x: 100
         });
     }
 }, 300));
 
 // 상단으로 스크롤 버튼을 클릭하면,
-const toTopEl = document.querySelector('#to-top')
 toTopEl.addEventListener('click', function () {
   // 페이지 위치를 최상단으로 부드럽게(0.7초 동안) 이동.
   gsap.to(window, .7, {
@@ -164,5 +164,5 @@ spyEls.forEach(function (spyEl) {
 
 
 /* 올해가 몇 년도인지 계산 */
- const thisYear = document.querySelector('.this-year')
- thisYear.textContent = new Date().getFullYear()
+ const thisYear = document.querySelector('.this-year');
+ thisYear.textContent = new Date().getFullYear();
