@@ -55,15 +55,11 @@
   
 </details>
 
-# 🎓Individual Project List🎓
-<ul>
-  <li>준비중입니다.</li>
-</ul>
+## 🎓Individual Project List🎓
+- 준비중입니다.
 
 
 
 
-# 🤷‍♂️Team Project List🤷‍♀️
-<ul>
-  <li>준비중입니다.</li>
-</ul>
+## 🤷‍♂️Team Project List🤷‍♀️
+- 준비중입니다.
