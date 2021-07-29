@@ -1,6 +1,6 @@
-개인 프로젝트 겸 학업을 위한 깃허브
+# 개인 프로젝트 겸 학업을 위한 깃허브
 
-# ✏Study List✏
+## ✏Study List✏
 
 
 ### 웹디자인 기능사
@@ -25,7 +25,7 @@
 - 카카오톡 API를 활용한 공유하기 사용 가능
 - 부트스트랩 난이도 중급으로 사용 가능
 
-# Company Work
+## Company Work
 <details>
 <summary>퍼블리싱</summary>
 
