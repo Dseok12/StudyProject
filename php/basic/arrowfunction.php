@@ -21,7 +21,7 @@ $fn = function ($var) {
     return 'Hello, world';
 };
 
-$fn = fn($var) => 'Hello, world';
+// $fn = fn($var) => 'Hello, world';
 
 
 
