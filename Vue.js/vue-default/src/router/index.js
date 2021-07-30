@@ -62,6 +62,16 @@ const routes = [
     name: 'Class',
     component: () => import(/* webpackChunkName: "Class", webpackPrefetch:true */ '../views/Class.vue')
   },
+  {
+    path: '/randering',
+    name: 'Randering',
+    component: () => import(/* webpackChunkName: "Randering", webpackPrefetch:true */ '../views/Randering.vue')
+  },
+  {
+    path: '/randering02',
+    name: 'Randering02',
+    component: () => import(/* webpackChunkName: "Randering02", webpackPrefetch:true */ '../views/Randering02.vue')
+  },
 ]
 
 const router = createRouter({

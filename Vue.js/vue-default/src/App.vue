@@ -11,6 +11,8 @@
         <router-link to="/example02">Select</router-link> |
         <router-link to="/example03">Attribute</router-link> |
         <router-link to="/class">Class</router-link> |
+        <router-link to="/randering">Randering</router-link> |
+        <router-link to="/randering02">Randering02</router-link> |
       </div>
       <router-view/>
   </div>
