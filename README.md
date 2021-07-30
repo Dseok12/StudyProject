@@ -1,5 +1,4 @@
-# 개인 프로젝트 겸 학업을 위한 깃허브
-# (GitHub for personal projects and studies)
+# 개인 프로젝트 겸 학업을 위한 깃허브 / GitHub for personal projects and studies
 
 ## ✏Study List✏
 
