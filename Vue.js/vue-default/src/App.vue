@@ -13,8 +13,14 @@
         <router-link to="/class">Class</router-link> |
         <router-link to="/randering">Randering</router-link> |
         <router-link to="/randering02">Randering02</router-link> |
-      </div>
-      <router-view/>
+        <router-link to="/event">Event</router-link> |
+        <router-link to="/computed">Computed</router-link> |
+        <router-link to="/watch">Watch</router-link> |
+        <router-link to="/exercise">Exercise</router-link> |
+        <router-link to="/save">save</router-link> |
+        <router-link to="/serverdata">ServerData</router-link> |
+    </div>
+    <router-view/>
   </div>
 </template>
 

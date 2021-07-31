@@ -72,6 +72,36 @@ const routes = [
     name: 'Randering02',
     component: () => import(/* webpackChunkName: "Randering02", webpackPrefetch:true */ '../views/Randering02.vue')
   },
+  {
+    path: '/event',
+    name: 'Event',
+    component: () => import(/* webpackChunkName: "Event", webpackPrefetch:true */ '../views/Event.vue')
+  },
+  {
+    path: '/computed',
+    name: 'Computed',
+    component: () => import(/* webpackChunkName: "Computed", webpackPrefetch:true */ '../views/Computed.vue')
+  },
+  {
+    path: '/watch',
+    name: 'Watch',
+    component: () => import(/* webpackChunkName: "Watch", webpackPrefetch:true */ '../views/Watch.vue')
+  },
+  {
+    path: '/exercise',
+    name: 'exercise',
+    component: () => import(/* webpackChunkName: "exercise", webpackPrefetch:true */ '../views/exercise.vue')
+  },
+  {
+    path: '/save',
+    name: 'save',
+    component: () => import(/* webpackChunkName: "save", webpackPrefetch:true */ '../views/save.vue')
+  },
+  {
+    path: '/serverdata',
+    name: 'serverdata',
+    component: () => import(/* webpackChunkName: "serverdata", webpackPrefetch:true */ '../views/serverdata.vue')
+  },
 ]
 
 const router = createRouter({
