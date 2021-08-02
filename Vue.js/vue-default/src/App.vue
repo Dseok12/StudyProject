@@ -20,6 +20,11 @@
         <router-link to="/save">save</router-link> |
         <router-link to="/serverdata">ServerData</router-link> |
     </div>
+    <div id="nav2">
+      <router-link to="/othercomponent">OtherComponent</router-link> |
+      <router-link to="/othercomponent02">OtherComponent02</router-link> |
+      <router-link to="/othercomponent03">OtherComponent03</router-link> |
+    </div>
     <router-view/>
   </div>
 </template>
@@ -44,5 +49,20 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+div{
+  padding: 30px;
+  margin-top: -20px;
+}
+div a{
+  font-weight: bold;
+  color: #2c3e50;
+}
+div a.router-link-exact-active{
+  color: #42b983;
+}
+#nav2{
+  margin-top: -30px;
 }
 </style>

@@ -102,6 +102,21 @@ const routes = [
     name: 'serverdata',
     component: () => import(/* webpackChunkName: "serverdata", webpackPrefetch:true */ '../views/serverdata.vue')
   },
+  {
+    path: '/othercomponent',
+    name: 'othercomponent',
+    component: () => import(/* webpackChunkName: "othercomponent", webpackPrefetch:true */ '../views/othercomponent.vue')
+  },
+  {
+    path: '/othercomponent02',
+    name: 'othercomponent02',
+    component: () => import(/* webpackChunkName: "othercomponent02", webpackPrefetch:true */ '../views/othercomponent02.vue')
+  },
+  {
+    path: '/othercomponent03',
+    name: 'othercomponent03',
+    component: () => import(/* webpackChunkName: "othercomponent03", webpackPrefetch:true */ '../views/othercomponent03.vue')
+  },
 ]
 
 const router = createRouter({
