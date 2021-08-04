@@ -117,6 +117,76 @@ const routes = [
     name: 'othercomponent03',
     component: () => import(/* webpackChunkName: "othercomponent03", webpackPrefetch:true */ '../views/othercomponent03.vue')
   },
+  {
+    path: '/childcomponent03',
+    name: 'childcomponent03',
+    component: () => import(/* webpackChunkName: "childcomponent03", webpackPrefetch:true */ '../views/childcomponent03.vue')
+  },
+  {
+    path: '/othercomponent04',
+    name: 'othercomponent04',
+    component: () => import(/* webpackChunkName: "othercomponent04", webpackPrefetch:true */ '../views/othercomponent04.vue')
+  },
+  {
+    path: '/othercomponent05',
+    name: 'othercomponent05',
+    component: () => import(/* webpackChunkName: "othercomponent05", webpackPrefetch:true */ '../views/othercomponent05.vue')
+  },
+  {
+    path: '/othercomponent06',
+    name: 'othercomponent06',
+    component: () => import(/* webpackChunkName: "othercomponent06", webpackPrefetch:true */ '../views/othercomponent06.vue')
+  },
+  {
+    path: '/slot01',
+    name: 'slot01',
+    component: () => import(/* webpackChunkName: "slot01", webpackPrefetch:true */ '../views/slot01.vue')
+  },
+  {
+    path: '/slot02',
+    name: 'slot02',
+    component: () => import(/* webpackChunkName: "slot02", webpackPrefetch:true */ '../views/slot02.vue')
+  },
+  {
+    path: '/provideinject',
+    name: 'provideinject',
+    component: () => import(/* webpackChunkName: "provideinject", webpackPrefetch:true */ '../views/provideinject.vue')
+  },
+  {
+    path: '/mixintest',
+    name: 'mixintest',
+    component: () => import(/* webpackChunkName: "mixintest", webpackPrefetch:true */ '../views/mixintest.vue')
+  },
+  {
+    path: '/compositionapi',
+    name: 'compositionapi',
+    component: () => import(/* webpackChunkName: "compositionapi", webpackPrefetch:true */ '../views/compositionapi.vue')
+  },
+  {
+    path: '/compositionapi01',
+    name: 'compositionapi01',
+    component: () => import(/* webpackChunkName: "compositionapi01", webpackPrefetch:true */ '../views/compositionapi01.vue')
+  },
+  {
+    path: '/compositionapiprovideinjection',
+    name: 'compositionapiprovideinjection',
+    component: () => import(/* webpackChunkName: "compositionapiprovideinjection", webpackPrefetch:true */ '../views/compositionapiprovideinjection.vue')
+  },
+  {
+    path: '/customdirective',
+    name: 'customdirective',
+    component: () => import(/* webpackChunkName: "customdirective", webpackPrefetch:true */ '../views/customdirective.vue')
+  },
+  {
+    path: '/plugins',
+    name: 'plugins',
+    component: () => import(/* webpackChunkName: "plugins", webpackPrefetch:true */ '../views/plugins.vue')
+  },
+  {
+    path: '/storeaccess',
+    name: 'storeaccess',
+    component: () => import(/* webpackChunkName: "storeaccess", webpackPrefetch:true */ '../views/storeaccess.vue')
+  },
 ]
 
 const router = createRouter({

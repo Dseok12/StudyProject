@@ -1,4 +1,5 @@
 <template>
+<div>
   <div>
     <div id="nav">
         <router-link to="/">Home</router-link> |
@@ -24,9 +25,24 @@
       <router-link to="/othercomponent">OtherComponent</router-link> |
       <router-link to="/othercomponent02">OtherComponent02</router-link> |
       <router-link to="/othercomponent03">OtherComponent03</router-link> |
+      <router-link to="/othercomponent04">OtherComponent04</router-link> |
+      <router-link to="/othercomponent05">OtherComponent05</router-link> |
+      <router-link to="/othercomponent06">OtherComponent06</router-link> |
+      <router-link to="/slot01">Slot-Modal-Layout</router-link> |
+      <router-link to="/slot02">Slot-Use-Modal-Layout</router-link> |
+      <router-link to="/provideinject">ProvideInject</router-link> |
+      <router-link to="/mixintest">MixinTest</router-link> |
+    </div>
+    <div id="nav2">
+      <router-link to="/compositionapi">CompositionAPI</router-link> |
+      <router-link to="/compositionapiprovideinjection">CompositionAPI Provide Injection</router-link> |
+      <router-link to="/customdirective">Custom Directive</router-link> |
+      <router-link to="/plugins">Plugins</router-link> |
+      <router-link to="/storeaccess">StoreAccess</router-link> |
     </div>
     <router-view/>
   </div>
+</div>
 </template>
 
 <style>
