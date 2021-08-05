@@ -187,6 +187,16 @@ const routes = [
     name: 'storeaccess',
     component: () => import(/* webpackChunkName: "storeaccess", webpackPrefetch:true */ '../views/storeaccess.vue')
   },
+  {
+    path: '/kakaologin',
+    name: 'kakaologin',
+    component: () => import(/* webpackChunkName: "kakaologin", webpackPrefetch:true */ '../views/kakaologin.vue')
+  },
+  {
+    path: '/naverlogin',
+    name: 'naverlogin',
+    component: () => import(/* webpackChunkName: "naverlogin", webpackPrefetch:true */ '../views/naverlogin.vue')
+  },
 ]
 
 const router = createRouter({

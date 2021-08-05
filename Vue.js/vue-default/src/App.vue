@@ -39,6 +39,8 @@
       <router-link to="/customdirective">Custom Directive</router-link> |
       <router-link to="/plugins">Plugins</router-link> |
       <router-link to="/storeaccess">StoreAccess</router-link> |
+      <router-link to="/kakaologin">KakaoLogin</router-link> |
+      <router-link to="/naverlogin">NaverLogin</router-link> |
     </div>
     <router-view/>
   </div>

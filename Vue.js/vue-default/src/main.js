@@ -26,3 +26,5 @@ app.directive('focus', {
     }
 })
 app.mount('#app')
+
+window.Kakao.init("b1e824711e7f5b05166c3693aa72391b") // 카카오 로그인 발급받은 앱키 넣는 자리
