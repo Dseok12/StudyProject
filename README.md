@@ -56,7 +56,7 @@
 </details>
 
 ## 🎓Individual Project List🎓
-- 준비중입니다.
+- 개인 Portfolio 작업 진행중
 
 
 
