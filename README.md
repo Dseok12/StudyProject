@@ -56,7 +56,7 @@
 </details>
 
 ## 🎓Individual Project List🎓
-- 개인 Portfolio 작업 진행중[Vue.js/portfolio][PlGh]
+- 개인 Portfolio 작업 진행중[Vue.js/portfolio/README.md][PlGh]
 
 
 
