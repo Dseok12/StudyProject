@@ -1,0 +1,289 @@
+@charset "utf-8";
+header{
+    width: 1200px;
+    position: relative;
+    text-align: center;
+    background-color: #eee;
+    margin: 100px auto;
+}
+header h1{
+    position: absolute;
+    left: 0;top: 0;
+    z-index: 10;
+    width: 250px;
+    height: 100px;
+    line-height: 100px;
+    background: #aaa;
+}
+header .nav{
+    position: relative;
+    float: right;
+    width: 100%;
+    margin-top: 56px;
+    background: #aaa;
+}
+header .nav ul{
+    padding-left: 40%;
+}
+header .nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+header .nav ul li ul.submenu{
+    display: none;
+    position: absolute;
+    left: 0;top: 44px;
+    height: 176px;
+    padding-left: 0;
+}
+header .nav ul li ul.submenu li{
+    width: 100%;
+}
+header .nav ul li:first-child ul.submenu::after{
+    content: '';
+    position: absolute;
+    left: -480px;top: 0;
+    width: 480px;
+    height: 188px;
+    background-color: #eee;
+}
+header .nav ul li a{
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    color: #333;
+    background-color: #eee;
+}
+header .nav ul li a:hover{
+    background-color: #aaa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

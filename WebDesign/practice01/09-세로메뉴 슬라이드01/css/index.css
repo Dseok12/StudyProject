@@ -1,0 +1,283 @@
+@charset "utf-8";
+.menu{
+    width: 300px;
+    height: 100vh;
+    background-color: #eee;
+    float: left;
+}
+.menu .logo h1{
+    text-align: center;
+    padding: 20px;
+}
+.menu ul > li{
+    width: 100%;
+    text-align: center;
+    background-color: #ddd;
+    cursor: pointer;
+}
+.menu ul > li > a{
+    display: block;
+    padding: 10px;
+}
+.menu li:hover{
+    background-color: #aaa
+}
+.menu li .submenu{
+    display: none;
+}
+.contents{
+    float: left;
+    width: 400px;
+    height: 500px;
+    background-color: #eee;
+}
+.contents .cont1 .tab-menu ul{
+    overflow: hidden;
+}
+.contents .cont1 .tab-menu ul li{
+    float: left;
+    width: 45%;
+    text-align: center;
+    padding: 10px;
+    background-color: #aaa;
+    cursor: pointer;
+}
+.contents .cont1 .tab-menu ul li:hover{
+    background-color: #ccc;
+}
+.contents .cont1 .tab-menu ul .active{
+    text-decoration: line-through;
+}
+.contents .cont1 .tab-cont{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

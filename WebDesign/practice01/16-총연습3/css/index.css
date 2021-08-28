@@ -1,0 +1,374 @@
+@charset "utf-8";
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix::after,
+.clearfix::before{
+    content: "";
+    display: block;
+    clear: both;
+}
+.wrap{
+    width: 1200px;
+    height: 600px;
+    margin: 50px auto;
+    border: 1px solid #000;
+}
+
+/* header */
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: #eee;
+}
+.header .logo h1{
+    width: 150px;
+    height: 100px;
+    background-color: #aaa;
+    float: left;
+    text-align: center;
+}
+.header .logo h1 a{
+    display: block;
+    line-height: 100px;
+    color: #000;
+}
+.header .nav{
+    width: 600px;
+    float: right;
+    margin-top: 48px;
+}
+/* .header .nav ul{
+
+} */
+.header .nav ul li{
+    float: left;
+    width: 25%;
+    background-color:#aaa;
+    text-align: center;
+    position: relative;
+}
+.header .nav ul li ul.submenu{
+    display: none;
+    position: absolute;
+    left: 0;top: 47px;
+    z-index: 2;
+}
+.header .nav ul li ul.submenu li{
+    width: 100%;
+}
+/* .header .nav ul li ul.submenu li a{
+
+} */
+.header .nav ul li a{
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+.header .nav ul li a:hover{
+    background-color: #ddd;
+    color: #333;
+}
+
+
+
+
+
+/* slideBox */
+.slideBox{
+    width: 100%;
+    height: 313px;
+    overflow: hidden;
+}
+.slideBox .slideList{
+    width: 1200x;
+    height: 313px;
+    position: relative;
+}
+.slideBox .slideImg{
+    width: 1200px;
+    float: left;
+    position: relative;
+}
+.slideBox .slideImg p{
+    position: absolute;
+    left: 45%;top: 45%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+.slideBox .slideImg img{
+    display: block;
+    width: 100%;
+}
+
+
+/* Tab Meun */
+.tabBox{
+    width: 100%;
+    height: 187px;
+    background: #aaa;
+}
+/* .tabBox .tabMenu{
+
+}
+.tabBox .tabMenu ul{
+
+} */
+.tabBox .tabMenu ul li{
+    width: 50%;
+    float: left;
+    text-align: center;
+    background: #ccc;
+}
+.tabBox .tabMenu ul li.active{
+    text-decoration: underline;
+}
+.tabBox .tabMenu ul li a{
+    display: block;
+    padding: 10px;
+}
+.tabBox .tabMenu ul li a:hover{
+    background: #ddd;
+}
+.tabBox .tabCont{
+    text-align: center;
+    /* display: none; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
