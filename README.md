@@ -13,7 +13,6 @@
 - JAVA
 - Vue.js
 - Node.js
-- PHP
 
 ### 실무에서 바로 활용가능한 기술 스텍
 - HTML/CSS
