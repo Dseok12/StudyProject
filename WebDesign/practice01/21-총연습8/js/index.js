@@ -1,4 +1,11 @@
-
+// $('.nav ul li').hover(
+//     function() {
+//         $('.submenu').stop().slideDown();
+//     },
+//     function() {
+//         $('.submenu').stop().slideUp();
+//     }
+// )
 
 
 
