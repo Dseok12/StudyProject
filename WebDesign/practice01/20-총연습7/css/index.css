@@ -30,6 +30,7 @@
     text-align: center;
     line-height: 100px;
 }
+
 .header .nav ul{
     width: 600px;
     margin-top: 40px;
@@ -93,9 +94,9 @@
     width: 33.333%;
     float: left;
 }
-.contents .tabBox ul{
+/* .contents .tabBox ul{
 
-}
+} */
 .contents .tabBox ul li{
     width: 50%;
     float: left;
@@ -109,9 +110,9 @@
 .contents .tabCont{
     text-align: center;
 }
-.contents .tabCont div{
+/* .contents .tabCont div{
 
-}
+} */
 
 
 

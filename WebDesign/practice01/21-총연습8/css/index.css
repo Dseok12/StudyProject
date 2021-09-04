@@ -6,28 +6,38 @@ header{
     /* border: 1px solid #000; */
     background-color: rgb(243, 243, 243);
     position: relative;
+    text-align: center;
 }
 .logo{
     width: 150px;
     height: 100px;
+    line-height: 100px;
     float: left;
+    position: absolute;
+    left: 0;top: 0;
+    z-index: 10;
 }
-.nav{
+.header .nav{
+    position: relative;
     float: right;
+    width: 100%;
+    margin-top: 56px;
+    background-color: rgb(243, 243, 243);
 }
-.nav > ul{
-    width: 600px;
-    margin-top: 59px;
+.header .nav ul{
+    padding-left: 40%;
 }
-.nav > ul > li{
-    width: 25%;
+.header .nav ul li{
     float: left;
+    width: 25%;
     text-align: center;
-    background-color: rgb(204, 204, 204);
 }
-.nav > ul > li > a{
+.header .nav ul li a{
     display: block;
     padding: 10px;
+}
+.header .nav ul li ul.submenu{
+    display: none;
 }
 
 

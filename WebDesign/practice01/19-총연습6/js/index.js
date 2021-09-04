@@ -22,17 +22,27 @@ $('.nav ul li').hover(
 
 
 
-$('.slideList').children('div:gt(0)').hide();
+// $('.slideList').children('div:gt(0)').hide();
 
-var current = 0;
-setInterval(function(){
-    var next = (current + 1) % 3;
+// var current = 0;
+// setInterval(function(){
+//     var next = (current + 1) % 3;
+//     $('.slideList').find('div').eq(current).fadeOut();
+//     $('.slideList').find('div').eq(next).fadeIn();
+//     current = next;
+// },2000)
+
+
+
+$('.slideList').chlidren('div:gt(0)').hide();
+
+var currnet = 0;
+setInterval(function() {
+    var next = (current + 1) % 3
     $('.slideList').find('div').eq(current).fadeOut();
-    $('.slideList').find('div').eq(next).fadeIn();
+    $('.slideList').find('div').eq(next).fadeOut();
     current = next;
-},2000)
-
-
+}, 2000)
 
 
 
