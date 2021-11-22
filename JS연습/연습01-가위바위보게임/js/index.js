@@ -9,6 +9,7 @@ const 결과 = ["이김", "비김", "졌음"];
 // other.innerHTML=컴퓨터가낼거[Math.floor(Math.random()*3)];
 // result.innerHTML=결과[0];
 // const 입력 = 내가낼거[0];
+/*
 function 게임(){
   if(내가낼거[Math.floor(Math.random()*3)] == 컴퓨터가낼거[Math.floor(Math.random()*3)]){
     console.log(내가낼거[Math.floor(Math.random()*3)]);
@@ -22,7 +23,7 @@ function 게임(){
   return;
 }
 게임();
-
+*/
 
 
 
