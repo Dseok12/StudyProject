@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+    /*
+    function Mul (n) {
+      switch(n){
+        case 1 :
+        for(let i = 1; i <= 50; i++){
+          document.write(`${n} X ${i} = ${n*i}<br/>`);
+        };
+          break;
+        case 2 : 
+        for(let i = 1; i < 10; i++){
+          document.write(`${n} X ${i} = ${n*i}<br/>`);
+        };
+          break;
+        case 3 : 
+        for(let i = 1; i < 10; i++){
+          document.write(`${n} X ${i} = ${n*i}<br/>`);
+        };
+          break;
+        case 4 : 
+        for(let i = 1; i < 10; i++){
+          document.write(`${n} X ${i} = ${n*i}<br/>`);
+        };
+          break;
+        case 5 : 
+        for(let i = 1; i < 10; i++){
+          document.write(`${n} X ${i} = ${n*i}<br/>`);
+        };
+          break;
+        case 6 : 
+        for(let i = 1; i < 10; i++){
+          document.write(`${n} X ${i} = ${n*i}<br/>`);
+        };
+          break;
+        case 7 : 
+        for(let i = 1; i < 10; i++){
+          document.write(`${n} X ${i} = ${n*i}<br/>`);
+        };
+          break;
+        case 8 : 
+        for(let i = 1; i < 10; i++){
+          document.write(`${n} X ${i} = ${n*i}<br/>`);
+        };
+          break;
+        case 9 : 
+        for(let i = 1; i < 10; i++){
+          document.write(`${n} X ${i} = ${n*i}<br/>`);
+        };
+          break;
+        default : document.write('정수만 입력해주세요.');
+      }
+    };
+    */
+
+
+    function Mul (n, m) {
+      function _func(m){
+        for(let i = 1; i <= m; i++){
+          document.write(`${n} X ${i} = ${n*i}<br/>`);
+        };
+      };
+      switch(n){
+        case n : _func(); 
+          break;
+        default : document.write('정수만 입력해주세요.');
+      };
+      let _depth = prompt("어디까지 알아볼까요?(정수만 입력해주세요.)");
+      _func(parseInt(_depth));
+    }
+    let _prop = prompt("단을 실행해주세요.(정수만 입력해주세요)");
+    Mul(parseInt(_prop));
+    
+
+    
+  </script>
+
+</body>
+</html>

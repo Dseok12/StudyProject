@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,
+  initial-scale=1.0">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .section1, .section2{
+      width: 1500px;
+      height: 3000px;
+      margin: 0 auto;
+      border: 1px solid red;
+    }
+    .section2 img{
+      width: 50%;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: all .2s;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="section1"></div>
+  <div class="section2">
+    <img src="https://images.unsplash.com/photo-1637870042417-6457a9df02ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1375&q=80" alt="" class="img_op">
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+
+      $(window).scroll(function(){
+        var _threshold = $('.section2').offset().top - 400;
+        console.log(_threshold);
+        if($(window).scrollTop() >= _threshold){
+          $('.img_op').animate({
+            opacity: 1,
+          });
+        }
+      });
+
+    });
+  </script>
+</body>
+</html>
