@@ -6,18 +6,24 @@ public :
 	string name;
 	string author;
 	int total_page;
-	int current_page;
 	void Open();
 	void Move(int);
 	void Read();
 	void PrintName();
 	BOOK & Compare(BOOK &);
 	BOOK(string, string, int);
+	BOOK();
+	~BOOK();
 
 private :
+	int current_page;
 	double read_percent;
 	void SetPercent();
+
+friend int addfive(BOOK &_book);
 };
+
+BOOK::BOOK(){}
 
 BOOK::BOOK(string _name, string _author, int _total_page) {
 	name = _name;
@@ -31,6 +37,10 @@ BOOK::BOOK(string _name, string _author, int _total_page) {
 	cout << "BOOK Total_page = " << total_page << endl;
 	cout << "THIS : " << this << endl;
 	SetPercent();
+}
+
+BOOK::~BOOK() {
+	cout << "Destructor called !!" << endl;
 }
 
 void BOOK::Open() {
@@ -72,8 +82,14 @@ void BOOK::SetPercent()
 
 }
 
+int addfive(BOOK &_book){
+	_book.current_page+=5;
+}
+
+
 int main()
-{
+{	
+	//BOOK tmpbook;
 	BOOK mybook1(" Front Web Course !!", "SaeSsac", 100);
 	BOOK mybook2("Math", "Pref. KIM", 500);
 	mybook1.Open();
@@ -85,8 +101,9 @@ int main()
 	for (int i=0; i<10; i++){
 		mybook1.Read();
 	}
-	mybook2.Move(40);
+	mybook2.Move(50);
 	mybook2.Read();
+	addfive(mybook2);
 	mybook1.Compare(mybook2).PrintName();
 
 	return 0;
