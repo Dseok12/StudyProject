@@ -381,6 +381,119 @@ textarea::-webkit-outer-spin-button {
   color: #fff;
 }
 
+.order_info_area {
+  padding-top: 10px 18px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  background-color: #e7f7ff;
+}
+
+.order_info_area .info_main_title {
+  line-height: 39px;
+}
+
+.order_info_area .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #333;
+}
+
+.order_info_area .title .ico-n-logo {
+  margin-right: 6px;
+  width: 24px;
+  height: 24px;
+}
+
+.tab_switch_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 12px;
+}
+
+.tab_switch_box .tab_swtich {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: rgba(0, 0, 0, 0.06);
+  line-height: 40px;
+  text-align: center;
+  font-weight: 700;
+  color: #666;
+  letter-spacing: -0.3px;
+}
+
+.tab_switch_box .is_active {
+  position: relative;
+  -webkit-box-flex: 1.2;
+      -ms-flex-positive: 1.2;
+          flex-grow: 1.2;
+  border: 1px solid #333;
+  background-color: #fff;
+  font-size: 15px;
+  color: #333;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.tab_switch_box .is_active::after {
+  content: '';
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border: 1px solid;
+  border-width: 0 1px 1px 0;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg) translateX(-50%);
+          transform: rotate(45deg) translateX(-50%);
+}
+
+.tab_switch_box .is_active .ico_check {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.ico_check {
+  display: none;
+}
+
+.info_main_notice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 2px;
+  background-color: #fff;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: #333;
+}
+
+.info_main_notice .alert {
+  color: #ff3d3b;
+  font-weight: 700;
+}
+
+.info_main_notice .ico_clock {
+  margin-right: 6px;
+}
+
 .container {
   padding-top: 94px;
 }
@@ -388,4 +501,5 @@ textarea::-webkit-outer-spin-button {
 .common_inner {
   margin: 0 auto;
   max-width: 720px;
+  width: 90%;
 }
