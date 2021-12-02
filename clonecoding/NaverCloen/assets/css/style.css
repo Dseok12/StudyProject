@@ -494,6 +494,131 @@ textarea::-webkit-outer-spin-button {
   margin-right: 6px;
 }
 
+.recent_order_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+  padding: 18px 0;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.recent_order_area .recent_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+  border-right: 1px solid #f2f2f2;
+  line-height: 1.42;
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+}
+
+.recent_order_area .recent_title .ico-clock {
+  margin-bottom: 4px;
+  width: 14px;
+}
+
+.recent_order_area .recent_menu_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recent_order_area .recent_menu_item {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding-left: 16px;
+  width: 80px;
+  text-align: center;
+}
+
+.recent_order_area .recent_menu_item .is_ordered {
+  padding-right: 16px;
+  border-right: 1px solid #f2f2f2;
+}
+
+.recent_order_area .recent_menu_item:last-child {
+  padding-right: 18px;
+}
+
+.recent_order_area .menu_img_area {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #f9f9f9;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.recent_order_area .badge_popular {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 5px;
+  border-radius: 10px;
+  line-height: 16px;
+  font-weight: 700;
+  background-color: #ff61a7;
+  color: #fff;
+  font-size: 11px;
+}
+
+.recent_order_area .menu_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.recent_order_area .badge_cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 6px;
+  border: 1px solid #e5e5e5;
+  border-radius: 100%;
+  background-color: #f8fafb;
+}
+
+.recent_order_area .ico_cart {
+  width: 16px;
+}
+
+.recent_order_area .menu_name {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.recent_order_area .menu_price {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ff3d3b;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .container {
   padding-top: 94px;
 }
@@ -502,4 +627,5 @@ textarea::-webkit-outer-spin-button {
   margin: 0 auto;
   max-width: 720px;
   width: 90%;
+  padding: 5% 0;
 }
