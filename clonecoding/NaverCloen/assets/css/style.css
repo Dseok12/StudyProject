@@ -189,6 +189,19 @@ textarea::-webkit-outer-spin-button {
   text-indent: -9999px;
 }
 
+.scroll_x {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll_x::-webkit-scrollbar {
+  display: none;
+}
+
 .header_area {
   position: fixed;
   left: 0;
@@ -209,6 +222,7 @@ textarea::-webkit-outer-spin-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 48px;
 }
 
 .header_area .place_header .title {
@@ -232,6 +246,69 @@ textarea::-webkit-outer-spin-button {
   padding-right: 18px;
   font-size: 15px;
   font-weight: 700;
+}
+
+.header_area .place_tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 46px;
+  background-color: #03b753;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.header_area .place_tab::-webkit-scrollbar {
+  display: none;
+}
+
+.header_area .tab_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.header_area .tab_inner .tab {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 12px;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.header_area .tab_inner .tab.is_active {
+  font-weight: 700;
+  opacity: 1;
+}
+
+.header_area .tab_inner .tab.is_active .txt::after {
+  content: '';
+  height: 2px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+
+.header_area .tab_inner .tab .txt {
+  position: relative;
+  display: inline-block;
+  padding: 0 4px;
+  line-height: 46px;
 }
 
 .dimmed-layer {
@@ -302,4 +379,13 @@ textarea::-webkit-outer-spin-button {
   border-radius: 28px;
   background-color: #424242;
   color: #fff;
+}
+
+.container {
+  padding-top: 94px;
+}
+
+.common_inner {
+  margin: 0 auto;
+  max-width: 720px;
 }

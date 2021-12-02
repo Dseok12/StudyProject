@@ -12,7 +12,7 @@
   <div class="container">
     <!-- 고정헤더영역 -->
     <header class="header_area">
-      <div class="place_header">
+      <div class="place_header" role="banner">
         <h1 class="title">
           <a href="#" class="link_back">
             <img src="../assets/img/ico-back.svg" alt="뒤로가기">
@@ -21,30 +21,49 @@
         </h1>
         <a href="#" class="my_orders">주문내역</a>
       </div>
-      <div class="place_tab">
+      <div class="place_tab scroll_x" role="tablist">
         <div class="tab_inner">
-          <a href="#" class="tab">
+          <a href="#" class="tab" role="tab">
             <sapn class="txt">홈</sapn>
           </a>
-          <a href="#" class="tab">
+          <a href="#" class="tab is_active">
             <sapn class="txt">메뉴</sapn>
           </a>
-          <a href="#" class="tab">
+          <a href="#" class="tab" role="tab">
             <sapn class="txt">리뷰</sapn>
           </a>
-          <a href="#" class="tab">
+          <a href="#" class="tab" role="tab">
             <sapn class="txt">사진</sapn>
           </a>
-          <a href="#" class="tab">
+          <a href="#" class="tab" role="tab">
             <sapn class="txt">지도</sapn>
           </a>
-          <a href="#" class="tab">
+          <a href="#" class="tab" role="tab">
             <sapn class="txt">주변</sapn>
           </a>
         </div>
       </div>
     </header>
     <!-- //고정헤더영역 -->
+
+    <!-- 주문 정보 영역 -->
+    <div class="order_info_area">
+      <div class="common_inner">
+        <div class="info_main_title">
+          <div class="title">
+            <svg viewBox="0 0 18 18" class="ico-n-logo">
+              <path fill-rule="evenodd" fill="currentColor"
+              d="M18 0v18H0V0h18zM7.255 4.582H4.473v9.054h2.915V8.
+              79l3.357 4.846h2.782V4.582h-2.915v4.846L7.255 4.582z">
+              </path>
+            </svg>
+            주문
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- //주문 정보 영역 -->
   </div>
 
   <div class="dimmed-layer hidden"></div>
