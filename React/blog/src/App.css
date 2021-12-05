@@ -22,6 +22,11 @@
   padding-left : 20px;
   padding-right : 20px;
 }
+.modal{
+  margin-top : 20px;
+  padding : 20px;
+  background : #eee;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
