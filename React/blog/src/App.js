@@ -98,6 +98,8 @@ function App() {
         ? <Modal 글제목작명 = {글제목} 누른제목작명 = {누른제목}></Modal>
         : null
       }
+
+      {/* <Profile></Profile> */}
     </div>
   );
 }
@@ -111,5 +113,26 @@ function Modal (props) {
     </div>
   )
 }
+
+// class Profile extends React.Component{
+//   constructor(){
+//     super();
+//     this.state = {name:'Kim', age: 30}
+//   }
+
+//   changName = () =>{
+//     this.setState( {name:'Park'} )
+//   }
+
+//   render(){
+//     return (
+//       <div>
+//         <h3>프로필입니다.</h3>
+//         <p>저는 { this.state.name } 입니다.</p>
+//         <button onClick={this.changName()}>버튼</button>
+//       </div>
+//     )
+//   }
+// }
 
 export default App;
