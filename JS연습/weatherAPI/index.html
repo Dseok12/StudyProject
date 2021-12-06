@@ -6,18 +6,54 @@
   <meta name="viewport" content="width=device-width,
   initial-scale=1.0">
   <style>
-    .h1{
-      font-size: 50px;
-    }
+  .box_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: calc(100% - 300px);
+    margin: 0 auto;
+  }
+  .box{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border: 1px solid #000;
+    background-color: cornsilk;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title{
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-right: 10px;
+  }
+  .temp{
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
   </style>
-  <title></title>
+  <title>온도 뽑기</title>
 </head>
 <body>
   <p class="lon"></p>
   <p class="lat"></p>
-  <h1 class="h1"></h1>
   <div class="test"></div>
-  <div class="test1"></div>
+  <div class="box_wrap">
+    <div class="temp_cur box">
+      <span class="title">현재온도: </span><span class="h1 temp"></span>
+    </div>
+    <div class="temp_feel box">
+      <span class="title">체감온도: </span><span class="feel temp"></span>
+    </div>
+    <div class="temp_min box">
+      <span class="title">최저기온: </span><span class="test1 temp"></span>
+    </div>
+  </div>
   <script src="js/index.js"></script>
   <script src="js/index2.js"></script>
 </body>

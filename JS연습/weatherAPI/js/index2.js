@@ -4,6 +4,7 @@ navigator.geolocation.getCurrentPosition(suc, err);
 function suc (pos) {
   const _test = document.querySelector('.h1');
   const _test1 = document.querySelector('.test1');
+  const _feel = document.querySelector('.feel');
   const lat = pos.coords.latitude;
   const lon = pos.coords.longitude;
   const apikey = 'APIKEY';
@@ -20,10 +21,12 @@ function suc (pos) {
       if(xhr.status === 200) {
         console.log(xhr.response)
         const temp = JSON.parse(xhr.response).main.temp;
-        const temp1 = JSON.parse(xhr.response).main;
+        const temp1 = JSON.parse(xhr.response).main.temp_min;
+        const feel = JSON.parse(xhr.response).main.feels_like;
         console.log(typeof temp)
         _test.innerText = temp;
         _test1.innerText = temp1;
+        _feel.innerText = feel;
       } else {
         console.error('error')
       }
