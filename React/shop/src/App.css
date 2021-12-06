@@ -4,6 +4,23 @@
 }
 .jumbotron{
   background-color: rgb(233, 233, 233);
+  text-align: center;
+  background-image: url("./img/jum_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  padding: 10rem 0;
+}
+.jumbotron h1{
+  font-weight: bold;
+}
+.jumbotron p{
+  font-weight: 600;
+}
+.container .row .col-md-4{
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {

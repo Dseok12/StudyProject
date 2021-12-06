@@ -1,13 +1,16 @@
-import React from 'react';
+import {React, useState} from 'react';
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import './App.css';
 
 function App() {
+
+  let [shoes, shoes변경] = useState([]);
+
   return (
     <div className="App">
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand href="#home">Shop</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -24,6 +27,32 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <div class="jumbotron">
+        <h1 class="display-4">20% Season Off</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4" />
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4">
+            <img src="https://codingapple1.github.io/shop/shoes1.jpg" alt="" width="100%" />
+            <h4>상품명</h4>
+            <p>상품설명 & 가격</p>
+          </div>
+          <div className="col-md-4">
+            <img src="https://codingapple1.github.io/shop/shoes2.jpg" alt="" width="100%" />
+            <h4>상품명</h4>
+            <p>상품설명 & 가격</p>
+          </div>
+          <div className="col-md-4">
+            <img src="https://codingapple1.github.io/shop/shoes3.jpg" alt="" width="100%" />
+            <h4>상품명</h4>
+            <p>상품설명 & 가격</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
