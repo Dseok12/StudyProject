@@ -1,10 +1,9 @@
-.App {
-  text-align: center;
+.inner{
+  width: calc(100% - 300px);
+  margin: 0 auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.jumbotron{
+  background-color: rgb(233, 233, 233);
 }
 
 @media (prefers-reduced-motion: no-preference) {
