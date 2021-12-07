@@ -1,9 +1,10 @@
 
+/*
 navigator.geolocation.getCurrentPosition(suc, err);
 
 function suc (pos) {
-  const _test = document.querySelector('.h1');
-  const _test1 = document.querySelector('.test1');
+  const _test = document.querySelector('.current_temp');
+  const _test1 = document.querySelector('.min');
   const _feel = document.querySelector('.feel');
   const lat = pos.coords.latitude;
   const lon = pos.coords.longitude;
@@ -42,3 +43,4 @@ function err (err) {
   console.warn(`ERROR(${err.code}): ${err.message}`);
 }
 // suc();
+*/
