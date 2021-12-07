@@ -2,7 +2,7 @@
 import React, {useState} from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import styled from 'styled-components';
-import './Detail.scss';
+import './Detail.css';
 
 let 박스 = styled.div`
   padding: 20px;
@@ -29,6 +29,9 @@ function Detail (props) {
           상세 페이지
         </제목>
       </박스>
+      <div className="my_alert">
+        <p>재고가 얼마 남지 않았습니다.</p>
+      </div>
       <div className="row">
         <div className="col-md-6">
           <img src="https://codingapple1.github.io/shop/shoes1.jpg" width="100%" />

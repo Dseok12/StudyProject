@@ -1,0 +1,15 @@
+.red{
+  color: red;
+}
+
+.my_alert{
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+.my_alert p{
+  margin: 0;
+}
