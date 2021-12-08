@@ -24,5 +24,5 @@ function suc (pos) {
 }
 
 function err (err) {
-  console.error('에러발생');
+  console.error('Error',err);
 }
