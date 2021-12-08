@@ -21,7 +21,21 @@
 
     // HTTP 요청 전송
     // 리소스 전체를 교체하기 위해 페이로드를 서버에 전송해야 한다.
-    xhr.send();
+    xhr.send(JSON.stringify({
+      id: 4,
+      content: 'React',
+      completed: false
+    }));
+
+    // load 이벤트는 요청이 성공적으로 완료된 경우 발생한다.
+    xhr.onload = () => {
+      if( xhr.status === 200 ){
+        document.querySelector('pre').textContent = xhr.response;
+      } else {
+        console.error('Error', xhr.status, xhr.statusText);
+      }
+    }
+
   </script>
 </body>
 </html>

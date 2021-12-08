@@ -4,21 +4,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>get_index.html</title>
+  <title>delete.html</title>
 </head>
 <body>
   <pre></pre>
   <script>
+    // XMLHttpRequest 생성
     const xhr = new XMLHttpRequest();
-    xhr.open('GET','/todos');
+
+    // Http 요청 초기화
+    // todo 리소스에서 id를 사용하여 todo를 삭제한다.
+    xhr.open('DELETE', '/todos/5');
+
+    // HTTP 요청 전송
     xhr.send();
+
+    // load 이벤트는 성공적으로 완료된 경우 발생한다.
     xhr.onload = () => {
       if( xhr.status === 200 ){
         document.querySelector('pre').textContent = xhr.response;
       } else {
-        console.error('Error', xhr.status, xhr.statusText);
-      }
-    }
+        console.Error('Error', xhr.status, xhr.statusText);
+      };
+    };
   </script>
 </body>
 </html>

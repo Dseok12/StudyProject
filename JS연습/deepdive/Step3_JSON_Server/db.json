@@ -17,6 +17,11 @@
     },
     {
       "id": 4,
+      "content": "React",
+      "completed": false
+    },
+    {
+      "id": 5,
       "content": "Vue",
       "completed": false
     }
