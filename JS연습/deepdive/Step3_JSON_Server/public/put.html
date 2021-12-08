@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <pre></pre>
+  <script>
+    // XMLHttpRequest 객체 생성
+    const xhr = new XMLHttpRequest();
+
+    // HTTP요청 초기화
+    // todos 리소스에서 id로 todo를 특정하여 id를 제외한 리소스에 전체를 교체
+    xhr.open('PUT', '/todos/4');
+
+    // 요청 몸체에 담아 서버로 전송할 페이로드의 MIME 타입을 지정
+    xhr.setRequestHeader('content-type', 'application/json');
+
+    // HTTP 요청 전송
+    // 리소스 전체를 교체하기 위해 페이로드를 서버에 전송해야 한다.
+    xhr.send();
+  </script>
+</body>
+</html>
