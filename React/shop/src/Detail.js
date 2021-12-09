@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import './Detail.css';
@@ -14,7 +14,29 @@ let 제목 = styled.h4`
   color: ${ props => props.색상 };
 `;
 
+// class Detail2 extends React.Component {
+//   componentDidMount(){
+
+//   }
+//   componentWillUnmount(){
+
+//   }
+// }
+
+
+
 function Detail (props) {
+
+  let [alert, alert변경] = useState(true);
+
+  let [inputData, inputData변경] = useState('');
+
+  useEffect(() => {
+    // let 타이머 = setTimeout(() => { document.querySelector('.my_alert').style.display = 'none' }, 2000);
+    let 타이머 = setTimeout(() => { alert변경(false) }, 2000);
+    console.log('안녕');
+    return () => { clearTimeout(타이머) }
+  }, [alert]);
 
   let { id } = useParams();
 
@@ -29,9 +51,19 @@ function Detail (props) {
           상세 페이지
         </제목>
       </박스>
-      <div className="my_alert">
-        <p>재고가 얼마 남지 않았습니다.</p>
-      </div>
+      {inputData}
+      <input onChange={ (e)=>{ inputData변경(e.target.value) } } />
+
+      {
+        alert === true
+        ? (
+            <div className="my_alert">
+              <p>재고가 얼마 남지 않았습니다.</p>
+            </div>
+          )
+        : null
+      }
+      
       <div className="row">
         <div className="col-md-6">
           <img src="https://codingapple1.github.io/shop/shoes1.jpg" width="100%" />
