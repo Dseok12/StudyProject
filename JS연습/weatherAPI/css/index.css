@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.box_wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: calc(100% - 300px);
+  margin: 0 auto;
+}
+.box{
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border: 1px solid #000;
+  background-color: cornsilk;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-right: 10px;
+}
+.temp{
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
