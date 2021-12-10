@@ -7,6 +7,40 @@ function solution(n){
 }
 console.log(solution(3));
 
+
+
+function solution(n) {
+  var answer = '';
+  // const arr = ["수","박"];
+  if(n%2 == 0){
+      // for(let i = 0; i < n; i++){
+      //   "수박".repeat(n)
+      // }
+      answer += "박"
+  } else {
+    // for(let i = 0; i < n; i++){
+    //   "수박".repeat(n)
+    // }
+    answer += "수"
+  }
+  return answer;
+}
+solution(6);
+
+
+
+
+function solution(n) {
+  var answer = '수박';
+  if(n%2 == 0){
+    console.log(answer.repeat(n).substring(0,n));
+  } else {
+    console.log(answer.repeat(n).substring(0,n));
+  }
+  return answer;
+}
+solution(2);
+
 */
 
 /*--------------------------------------------------------------------------------------*/
@@ -36,6 +70,7 @@ n	return
 5의 약수는 1, 5입니다. 이를 모두 더하면 6입니다.
 
 */
+
 
 
 
