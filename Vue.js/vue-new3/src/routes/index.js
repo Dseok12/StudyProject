@@ -6,8 +6,17 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
+    redirect: '/news'
+  },
+  {
+    path: '/news',
     name: 'NewsView',
     component: () => import('../views/NewsView.vue')
+  },
+  {
+    path: '/ask',
+    name: 'AskView',
+    component: () => import('../views/AskView.vue')
   },
   {
     path: '/jobs',
@@ -15,9 +24,14 @@ const routes = [
     component: () => import('../views/JobsView.vue')
   },
   {
-    path: '/ask',
-    name: 'AskView',
-    component: () => import('../views/AskView.vue')
+    path: '/user',
+    name: 'UserView',
+    component: () => import('../views/UserView.vue')
+  },
+  {
+    path: '/item',
+    name: 'ItemView',
+    component: () => import('../views/ItemView.vue')
   }
 ]
 
