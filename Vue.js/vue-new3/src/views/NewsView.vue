@@ -1,16 +1,28 @@
 <template>
   <div class="news">
-    <h1>
-      여기는 NewsView입니다.
-    </h1>
+    <div v-for="user in users" :key="user">
+      {{ user.title }}
+    </div>
   </div>
 </template>
 
 <script>
+import { fetchNewsList } from '../api'
 export default {
   name: 'news',
-  components: {
-
+  data () {
+    return {
+      users: []
+    }
+  },
+  created () {
+    fetchNewsList()
+      .then((response) => {
+        this.users = response.data
+      })
+      .catch((error) => {
+        console.log(error)
+      })
   }
 }
 </script>

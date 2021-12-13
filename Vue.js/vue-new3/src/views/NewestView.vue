@@ -1,24 +1,24 @@
 <template>
-  <div class='ask'>
-    <div v-for="item in ask" :key="item">
-      {{ item.title }}
+  <div class='newest'>
+    <div v-for="newest in newests" :key="newest">
+      {{newest.title}}
     </div>
   </div>
 </template>
 
 <script>
-import { fetchAsk } from '../api'
+import { fetchNewsList } from '../api'
 export default {
-  name: 'ask',
+  name: 'newest',
   data () {
     return {
-      ask: []
+      newests: []
     }
   },
   created () {
-    fetchAsk()
+    fetchNewsList()
       .then((response) => {
-        this.ask = response.data
+        this.newests = response.data
       })
       .catch((error) => {
         console.log(error)

@@ -4,7 +4,9 @@
       <div class="nav_inner">
         <router-link to="/">News</router-link> |
         <router-link to="/ask">Ask</router-link> |
-        <router-link to="/jobs">Jobs</router-link>
+        <router-link to="/jobs">Jobs</router-link> |
+        <router-link to="/show">Show</router-link> |
+        <router-link to="/newest">Newest</router-link>
       </div>
     </div>
   </div>

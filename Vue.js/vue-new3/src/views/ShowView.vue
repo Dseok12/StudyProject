@@ -1,24 +1,24 @@
 <template>
-  <div class="jobs">
-    <div v-for="job in jobs" :key="job">
-      {{ job.title }}
+  <div class='show'>
+    <div v-for="show in shows" :key="show">
+      {{ show.title }}
     </div>
   </div>
 </template>
 
 <script>
-import { fetchJobs } from '../api'
+import { fetchShow } from '../api'
 export default {
-  name: 'jobs',
+  name: 'show',
   data () {
     return {
-      jobs: []
+      shows: []
     }
   },
   created () {
-    fetchJobs()
+    fetchShow()
       .then((response) => {
-        this.jobs = response.data
+        this.shows = response.data
       })
       .catch((error) => {
         console.log(error)
@@ -26,3 +26,7 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+</style>
