@@ -15,7 +15,7 @@ function solution(n) {
   if(n%2 == 0){
     // for(let i = 0; i < n; i++){
     //   "수박".repeat(n)
-    // }
+    // }  
     answer += "박"
   } else {
     // for(let i = 0; i < n; i++){
