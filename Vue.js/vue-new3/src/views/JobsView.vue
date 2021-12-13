@@ -1,28 +1,22 @@
 <template>
   <div class="jobs">
-    <div v-for="job in jobs" :key="job">
+    <div v-for="job in fetchedJobs" :key="job">
       {{ job.title }}
     </div>
   </div>
 </template>
 
 <script>
-import { fetchJobs } from '../api'
+import { mapGetters } from 'vuex'
 export default {
   name: 'jobs',
-  data () {
-    return {
-      jobs: []
-    }
+  computed: {
+    ...mapGetters([
+      'fetchedJobs'
+    ])
   },
   created () {
-    fetchJobs()
-      .then((response) => {
-        this.jobs = response.data
-      })
-      .catch((error) => {
-        console.log(error)
-      })
+    this.$store.dispatch('FETCH_JOBS')
   }
 }
 </script>
