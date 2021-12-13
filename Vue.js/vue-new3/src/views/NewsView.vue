@@ -1,7 +1,19 @@
 <template>
   <div class="news">
-    <div v-for="user in this.$store.state.news" :key="user">
-      {{ user.title }}
+    <div class="wrap">
+      <div class="inner">
+        <p v-for="item in this.$store.state.news" :key="item">
+          <a :href="item.url">
+            {{ item.title }}
+          </a>
+          <small>
+            {{item.time_ago}} by
+            <router-link :to="`/user/${item.user}`">
+              {{item.user}}
+            </router-link>
+          </small>
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -14,3 +26,7 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+
+</style>

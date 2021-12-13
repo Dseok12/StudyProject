@@ -1,7 +1,14 @@
 <template>
   <div class='newest'>
-    <div v-for="newest in fetchedNewest" :key="newest">
-      {{newest.title}}
+    <div class="wrap">
+      <div class="inner">
+        <p v-for="newest in fetchedNewest" :key="newest">
+          <a :href="newest.url">
+            {{newest.title}}
+          </a>
+          <small>{{newest.time_ago}} by {{newest.user}}</small>
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -29,6 +36,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

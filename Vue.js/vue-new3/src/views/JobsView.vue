@@ -1,7 +1,14 @@
 <template>
   <div class="jobs">
-    <div v-for="job in fetchedJobs" :key="job">
-      {{ job.title }}
+    <div class="wrap">
+      <div class="inner">
+        <p v-for="job in fetchedJobs" :key="job">
+          <a :href="job.url">
+            {{ job.title }}
+          </a>
+          <small>{{job.time_ago}}, {{job.domain}}</small>
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -20,3 +27,7 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+
+</style>

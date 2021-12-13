@@ -1,7 +1,14 @@
 <template>
   <div class='ask'>
-    <div v-for="item in fetchedAsk" :key="item">
-      {{ item.title }}
+    <div class="wrap">
+      <div class="inner">
+        <p v-for="item in fetchedAsk" :key="item">
+          <a :href="item.url">
+            {{ item.title }}
+          </a>
+          <small>{{item.time_ago}}</small>
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -33,6 +40,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

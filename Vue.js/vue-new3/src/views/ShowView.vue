@@ -1,7 +1,14 @@
 <template>
   <div class='show'>
-    <div v-for="show in fetchedShow" :key="show">
-      {{ show.title }}
+    <div class="wrap">
+      <div class="inner">
+        <p v-for="show in fetchedShow" :key="show">
+          <a :href="show.url">
+            {{ show.title }}
+          </a>
+          <small>{{show.time_ago}} by {{show.user}}</small>
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -29,6 +36,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>
