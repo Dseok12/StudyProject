@@ -3,7 +3,9 @@ import {
   fetchAsk,
   fetchJobs,
   fetchShow,
-  fetchNewest
+  fetchNewest,
+  fetchUserInfo,
+  fetchCommentItem
 } from '../api/index'
 
 export default {
@@ -57,6 +59,29 @@ export default {
       .then((response) => {
         console.log(response)
         context.commit('SET_NEWEST', response.data)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  },
+  // Show, Newest 내가 연습하는것
+
+  FETCH_USER ({ commit }, name) {
+    fetchUserInfo(name)
+      .then(({ data }) => {
+        console.log(data)
+        commit('SET_USER', data)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  },
+
+  FETCH_ITEM ({ commit }, item) {
+    fetchCommentItem(item)
+      .then(({ data }) => {
+        console.log(data)
+        commit('SET_ITEM', data)
       })
       .catch((error) => {
         console.log(error)

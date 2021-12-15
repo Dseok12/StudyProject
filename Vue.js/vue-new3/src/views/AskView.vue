@@ -3,9 +3,9 @@
     <div class="wrap">
       <div class="inner">
         <p v-for="item in fetchedAsk" :key="item">
-          <a :href="item.url">
+          <router-link :to="`item/${item.id}`">
             {{ item.title }}
-          </a>
+          </router-link>
           <small>{{item.time_ago}}</small>
         </p>
       </div>

@@ -18,5 +18,14 @@ export default {
 
   SET_NEWEST (state, newest) {
     state.newests = newest
+  },
+  // Show, Newest 내가 연습하는것
+
+  SET_USER (state, user) {
+    state.user = user
+  },
+
+  SET_ITEM (state, item) {
+    state.item = item
   }
 }

@@ -13,5 +13,9 @@ export default {
 
   fetchedNewest (state) {
     return state.newests
+  },
+
+  fetchedItem (state) {
+    return state.item
   }
 }

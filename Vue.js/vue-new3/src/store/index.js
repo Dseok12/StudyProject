@@ -14,7 +14,11 @@ export default new Vuex.Store({
 
     // Show, Newest 내가 연습하는것
     shows: [],
-    newests: []
+    newests: [],
+    // Show, Newest 내가 연습하는것
+
+    user: {},
+    item: {}
   },
   actions,
   mutations,

@@ -1,21 +1,26 @@
 <template>
   <div class='user'>
-    <h1>
-      여기는 UserView입니다.
-    </h1>
+    <div class="wrap">
+      <div class="inner">
+        <p>사용자 이름: {{userInfo.id}}</p>
+        <p>활동 점수: {{userInfo.karma}}</p>
+        <p>아이디 생성일: {{userInfo.created}}</p>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'user',
-  components: {
-
-  },
-  data () {
-    return {
-      sampleData: ''
+  computed: {
+    userInfo () {
+      return this.$store.state.user
     }
+  },
+  created () {
+    const userName = this.$route.params.id
+    this.$store.dispatch('FETCH_USER', userName)
   }
 }
 </script>
