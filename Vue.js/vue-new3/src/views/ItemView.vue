@@ -4,28 +4,26 @@
       <div class="inner">
         <section>
           <!-- 질문 상세 정보 -->
-          <div>
-            <div>
-              User
+          <div class="user_container">
+            <div class="user">
+              프로필
             </div>
-            <div>
-              <router-link :to="`/user/${fetchedItem.user}`">
-                <i class="fas fa-user-astronaut"></i>{{ fetchedItem.user }}
+            <div class="link_box">
+              <router-link :to="`/user/${fetchedItem.user}`" class="user_desc">
+                {{ fetchedItem.user }}
               </router-link>
-              <div>
+              <div class="time">
                 {{ fetchedItem.time_ago }}
               </div>
             </div>
-            <h2>{{fetchedItem.title}}</h2>
+            <!-- 제목 -->
           </div>
+          <h2 class="title">{{fetchedItem.title}}</h2>
         </section>
         <section>
           <!-- 질문 댓글 -->
+          <div v-html="fetchedItem.content"></div>
         </section>
-        <!-- <p>{{fetchedItem.title}}</p>
-        <div>
-          {{fetchedItem.content}}
-        </div> -->
       </div>
     </div>
   </div>
@@ -46,6 +44,30 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+.user_container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  .user{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+  .link_box{
+    margin-right: 15px;
+    .user_desc{
+      font-weight: 600;
+      color: #414141;
+    }
+    .time{
+      font-size: 12px;
+    }
+  }
+}
+.title{
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
 </style>

@@ -2,12 +2,23 @@
   <div class='newest'>
     <div class="wrap">
       <div class="inner">
-        <p v-for="newest in fetchedNewest" :key="newest">
-          <a :href="newest.url">
-            {{newest.title}}
-          </a>
-          <small>{{newest.time_ago}} by {{newest.user}}</small>
-        </p>
+        <ul class="newest_list">
+          <li v-for="newest in fetchedNewest" :key="newest" class="post">
+            <!-- 포인트 영역 -->
+            <!-- <div class="points">
+              {{item.points}}
+            </div> -->
+            <!-- 기타 정보 영역 -->
+            <div class="user_info">
+              <a :href="newest.url" class="newest_title" target="_blank">
+                {{newest.title}}
+              </a>
+              <small class="small">
+                {{newest.time_ago}} by {{newest.user}}
+              </small>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -37,5 +48,45 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.newest_list{
+  margin: 0;
+  padding: 0;
+  .post{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    .points{
+      color: #41b883;
+      font-weight: bold;
+    }
+    .newest_title{
+      margin-left: 10px;
+      color: #000;
+      font-weight: bold;
+      font-size: 18px;
+      transition: all 0.1s;
+    }
+    .newest_title:hover{
+      color: #41b883;
+    }
+    .user_info{
+      display: flex;
+      align-items: center;
+      .small{
+        font-size: 13px;
+        margin-left: 18px;
+        .user_link{
+          color: #000;
+          font-weight: bold;
+          transition: all 0.1s;
+        }
+        .user_link:hover{
+          color: #41b883;
+        }
+      }
+    }
+  }
+}
 </style>

@@ -2,12 +2,23 @@
   <div class='ask'>
     <div class="wrap">
       <div class="inner">
-        <p v-for="item in fetchedAsk" :key="item">
-          <router-link :to="`item/${item.id}`">
-            {{ item.title }}
-          </router-link>
-          <small>{{item.time_ago}}</small>
-        </p>
+        <ul class="ask_list">
+          <li v-for="item in fetchedAsk" :key="item" class="post">
+            <!-- 포인트 영역 -->
+            <div class="points">
+              {{item.points}}
+            </div>
+            <!-- 기타 정보 영역 -->
+            <div class="user_info">
+              <router-link :to="`item/${item.id}`" class="news_title" target="_blank">
+                {{ item.title }}
+              </router-link>
+              <small class="small">
+                {{item.time_ago}}
+              </small>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -41,5 +52,45 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.ask_list{
+  margin: 0;
+  padding: 0;
+  .post{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    .points{
+      color: #41b883;
+      font-weight: bold;
+    }
+    .news_title{
+      margin-left: 10px;
+      color: #000;
+      font-weight: bold;
+      font-size: 18px;
+      transition: all 0.1s;
+    }
+    .news_title:hover{
+      color: #41b883;
+    }
+    .user_info{
+      display: flex;
+      align-items: center;
+      .small{
+        font-size: 13px;
+        margin-left: 18px;
+        .user_link{
+          color: #000;
+          font-weight: bold;
+          transition: all 0.1s;
+        }
+        .user_link:hover{
+          color: #41b883;
+        }
+      }
+    }
+  }
+}
 </style>
