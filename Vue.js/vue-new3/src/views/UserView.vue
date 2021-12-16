@@ -26,7 +26,5 @@ export default {
 </script>
 
 <style scoped>
-p{
-  padding: 10px 0;
-}
+
 </style>

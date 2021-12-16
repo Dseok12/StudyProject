@@ -5,9 +5,9 @@
         <ul class="show_list">
           <li v-for="show in fetchedShow" :key="show" class="post">
             <!-- 포인트 영역 -->
-            <!-- <div class="points">
-              {{item.points}}
-            </div> -->
+            <div class="points">
+              {{show.points || 0}}
+            </div>
             <!-- 기타 정보 영역 -->
             <div class="user_info">
               <a :href="show.url" class="show_title" target="_blank">

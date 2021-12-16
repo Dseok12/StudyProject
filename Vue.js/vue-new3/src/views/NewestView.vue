@@ -1,14 +1,15 @@
 <template>
   <div class='newest'>
-    <div class="wrap">
+    <list-item></list-item>
+    <!-- <div class="wrap">
       <div class="inner">
         <ul class="newest_list">
           <li v-for="newest in fetchedNewest" :key="newest" class="post">
-            <!-- 포인트 영역 -->
-            <!-- <div class="points">
-              {{item.points}}
-            </div> -->
-            <!-- 기타 정보 영역 -->
+            포인트 영역
+            <div class="points">
+              {{newest.points || 0}}
+            </div>
+            기타 정보 영역
             <div class="user_info">
               <a :href="newest.url" class="newest_title" target="_blank">
                 {{newest.title}}
@@ -20,30 +21,34 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
 // import { fetchNewsList } from '../api'
-import { mapGetters } from 'vuex'
+// import { mapGetters } from 'vuex'
+import ListItem from '../components/ListItem.vue'
 export default {
   name: 'newest',
-  computed: {
-    ...mapGetters([
-      'fetchedNewest'
-    ])
-  },
-  created () {
-    this.$store.dispatch('FETCH_NEWEST')
-    // fetchNewsList()
-    //   .then((response) => {
-    //     this.newests = response.data
-    //   })
-    //   .catch((error) => {
-    //     console.log(error)
-    //   })
+  components: {
+    ListItem
   }
+  // computed: {
+  //   ...mapGetters([
+  //     'fetchedNewest'
+  //   ])
+  // },
+  // created () {
+  //   this.$store.dispatch('FETCH_NEWEST')
+  //   // fetchNewsList()
+  //   //   .then((response) => {
+  //   //     this.newests = response.data
+  //   //   })
+  //   //   .catch((error) => {
+  //   //     console.log(error)
+  //   //   })
+  // }
 }
 </script>
 

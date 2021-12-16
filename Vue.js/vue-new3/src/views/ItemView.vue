@@ -57,8 +57,10 @@ export default {
   .link_box{
     margin-right: 15px;
     .user_desc{
+      display: block;
       font-weight: 600;
       color: #414141;
+      margin-bottom: 10px;
     }
     .time{
       font-size: 12px;

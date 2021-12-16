@@ -1,41 +1,49 @@
 <template>
   <div class="jobs">
-    <div class="wrap">
+    <list-item></list-item>
+    <!-- <div class="wrap">
       <div class="inner">
         <ul class="jobs_list">
           <li v-for="job in fetchedJobs" :key="job" class="post">
-            <!-- 포인트 영역 -->
-            <!-- <div class="points">
-              {{item.points}}
-            </div> -->
-            <!-- 기타 정보 영역 -->
+            포인트 영역
+            <div class="points">
+              {{job.points || 0}}
+            </div>
+            기타 정보 영역
             <div class="user_info">
               <a :href="job.url" class="jobs_title" target="_blank">
                 {{ job.title }}
               </a>
               <small class="small">
-                {{job.time_ago}}, {{job.domain}}
+                {{job.time_ago}} by
+                <a :href="job.url" target="_blank">
+                  {{job.domain}}
+                </a>
               </small>
             </div>
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import ListItem from '../components/ListItem.vue'
+// import { mapGetters } from 'vuex'
 export default {
   name: 'jobs',
-  computed: {
-    ...mapGetters([
-      'fetchedJobs'
-    ])
-  },
-  created () {
-    this.$store.dispatch('FETCH_JOBS')
+  components: {
+    ListItem
   }
+  // computed: {
+  //   ...mapGetters([
+  //     'fetchedJobs'
+  //   ])
+  // },
+  // created () {
+  //   this.$store.dispatch('FETCH_JOBS')
+  // }
 }
 </script>
 
@@ -69,6 +77,9 @@ export default {
       .small{
         font-size: 13px;
         margin-left: 18px;
+        a{
+          color: rgb(150, 150, 150);
+        }
         .user_link{
           color: #000;
           font-weight: bold;

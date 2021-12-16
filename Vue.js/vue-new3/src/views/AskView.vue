@@ -1,14 +1,15 @@
 <template>
   <div class='ask'>
-    <div class="wrap">
+    <list-item></list-item>
+    <!-- <div class="wrap">
       <div class="inner">
         <ul class="ask_list">
           <li v-for="item in fetchedAsk" :key="item" class="post">
-            <!-- 포인트 영역 -->
+            포인트 영역
             <div class="points">
               {{item.points}}
             </div>
-            <!-- 기타 정보 영역 -->
+            기타 정보 영역
             <div class="user_info">
               <router-link :to="`item/${item.id}`" class="news_title" target="_blank">
                 {{ item.title }}
@@ -20,34 +21,38 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+// import { mapGetters } from 'vuex'
+import ListItem from '../components/ListItem.vue'
 export default {
   name: 'ask',
-  computed: {
-    // #1
-    // ask () {
-    //   return this.$store.state.ask
-    // }
-
-    // #2
-    // ...mapState({
-    //   fetchedAsk: state => state.ask
-    // })
-    // import { mapState } from 'vuex'해줄 것
-
-    // #3
-    ...mapGetters([
-      'fetchedAsk'
-    ])
-  },
-  created () {
-    this.$store.dispatch('FETCH_ASK')
+  components: {
+    ListItem
   }
+  // computed: {
+  //   // #1
+  //   // ask () {
+  //   //   return this.$store.state.ask
+  //   // }
+
+  //   // #2
+  //   // ...mapState({
+  //   //   fetchedAsk: state => state.ask
+  //   // })
+  //   // import { mapState } from 'vuex'해줄 것
+
+  //   // #3
+  //   ...mapGetters([
+  //     'fetchedAsk'
+  //   ])
+  // },
+  // created () {
+  //   this.$store.dispatch('FETCH_ASK')
+  // }
 }
 </script>
 
