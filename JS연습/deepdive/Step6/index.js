@@ -90,6 +90,22 @@ for(let i = 0; i <= 100; i++){
 console.log(s)
 
 
+const level = 5;
+for(let i = 1; i <= level; i++){
+  // 초기화
+  let star = '';
+  for(let k = 1; k <= level - i; k++){
+    // 앞쪽 띄어쓰기
+    star += ' ';
+  }
+  for(let j = 1; j <= i * 2 - 1; j++){
+    // 별 찍기
+    star += '*';
+  }
+  console.log(star);
+}
+
+
 
 
 
