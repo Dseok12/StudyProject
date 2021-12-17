@@ -19,6 +19,9 @@ body{
   input{
     border-style: groove;
     width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
   }
   button{
     border-style: groove;
