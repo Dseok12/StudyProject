@@ -1,9 +1,9 @@
 <template>
-  <div class='TodoInput'>
-    <input type="text" v-model="newTodoItem" />
-    <button v-on:click="addTodo">add</button>
-    <span class="addContainer">
-
+  <div class='inputBox'>
+    <input type="text" v-model="newTodoItem" v-on:keyup.enter="addTodo" />
+    <!-- <button v-on:click="addTodo">add</button> -->
+    <span class="addContainer" v-on:click="addTodo">
+      <i class="fas fa-plus"></i>
     </span>
   </div>
 </template>
@@ -29,20 +29,35 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-input:focus{
+input:focus {
   outline: none;
 }
-button{
-  width: 60px;
-  padding: 10px;
-  margin-left: 25px;
-  background-color: rgb(94, 94, 94);
-  border: none;
-  border-radius: 30px;
+.inputBox {
+  background: white;
+  height: 50px;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 50px;
+  border-radius: 5px;
+}
+.inputBox input {
+  border-style: none;
+  width: 90%;
+  font-size: 0.9rem;
+}
+.addContainer {
+  float: right;
+  background: linear-gradient(to right, #6478FB, #8763FB);
+  display: block;
+  width: 3rem;
+  border-radius: 0 5px 5px 0;
   color: #fff;
-  cursor: pointer;
-  &:active{
-    background-color: saddlebrown;
-  }
+}
+.addBtn {
+  color: white;
+  vertical-align: middle;
+}
+.closeModalBtn {
+  color: #42b983;
 }
 </style>
