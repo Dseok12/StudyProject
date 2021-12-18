@@ -1,6 +1,10 @@
 <template>
   <div class='Newest'>
-    Newest 탭입니다.
+    <div class="wrap">
+      <div class="inner">
+        Newest탭입니다.
+      </div>
+    </div>
   </div>
 </template>
 

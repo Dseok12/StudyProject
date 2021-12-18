@@ -1,6 +1,10 @@
 <template>
   <div class="news">
-    여기는 news입니다.
+    <div class="wrap">
+      <div class="inner">
+        News 탭입니다.
+      </div>
+    </div>
   </div>
 </template>
 

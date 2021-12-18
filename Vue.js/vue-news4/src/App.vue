@@ -16,12 +16,15 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url('./Global.scss');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+.wrap{
+  width: 100%;
+  background-color: #f6f6f6;
+  .inner{
+    width: calc(100% - 200px);
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
 }
-
 </style>

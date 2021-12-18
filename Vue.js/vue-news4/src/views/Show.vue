@@ -1,6 +1,10 @@
 <template>
   <div class='show'>
-
+    <div class="wrap">
+      <div class="inner">
+        Show 탭입니다.
+      </div>
+    </div>
   </div>
 </template>
 

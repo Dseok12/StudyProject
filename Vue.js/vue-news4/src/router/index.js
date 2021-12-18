@@ -27,6 +27,21 @@ const routes = [
     path: '/show',
     name: 'Show',
     component: () => import('../views/Show.vue')
+  },
+  {
+    path: '/newest',
+    name: 'Newest',
+    component: () => import('../views/Newest.vue')
+  },
+  {
+    path: '/ask/:id',
+    name: 'Ask',
+    component: () => import('../views/Ask.vue')
+  },
+  {
+    path: '/job/:id',
+    name: 'Jobs',
+    component: () => import('../views/Jobs.vue')
   }
 ]
 

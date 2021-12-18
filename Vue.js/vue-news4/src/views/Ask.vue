@@ -1,6 +1,10 @@
 <template>
   <div class="ask">
-    This is an ask page
+    <div class="wrap">
+      <div class="inner">
+        Ask 탭입니다.
+      </div>
+    </div>
   </div>
 </template>
 
