@@ -39,9 +39,40 @@ const name = new Person('김다정')
 name.hello('김다정')
 */
 
+
+/*
+// 16번.거꾸로 문제
+
 function _reverse(n) {
   const _text = n;
   const _reverse = _text.split('').reverse().join('');
   console.log(_reverse)
 }
 _reverse('거꾸로')
+*/
+
+
+
+
+
+/*
+// 17번. 놀이기구 문제
+
+const play = (n) => {
+  if (typeof n === 'number') {
+    if(n>=150){
+      return "YES!!";
+    } else {
+      return "NO!!";
+    }
+  } else {
+    return 'error';
+  }
+}
+console.log(play(180))
+*/
+
+
+// 평균점수 구하기
+// 
+
