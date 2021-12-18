@@ -52,6 +52,7 @@ input:focus {
   width: 3rem;
   border-radius: 0 5px 5px 0;
   color: #fff;
+  cursor: pointer;
 }
 .addBtn {
   color: white;
