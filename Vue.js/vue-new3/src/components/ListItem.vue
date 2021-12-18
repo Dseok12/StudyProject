@@ -11,14 +11,31 @@
             </div>
             <!-- 기타 정보 영역 -->
             <div class="user_info">
-              <a :href="item.url" class="news_title" target="_blank">
-                {{ item.title }}
-              </a>
+              <!-- 타이틀 영역 -->
+              <template v-if="item.domain">
+                <a :href="item.url" class="news_title" target="_blank">
+                  {{ item.title }}
+                </a>
+              </template>
+              <template v-else>
+                <router-link :to="`item/${item.id}`" class="news_title">
+                  {{ item.title }}
+                </router-link>
+              </template>
               <small class="small">
                 {{item.time_ago}} by
-                <router-link :to="`/user/${item.user}`" class="user_link">
-                  {{item.user}}
+                <router-link
+                  v-if="item.user"
+                  :to="`/user/${item.user}`"
+                  class="user_link">
+                    {{item.user}}
                 </router-link>
+                <a
+                  v-else
+                  :href="item.url"
+                  target="_blank">
+                    {{item.domain}}
+                </a>
               </small>
             </div>
           </li>
@@ -78,8 +95,10 @@ export default {
     border-bottom: 1px solid #eee;
     padding: 10px 0;
     .points{
+      width: 50px;
       color: #41b883;
       font-weight: bold;
+      text-align: center;
     }
     .news_title{
       margin-left: 10px;
