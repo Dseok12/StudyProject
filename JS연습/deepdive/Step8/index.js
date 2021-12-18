@@ -39,7 +39,9 @@ const name = new Person('김다정')
 name.hello('김다정')
 */
 
-const arr = ['거꾸로'];
-
-const _reverse = [...arr].splice(',').join()
-console.log(_reverse)
+function _reverse(n) {
+  const _text = n;
+  const _reverse = _text.split('').reverse().join('');
+  console.log(_reverse)
+}
+_reverse('거꾸로')
