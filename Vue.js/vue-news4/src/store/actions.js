@@ -27,5 +27,16 @@ export default {
       .catch((err) => {
         console.log(err)
       })
+  },
+
+  FETCH_JOBS (context) {
+    fetchAsk()
+      .then((response) => {
+        console.log(response.data)
+        context.commit('SET_JOBS', response.data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
   }
 }
