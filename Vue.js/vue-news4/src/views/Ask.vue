@@ -26,3 +26,22 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.item_wrap{
+  .post{
+    padding: 10px 0;
+    .title{
+      font-size: 1.2rem;
+      color: #222;
+    }
+    .dec{
+      font-size: 12px;
+      .user_name{
+        color: #222;
+        font-weight: 500;
+      }
+    }
+  }
+}
+</style>
