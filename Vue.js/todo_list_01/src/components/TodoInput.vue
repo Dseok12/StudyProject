@@ -35,14 +35,13 @@ input:focus {
 .inputBox {
   background: white;
   height: 50px;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   line-height: 50px;
   border-radius: 5px;
 }
 .inputBox input {
   border-style: none;
-  width: 90%;
   font-size: 0.9rem;
 }
 .addContainer {
