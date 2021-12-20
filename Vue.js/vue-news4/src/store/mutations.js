@@ -9,5 +9,9 @@ export default {
 
   SET_JOBS (state, jobs) {
     state.jobs = jobs
+  },
+
+  SET_SHOW (state, show) {
+    state.show = show
   }
 }
