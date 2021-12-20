@@ -1,6 +1,7 @@
 import {
   fetchNews,
-  fetchAsk
+  fetchAsk,
+  fetchShow
   // fetchJobs,
   // fetchShow,
   // fetchNewest
@@ -34,6 +35,17 @@ export default {
       .then((response) => {
         console.log(response.data)
         context.commit('SET_JOBS', response.data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  },
+
+  FETCH_SHOW (context) {
+    fetchShow()
+      .then((response) => {
+        console.log(response.data)
+        context.commit('SET_SHOW', response.data)
       })
       .catch((err) => {
         console.log(err)

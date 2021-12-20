@@ -3,13 +3,13 @@
     <div class="wrap">
       <div class="inner">
         <ul class="item_wrap">
-          <li class="post" v-for="item in this.$store.state.jobs" :key="item">
-            <a :href="item.url" class="title">
-              {{item.title}}
+          <li class="post" v-for="jobs in this.$store.state.jobs" :key="jobs">
+            <a :href="jobs.url" class="title">
+              {{jobs.title}}
             </a>
             <small class="dec">
-              {{item.time_ago}} by
-              <a href="#" class="user_name">{{item.user}}</a>
+              {{jobs.time_ago}} by
+              <a href="#" class="user_name">{{jobs.user}}</a>
             </small>
           </li>
         </ul>
