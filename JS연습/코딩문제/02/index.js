@@ -3,10 +3,10 @@
 
 // a^5 = a * a * a * a * a
 
-const squared = (a, i) => {
-  
-} 
-squared(2,4);
+const squared = (a, b) => {
+  console.log(Math.pow(a,b))
+}
+squared(2,8);
 
 
 
