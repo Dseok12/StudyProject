@@ -1,28 +1,27 @@
 <template>
-  <div class='inputBox'>
-    <input type="text" v-model="newTodoItem" v-on:keyup.enter="addTodo" />
+  <div class="inputBox shadow">
+    <input type="text" v-model="newTodoItem">
     <span class="addContainer" v-on:click="addTodo">
-      <i class="fas fa-plus"></i>
+      <i class="addBtn fas fa-plus" aria-hidden="true"></i>
     </span>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'TodoInput',
-  data () {
+  data: function () {
     return {
       newTodoItem: ''
     }
   },
   methods: {
-    addTodo () {
+    addTodo: function () {
       if (this.newTodoItem !== '') {
-        this.$emit('addTodoItem', this.newTodoItem)
+        this.$emit('addItem', this.newTodoItem)
         this.clearInput()
       }
     },
-    clearInput () {
+    clearInput: function () {
       this.newTodoItem = ''
     }
   }
