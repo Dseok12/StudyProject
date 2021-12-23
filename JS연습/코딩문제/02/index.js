@@ -1,7 +1,7 @@
 // 제곱을 구하자
 // 공백으로 구분하여 두 숫자 a와 b가 주어지면, a의 b승을 구하는 프로그램을 작성하세요.
 
-// a^5 = a * a * a * a * a
+
 
 /*
 // 내장함수를 사용한 방식
@@ -16,7 +16,6 @@ squared(2,8);
 
 /*
 // 거듭제곱 연산자를 활용한 방식
-
 const squared = (a, b) => {
   console.log(a**b)
 }
@@ -25,13 +24,15 @@ squared(2,8)
 
 /*
 // a를 b번만큼 반복해서 곱해라
-
+// a^b = a * a * a * a * a
 const squared = (a, b) => {
   for(let i = 0; i <= b; i++){
-    console.log(a*(b*i))
+    if(a = b){
+      
+    }
   }
 }
-squared(2,5)
+squared(2,1)
 */
 
 
@@ -94,7 +95,7 @@ upper('mary')
 원의 넓이 구하기
 
 const cir = (n) => {
-  console.log(n*n*3.14);
+  console.log((n**2)*3.14);
 }
 cir(2)
 */
@@ -105,8 +106,6 @@ cir(2)
 수성, 금성, 지구, 화성, 목성, 토성, 천왕성, 해왕성
 Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune
 행성의 한글 이름을 입력하면 영어 이름을 반환하는 프로그램을 만드시오.
-*/
-
 const kor = ['수성', '금성', '지구', '화성', '목성', '토성', '천왕성', '해왕성']
 const eng = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
 
@@ -115,6 +114,8 @@ kor[i] = eng[i];
 const result = () => {
   
 }
+*/
+
 
 
 /*
