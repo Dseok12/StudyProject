@@ -24,10 +24,20 @@ function fetchNewest () {
   return axios.get(`${config.baseUrl}newest/1.json`)
 }
 
+function fetchUser (username) {
+  return axios.get(`${config.baseUrl}user/${username}.json`)
+}
+
+function fetchItem (id) {
+  return axios.get(`${config.baseUrl}user/${id}.json`)
+}
+
 export {
   fetchNews,
   fetchAsk,
   fetchJobs,
   fetchShow,
-  fetchNewest
+  fetchNewest,
+  fetchUser,
+  fetchItem
 }

@@ -34,14 +34,14 @@ const routes = [
     component: () => import('../views/Newest.vue')
   },
   {
-    path: '/ask/:id',
-    name: 'Ask',
-    component: () => import('../views/Ask.vue')
+    path: '/user/:id',
+    name: 'User',
+    component: () => import('../views/User.vue')
   },
   {
-    path: '/job/:id',
-    name: 'Jobs',
-    component: () => import('../views/Jobs.vue')
+    path: '/item/:id',
+    name: 'Item',
+    component: () => import('../views/Item.vue')
   }
 ]
 

@@ -3,7 +3,9 @@ import {
   fetchAsk,
   fetchJobs,
   fetchShow,
-  fetchNewest
+  fetchNewest,
+  fetchUser,
+  fetchItem
 } from '../api/index'
 
 export default {
@@ -56,6 +58,28 @@ export default {
       .then((response) => {
         console.log(response.data)
         context.commit('SET_NEWEST', response.data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  },
+
+  FETCH_USER ({ commit }, name) {
+    fetchUser(name)
+      .then(({ data }) => {
+        console.log(data)
+        commit('SET_USER', data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  },
+
+  FETCH_ITEM ({ commit }, name) {
+    fetchItem(name)
+      .then(({ data }) => {
+        console.log(data)
+        commit('SET_ITEM', data)
       })
       .catch((err) => {
         console.log(err)

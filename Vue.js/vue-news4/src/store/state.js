@@ -4,6 +4,8 @@ export default {
     ask: {},
     jobs: {},
     show: {},
-    newest: {}
+    newest: {},
+    user: {},
+    item: {}
   }
 }

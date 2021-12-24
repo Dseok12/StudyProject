@@ -9,7 +9,11 @@
             </a>
             <small class="dec">
               {{item.time_ago}} by
-              <a href="#" class="user_name">{{item.user}}</a>
+              <router-link
+                :to="`/user/${item.user}`"
+                class="user_name">
+                  {{item.user}}
+              </router-link>
             </small>
           </li>
         </ul>
