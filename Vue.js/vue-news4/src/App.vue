@@ -20,7 +20,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 .wrap{
   width: 100%;
-  background-color: #f6f6f6;
+  background-color: #fdfdfd;
   .inner{
     width: calc(100% - 200px);
     margin: 0 auto;
