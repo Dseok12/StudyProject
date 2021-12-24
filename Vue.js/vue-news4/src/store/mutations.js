@@ -13,5 +13,9 @@ export default {
 
   SET_SHOW (state, show) {
     state.show = show
+  },
+
+  SET_NEWEST (state, newest) {
+    state.newest = newest
   }
 }

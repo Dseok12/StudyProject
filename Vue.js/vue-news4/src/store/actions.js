@@ -1,10 +1,9 @@
 import {
   fetchNews,
   fetchAsk,
-  fetchShow
-  // fetchJobs,
-  // fetchShow,
-  // fetchNewest
+  fetchJobs,
+  fetchShow,
+  fetchNewest
 } from '../api/index'
 
 export default {
@@ -31,7 +30,7 @@ export default {
   },
 
   FETCH_JOBS (context) {
-    fetchAsk()
+    fetchJobs()
       .then((response) => {
         console.log(response.data)
         context.commit('SET_JOBS', response.data)
@@ -46,6 +45,17 @@ export default {
       .then((response) => {
         console.log(response.data)
         context.commit('SET_SHOW', response.data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  },
+
+  FETCH_NEWEST (context) {
+    fetchNewest()
+      .then((response) => {
+        console.log(response.data)
+        context.commit('SET_NEWEST', response.data)
       })
       .catch((err) => {
         console.log(err)
