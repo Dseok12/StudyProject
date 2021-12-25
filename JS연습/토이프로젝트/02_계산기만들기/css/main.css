@@ -1,6 +1,152 @@
 @charset "utf-8";
+.wrap{
+  width: 100%;
+  background-color: #eee;
+}
+.inner{
+  width: calc(100% - 200px);
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+button {
+  cursor: pointer;
+}
+
+.calculator {
+  width: 20.5rem;
+  border-left: 1px solid #222;
+  border-bottom: 1px solid #222;
+  border-radius: 0.5rem;
+  box-shadow: 0px 25px 50px 1px rgb(0 0 0 / 30%);
+  margin: 0 auto;
+}
+
+.calculator .result-container {
+  height: 7rem;
+  background: #2c2d2f;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.calculator .result-container .navigation {
+  margin-left: 4px;
+}
+
+.calculator .result-container .navigation > * {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.calculator .result-container .navigation .close {
+  background: #ff5b52;
+}
+
+.calculator .result-container .navigation .minimize {
+  background: #e6c029;
+}
+
+.calculator .result-container .navigation .zoom {
+  background: #53c22c;
+}
+
+.calculator .result-container .result {
+  padding: 0.3rem 0.7rem;
+  height: calc(100% - 1rem);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  color: #fff;
+  font-size: 3.625rem;
+  overflow: hidden;
+}
+
+.calculator .contents {
+  display: flex;
+}
+
+.calculator .contents button:hover {
+  background: white;
+}
+
+.calculator .contents button:active {
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%) inset;
+}
+
+.calculator .contents .clear .ac {
+  background: #3f4143;
+  color: white;
+}
+
+.calculator .contents .clear .ac:hover {
+  background: #666666;
+}
+
+.calculator .contents .clear .ac:active {
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%) inset;
+}
+
+.calculator .contents .clear,
+.calculator .contents .numbers {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+}
 
 
+.calculator .contents .operators {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.calculator .contents .numbers .first-row,
+.calculator .contents .numbers .second-row,
+.calculator .contents .numbers .third-row {
+  display: flex;
+}
+
+.calculator .contents .operators .operator {
+  background: #ff9f0d;
+}
+
+.calculator .contents .operators .operator:hover {
+  background: #ffb748;
+}
+
+.calculator .contents .operators .operator:last-child {
+  border-radius: 0 0 0.5rem 0; 
+  border-right: 1px solid #222;
+  padding: 1.825rem 0;
+  font-size: 1.4rem;
+}
+
+.calculator .contents .numbers .clear .ac,
+.calculator .contents .operator:not(:last-child) { 
+  border-right: 1px solid #222;
+  border-bottom: 1px solid #222;
+  padding: 1.825rem;
+  font-size: 1.4rem;
+}
+
+.calculator .contents .numbers .number {
+  border-right: 1px solid #222;
+  border-bottom: 1px solid #222;
+  width: 5rem;
+  padding: 1.825rem 0;
+  font-size: 1.4rem;
+}
+
+.calculator .contents .numbers .fourth-row .number {
+  border-bottom: 0;
+}
+
+.calculator .contents .numbers .fourth-row .number {
+  width: 100%;
+  border-radius: 0 0 0 0.5rem;
+}
 
 
 

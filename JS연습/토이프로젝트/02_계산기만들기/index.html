@@ -5,10 +5,56 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
   <title>계산기만들기</title>
 </head>
 <body>
-  
+  <div class="wrap">
+    <div class="inner">
+      <article class="calculator">
+        <section class="result-container">
+          <nav class="navigation">
+            <span class="close"></span>
+            <span class="minimize"></span>
+            <span class="zoom"></span>
+          </nav>
+          <div class="result" id="result">0</div>
+        </section>
+        <section class="contents">
+          <section class="numbers">
+            <section class="clear">
+              <button class="ac">AC</button>
+            </section>
+            <div class="first-row">
+              <button class="number" onclick="_input(7)">7</button>
+              <button class="number" onclick="_input(8)">8</button>
+              <button class="number" onclick="_input(9)">9</button>
+            </div>
+            <div class="second-row">
+              <button class="number" onclick="_input(4)">4</button>
+              <button class="number" onclick="_input(5)">5</button>
+              <button class="number" onclick="_input(6)">6</button>
+            </div>
+            <div class="third-row">
+              <button class="number" onclick="_input(1)">1</button>
+              <button class="number" onclick="_input(2)">2</button>
+              <button class="number" onclick="_input(3)">3</button>
+            </div>
+            <div class="fourth-row">
+              <button class="number" onclick="_input(0)">0</button>
+            </div>
+          </section>
+          <section class="operators">
+            <button class="operator">÷</button>
+            <button class="operator">+</button>
+            <button class="operator">-</button>
+            <button class="operator">×</button>
+            <button class="operator">=</button>
+          </section>
+        </section>
+      </article>
+    </div>
+  </div>
   <script src="./js/index.js"></script>
 </body>
 </html>
