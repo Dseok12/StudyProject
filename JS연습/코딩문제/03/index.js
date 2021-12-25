@@ -31,13 +31,6 @@ console.log(행성.지구)
 
 
 
-
-
-
-
-
-
-
 /*
 27번. 객체만들기
 첫번째 입력에서는 학생의 이름이 공백으로 구분되어 입력되고, 두번째에는 그 학생의 수학 점수가 고백으로 구분되어 주어집니다.
@@ -49,3 +42,32 @@ console.log(행성.지구)
 
 출력 : {'Yujin': 70, 'Hyewon': 100}
 */
+
+
+class 학생 {
+  constructor (name, math) {
+    this.name = name;
+    this.math = math;
+  }
+}
+
+const 유진 = new 학생('Yujin', 70)
+console.log(유진)
+const 혜원 = new 학생('Hyewon', 100)
+console.log(혜원)
+
+
+const 학생2 = {
+  'Yujin' : 70,
+  'Hyewon' : 100
+}
+console.log(학생2)
+
+
+
+
+
+
+
+
+
