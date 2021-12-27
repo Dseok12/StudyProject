@@ -14,9 +14,10 @@ function hover () {
   }
 }
 
+
 function hoverBind () {
   const mainMeun = document.querySelector('.menu li');
-  mainMeun.addEventListener('mouseover', hover)
+  mainMeun.addEventListener('mouseover', hover);
 }
 
 

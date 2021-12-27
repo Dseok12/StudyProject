@@ -39,12 +39,15 @@ header .inner .menu li .submenu{
   position: absolute;
   left: 0;
   top: 40px;
+  z-index: 10;
   display: none;
 }
+
 header .inner .menu li .submenu li{
   height: 30px;
   line-height: 30px;
 }
+
 .block{
   display: block;
 }
