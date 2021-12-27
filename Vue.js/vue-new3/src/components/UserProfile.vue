@@ -7,12 +7,12 @@
               프로필
             </div>
             <div class="link_box">
-              <p>{{ userInfo.id }}</p>
-              <!-- <router-link :to="`/user/${userInfo.user}`" class="user_desc">
-                {{ userInfo.id }}
+              <p>{{ info.id }}</p>
+              <!-- <router-link :to="`/user/${info.user}`" class="user_desc">
+                {{ info.id }}
               </router-link> -->
               <div class="time">
-                {{ userInfo.created }}
+                {{ info.created }}
               </div>
             </div>
             <!-- 제목 -->
@@ -25,11 +25,9 @@
 <script>
 export default {
   name: 'userprofile',
-  computed: {
-    userInfo () {
-      return this.$store.state.user
-    }
-  },
+  props: {
+    info: Object
+  }
 }
 </script>
 

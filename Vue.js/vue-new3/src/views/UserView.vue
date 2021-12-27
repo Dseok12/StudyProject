@@ -2,7 +2,7 @@
   <div class='user'>
     <div class="wrap">
       <div class="inner">
-        <user-profile></user-profile>
+        <user-profile :propsdata="userInfo"></user-profile>
         <!-- <p>사용자 이름: {{userInfo.id}}</p>
         <p>활동 점수: {{userInfo.karma}}</p>
         <p>아이디 생성일: {{userInfo.created}}</p> -->
@@ -19,11 +19,11 @@ export default {
   components: {
     UserProfile
   },
-  // computed: {
-  //   userInfo () {
-  //     return this.$store.state.user
-  //   }
-  // },
+  computed: {
+    userInfo () {
+      return this.$store.state.user
+    }
+  },
   created () {
     const userName = this.$route.params.id
     this.$store.dispatch('FETCH_USER', userName)
