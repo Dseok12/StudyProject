@@ -15,19 +15,21 @@ Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune
 ex) kor[1] = eng[1]
     kor[2] = eng[2]
     kor[3] = eng[3]
+
+
+    const 행성 = {
+      수성: 'Mercury',
+      금성: 'Venus',
+      지구: 'Earth',
+      화성: 'Mars',
+      목성: 'Jupiter',
+      토성: 'Saturn',
+      천왕성: 'Uranus',
+      해왕성: 'Neptune'
+    }
+    console.log(행성.지구)
 */
 
-const 행성 = {
-  수성: 'Mercury',
-  금성: 'Venus',
-  지구: 'Earth',
-  화성: 'Mars',
-  목성: 'Jupiter',
-  토성: 'Saturn',
-  천왕성: 'Uranus',
-  해왕성: 'Neptune'
-}
-console.log(행성.지구)
 
 
 
@@ -41,7 +43,6 @@ console.log(행성.지구)
       70 100
 
 출력 : {'Yujin': 70, 'Hyewon': 100}
-*/
 
 
 class 학생 {
@@ -62,6 +63,9 @@ const 학생2 = {
   'Hyewon' : 100
 }
 console.log(학생2)
+*/
+
+
 
 
 /*
@@ -81,7 +85,85 @@ i p
 p t
 
 입력으로 문자열이 주어지면 2-gram으로 출력하는 프로그램을 작성하시오.
+
+
+function 쪼개기 (c) {
+  const 문자열대입 = c;
+  for(let i = 0; i < 문자열대입.length-1; i++){
+    const 문자열쪼개기 = 문자열대입.substring(i,i+2);
+    console.log(문자열쪼개기);
+  }
+}
+쪼개기('Javasctipt');
 */
+
+
+
+/*
+  29번.
+  진구는 영어 학원 아르바이트를 하고 있습니다. 반 아이들은 알파벳을 공부하는 학생들인데
+  오늘은 대문자 쓰기 시험을 봤습니다.
+  
+  알파벳 하나만을 입력하고 그 알파벳이 대문자이면 YES를 아니면 NO를 출력하는 프로그램을 만드세요.
+  
+  
+  function 대소문자구별 (c) {
+    if(c === c.toUpperCase()){
+      console.log('YES');
+    } else {
+      console.log('NO');
+    }
+  }
+  
+  대소문자구별('A')
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  30번 문자열 속 문자 찾기
+  
+  문자 pineapple에는 apple이라는 문자가 숨어 있습니다. 원범이는 이렇듯 문자열 속에 숨어있는 문자를 찾아보려고 합니다.
+  첫번째 입력에서는 문자열이 입력되고, 두번째에는 찾을 문자가 입력되어야 합니다.
+  그 문자가 시작하는 index를 반환하는 프로그램을 만드시오.
+  
+  입력: pineapple is yummy / apple
+  출력: 4
+ */
+
+
+
+
+
+
+
+
+
+
+
 
 
 
