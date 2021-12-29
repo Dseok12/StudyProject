@@ -15,6 +15,8 @@
 출력: 5
 
 
+풀이시작)
+
 const 자소서단어검색기 = (x) => {
   const 입력받은문자열 = `${x}`;
   const 구분하기 = 입력받은문자열.split(' ');
@@ -35,21 +37,25 @@ const 자소서단어검색기 = (x) => {
 
   입력: 2 4 6 7 8
   출력: 8 7 6 4 2
+
+
+  풀이시작)
+
+  const 거꾸로출력기 = (x) => {
+    const 입력받은배열 = x;
+    const 거꾸로출력 = 입력받은배열.split(' ').reverse().join(' ');
+    console.log(거꾸로출력)
+  }
+  const arr1 = '1 2 3 4 5';
+  거꾸로출력기(arr1);
+  
+  const arr2 = '2 3 6 7 8';
+  거꾸로출력기(arr2);
+  
+  const arr3 = '12 15 16 18';
+  거꾸로출력기(arr3);
 */
 
-const 거꾸로출력기 = (x) => {
-  const 입력받은배열 = x;
-  const 거꾸로출력 = 입력받은배열.split(' ').reverse().join(' ');
-  console.log(거꾸로출력)
-}
-const arr1 = '1 2 3 4 5';
-거꾸로출력기(arr1);
-
-const arr2 = '2 3 6 7 8';
-거꾸로출력기(arr2);
-
-const arr3 = '12 15 16 18';
-거꾸로출력기(arr3);
 
 
 
@@ -57,6 +63,8 @@ const arr3 = '12 15 16 18';
   34번
   sort구현하기
   민주를 위해 키가 주어지면 순서대로 제대로 섰는지 확인하는 프로그램을 작성해보자
+  작은순서대로 나열되있으면, YES
+  반대면, NO
   
   입력: 176 156 155 165 166 169
   출력: NO
@@ -64,14 +72,90 @@ const arr3 = '12 15 16 18';
   입력: 155 156 165 166 169 176
   출력: YES
 
+
+  풀이시작)
+
+  const 작은놈앞으로 = (x) => {
+    const 입력받은순서 = x.split(' ');
+    for(let i = 0; i < 입력받은순서.length; i++){
+  
+      for(let j = 0; j < 입력받은순서.length; j++) {
+        if(입력받은순서[j] < 입력받은순서[j+1]){
+  
+        }
+      }
+  
+      if(입력받은순서[i] > 입력받은순서[i+1]){
+        console.log('NO')
+      } else {
+        console.log('YES')
+      }
+  
+      return
+    }
+  
+  };
+  
+  const arr1 = '176 156 155 165 166 168';
+  작은놈앞으로(arr1);
+  
+  const arr2 = '155 156 165 166 169 176';
+  작은놈앞으로(arr2);
+  
+  const arr3 = '2 5 3 4 7 6';
+  작은놈앞으로(arr3);
+  
+  const arr4 = '0 3 4 5 6 7';
+  작은놈앞으로(arr4);
+
+
+
+  // 태원이가 짠거
+  const solution = (personheight) => {
+    let boll= 0;
+    personheight = personheight.split(" ");
+    for(let i=0; i<personheight.length; i++){
+        for(let j=i; j<personheight.length; j++){
+            if(personheight[i] > personheight[j]){
+                console.log("NO");
+                return;
+            }
+        }
+    }
+    console.log("YES");
+}
+
+solution("1 2 3 4 5");
+solution("5 1 2 3 4");
+solution("4 5 1 2 3");
+solution("3 4 5 1 2");
+solution("2 3 4 5 1");
 */
 
 
+/*
+  35번
+  2제곱, 3제곱, 4제곱을 할 수 있는 Factory 함수를 만들려고 합니다.
+  <pass>에 코드를 작성하여 two함수를 완성하시오.
 
-
-
-
-
+  풀이)
+  // 반칙씀
+  
+  function one (n) {
+    function two (m) {
+      return m**n
+    }
+    return two;
+  };
+  
+  const a = one(2);
+  const b = one(3);
+  const c = one(4);
+  
+  console.log(a(10));
+  console.log(b(10));
+  console.log(c(10));
+*/
 
 
 
