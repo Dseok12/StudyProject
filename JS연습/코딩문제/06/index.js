@@ -38,23 +38,25 @@
 /*
   43번 10진수를 2진수로
   사용자에게 숫자를 입력받고 이를 2진수로 바꾸고 그 값을 출력해주세요.
+
+
+  const solution = (a) => {
+    const 진수변환 = a.toString(2);
+    console.log(진수변환)
+  }
+  
+  solution(1);
+  solution(2);
+  solution(3);
+  solution(4);
+  solution(5);
+  solution(6);
+  solution(7);
+  solution(8);
+  solution(9);
+  solution(10);
 */
 
-const solution = (a) => {
-  const 진수변환 = a.toString(2);
-  console.log(진수변환)
-}
-
-solution(1);
-solution(2);
-solution(3);
-solution(4);
-solution(5);
-solution(6);
-solution(7);
-solution(8);
-solution(9);
-solution(10);
 
 
 
@@ -77,8 +79,12 @@ solution(10);
 */
 
 
-
-
+const solution = (n) => {
+  const 자리수 = n.toString().length;
+  const 배열초기화 = [n];
+  console.log(배열초기화);
+}
+solution(18234)
 
 
 
