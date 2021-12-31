@@ -193,23 +193,21 @@ solution("2 3 4 5 1");
   가장 많은 것만 출력해주면됨.
 
 
-  */
-const 대장뽑기 = (n) => {
-  const 투표받음 = n;
-  const 배열로받음 = 투표받음.split(' ');
-  배열로받음.sort((a, b) => { return ( a < b ) ? -1 : ( a==b ) ? 0 : 1 });
-  // console.log(배열로받음);
-  
-  for( let i = 0; i < 배열로받음.length; i++ ) {
-    if ( 배열로받음[i] === 배열로받음[i+1] ){
-      console.log(배열로받음[i]);
+  const 대장뽑기 = (n) => {
+    const 투표받음 = n;
+    const 배열로받음 = 투표받음.split(' ');
+    배열로받음.sort((a, b) => { return ( a < b ) ? -1 : ( a==b ) ? 0 : 1 });
+    console.log(배열로받음);
+    
+    for( let i = 0; i < 배열로받음.length; i++ ) {
+      if ( 배열로받음[i] === 배열로받음[i+1] ){
+        console.log(배열로받음[i]);
+      };
     };
-    return;
   };
-};
-
-대장뽑기('원범 원범 혜원 혜원 혜원 혜원 유진 유진');
-
+  
+  대장뽑기('원범 원범 혜원 혜원 혜원 혜원 유진 유진');
+  */
 
 
 
