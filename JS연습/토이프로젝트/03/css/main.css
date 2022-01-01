@@ -1,14 +1,115 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+body{
+  background-color: rgba(0,0,0);
+  font-family: 'Nanum Pen Script', cursive;
+}
 
+.wrap{
+  width: calc(100% - 600px);
+  margin: 100px auto;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.inner{
+  width: calc(100% - 300px);
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.header .inner .form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .inner h2{
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.header .inner .input_text{
+  width: 100%;
+  padding: 8px 15px;
+  border: none;
+  background-color: rgb(236, 236, 236);
+  border-radius: 20px;
+}
+.header .inner .submit_btn{
+  outline: none;
+  border: none;
+  background-color: rgb(40, 132, 189);
+  padding: 10px;
+  width: 60px;
+  border-radius: 20px;
+  margin-left: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.header .inner .submit_btn:hover{
+  background-color: rgb(75, 163, 218);
+  box-shadow: 3px 3px 3px lightslategray;
+}
 
-
-
-
-
-
-
-
-
+.contents_body .inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contents_body .inner .content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contents_body .inner .content .todo_checkbox{
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+}
+.contents_body .inner .content label{
+  font-size: 2rem;
+}
+.contents_body .inner .content .todo_content{
+  width: 400px;
+  padding: 8px 15px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.contents_body .inner .content_buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contents_body .inner .btn{
+  width: 70px;
+  outline: none;
+  border: none;
+  padding: 10px 0px;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #fff;
+}
+.contents_body .inner .content_buttons .todo_edit_button{
+  background-color: rgb(40, 132, 189);
+}
+.contents_body .inner .content_buttons .todo_remove_button{
+  margin-left: 20px;
+  background-color: rgb(189, 40, 115);
+}
+.contents_body .inner .edit_buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.contents_body .inner .edit_buttons .todo_edit_confirm_button{
+  background-color: rgb(40, 132, 189);
+}
+.contents_body .inner .edit_buttons .todo_edit_cancel_button{
+  margin-left: 20px;
+  background-color: rgb(189, 40, 115);
+}
 
 
 
