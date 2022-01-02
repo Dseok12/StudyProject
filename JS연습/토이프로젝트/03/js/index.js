@@ -1,5 +1,13 @@
 
-const createTodoElement = () => {
+
+
+const get = (target) => {
+  return document.querySelector(target);
+}
+
+
+const createTodoElement = (item) => {
+  const { id, content } = item;
   const _todoItem = document.createElement('div');
   _todoItem.innerHTML = `
           <div class="content">
@@ -26,11 +34,16 @@ const createTodoElement = () => {
             </div>
           </div>
   `
+  return _todoItem
 }
 
 
 
+const init = () => {
+  window.addEventListener('DOMContentLoaded', () => {})
+}
 
+init();
 
 
 
