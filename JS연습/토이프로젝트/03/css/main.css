@@ -6,13 +6,13 @@ body{
 }
 
 .wrap{
-  width: calc(100% - 600px);
+  width: 80%;
   margin: 100px auto;
   background-color: #fff;
   border-radius: 20px;
 }
 .inner{
-  width: calc(100% - 300px);
+  width: 90%;
   margin: 0 auto;
   padding: 10px 0;
 }
@@ -40,7 +40,7 @@ body{
   border: none;
   background-color: rgb(40, 132, 189);
   padding: 10px;
-  width: 60px;
+  width: 100px;
   border-radius: 20px;
   margin-left: 10px;
   color: #fff;
@@ -53,6 +53,15 @@ body{
 }
 
 .contents_body .inner{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.contents_body .inner .item{
+  width: 90%;
+  margin: 10px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,9 +72,9 @@ body{
   justify-content: center;
 }
 .contents_body .inner .content .todo_checkbox{
-  width: 35px;
-  height: 35px;
-  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
 }
 .contents_body .inner .content label{
   font-size: 2rem;
@@ -74,6 +83,7 @@ body{
   width: 400px;
   padding: 8px 15px;
   border: none;
+  display: none;
   border-bottom: 1px solid #000;
 }
 .contents_body .inner .content_buttons{
@@ -92,10 +102,20 @@ body{
 }
 .contents_body .inner .content_buttons .todo_edit_button{
   background-color: rgb(40, 132, 189);
+  transition: all .3s;
+}
+.contents_body .inner .content_buttons .todo_edit_button:hover{
+  background-color: rgb(66, 159, 218);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .contents_body .inner .content_buttons .todo_remove_button{
   margin-left: 20px;
   background-color: rgb(189, 40, 115);
+  transition: all .3s;
+}
+.contents_body .inner .content_buttons .todo_remove_button:hover{
+  background-color: rgb(209, 66, 138);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .contents_body .inner .edit_buttons{
   display: flex;

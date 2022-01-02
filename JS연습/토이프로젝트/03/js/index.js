@@ -1,19 +1,23 @@
 
-
-
 const get = (target) => {
   return document.querySelector(target);
 }
 
+const API_URL = 'http://localhost:3001/todos';
+const _todos = get('.todos_inner');
+const _form = get('.form');
+const _todoInput = get('.input_text')
 
 const createTodoElement = (item) => {
   const { id, content } = item;
   const _todoItem = document.createElement('div');
+  _todoItem.classList.add('item')
+  _todoItem.dataset.id = id
   _todoItem.innerHTML = `
           <div class="content">
             <input type="checkbox" class="todo_checkbox">
-            <label></label>
-            <input type="text" value="" class="todo_content">
+            <label>${content}</label>
+            <input type="text" value="${content}" class="todo_content">
           </div>
           <div class="btn_wrap">
             <div class="item_buttons content_buttons">
@@ -38,10 +42,52 @@ const createTodoElement = (item) => {
 }
 
 
+const renderAllTodos = (todos) => {
+  _todos.innerHTML = ''
+  todos.forEach(item => {
+    const todoElement = createTodoElement(item)
+    _todos.appendChild(todoElement)
+  })
+}
+
+const getTodos = () => {
+  fetch(API_URL)
+    .then(res => res.json())
+    .then(todos => renderAllTodos(todos))
+    .catch((error) => {
+      console.error(error)
+    })
+}
+
+const addTodo = (e) => {
+  e.preventDefault();
+  // console.log(_todoInput.value)
+  const todo = {
+    content: _todoInput.value,
+    completed: false
+  }
+  fetch(API_URL,{
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(todo)
+  })
+    .then(getTodos)
+    .then(() => {
+      _todoInput.value = ''
+      _todoInput.focus()
+    })
+    .catch(err => console.error(err))
+}
+
 
 const init = () => {
-  window.addEventListener('DOMContentLoaded', () => {})
-}
+  window.addEventListener('DOMContentLoaded', () => {
+    getTodos();
+  });
+  _form.addEventListener('submit', addTodo)
+};
 
 init();
 
