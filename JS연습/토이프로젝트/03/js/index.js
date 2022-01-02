@@ -9,13 +9,14 @@ const _form = get('.form');
 const _todoInput = get('.input_text')
 
 const createTodoElement = (item) => {
-  const { id, content } = item;
+  const { id, content, completed } = item;
   const _todoItem = document.createElement('div');
+  const isChecked = completed ? 'checked' : ''
   _todoItem.classList.add('item')
   _todoItem.dataset.id = id
   _todoItem.innerHTML = `
           <div class="content">
-            <input type="checkbox" class="todo_checkbox">
+            <input type="checkbox" class="todo_checkbox" ${isChecked}>
             <label>${content}</label>
             <input type="text" value="${content}" class="todo_content">
           </div>
@@ -81,12 +82,33 @@ const addTodo = (e) => {
     .catch(err => console.error(err))
 }
 
+const toggleTodo = (e) => {
+  if (e.target.className !== 'todo_checkbox') return
+  const _item = e.target.closest('.item')
+  // console.log(_item)
+  const id = _item.dataset.id
+  const completed = e.target.checked
+
+  fetch(`${API_URL}/${id}`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({completed})
+  })
+    .then(getTodos)
+    .catch(err => {
+      console.log(err)
+    })
+}
+
 
 const init = () => {
   window.addEventListener('DOMContentLoaded', () => {
     getTodos();
   });
-  _form.addEventListener('submit', addTodo)
+  _form.addEventListener('submit', addTodo);
+  _todos.addEventListener('click', toggleTodo);
 };
 
 init();

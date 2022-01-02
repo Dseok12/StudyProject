@@ -66,6 +66,10 @@ body{
   align-items: center;
   justify-content: space-between;
 }
+.contents_body .inner .item .todo_checkbox:checked{
+  color: #ddd;
+  text-decoration: line-through;
+}
 .contents_body .inner .content{
   display: flex;
   align-items: center;
