@@ -61,21 +61,56 @@ const 구구단한단씩 = (b) => {
 
 
 // 네모찍기
-let star = '*';
-const 네모찍기 = (a, b) => {
-  for( let i = 1; i <= a; i++ ){
-    console.log(star);
-    for( let j = 1; j <= b; j++ ){
-      console.log(j);
-    };
-  };
-};
+// const 네모찍기 = (a) => {
+//   let star1 = ''
+//   for(let j = 1; j < a ; j++){
+//     star1 += '*'
+//   }
+//   console.log(star1)
+//   for(let i = 1; i <= a-1; i++){
+//     star1 += ' '
+//     console.log(star1)
+//   }
+// }
+// 네모찍기(6)
 
-네모찍기(5,5);
+
+
+// const 좌측직각삼각형 = (a) => {
+//   let star1 = ''
+//   for(let i = 1; i <= a; i++){
+//     star1 += '*'
+//     console.log(star1)
+//   }
+// }
+// 좌측직각삼각형(5)
+
+// const 좌측직각삼각형 = (a) => {
+//   let star1 = ''
+//   for(let i = 1; i <= a; i++){
+//     star1 += '*'
+//     console.log(star1)
+//   }
+// }
+// 좌측직각삼각형(5)
 
 
 
-
+// a = 5
+const 우측직각삼각형 = (a) => {
+  let star1 = ''
+  // for(let k = 1; k <= a; k++){
+  // }
+  for(let j = 1; j <= a; j++){
+    star1 += '1'
+  }
+  console.log(star1)
+  for(let i = 1; i <= a; i++){
+    star1 += '*'
+    console.log(star1)
+  }
+}
+우측직각삼각형(5)
 
 
 
