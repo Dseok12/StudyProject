@@ -22,18 +22,18 @@ const createTodoElement = (item) => {
           </div>
           <div class="btn_wrap">
             <div class="item_buttons content_buttons">
-              <button class="todo_edit_button btn">
+              <button class="todo_edit_button">
                 수정
               </button>
-              <button class="todo_remove_button btn">
+              <button class="todo_remove_button">
                 삭제
               </button>
             </div>
             <div class="item_buttons edit_buttons">
-              <button class="todo_edit_confirm_button btn">
+              <button class="todo_edit_confirm_button">
                 수정확인
               </button>
-              <button class="todo_edit_cancel_button btn">
+              <button class="todo_edit_cancel_button">
                 취소
               </button>
             </div>
@@ -102,6 +102,65 @@ const toggleTodo = (e) => {
     })
 }
 
+const changeEditMode = (e) => {
+  const _item = e.target.closest('.item');
+  const _label = _item.querySelector('label');
+  const _editInput = _item.querySelector('input[type="text"]');
+  const _contentButtons = _item.querySelector('.content_buttons');
+  const _editButtons = _item.querySelector('.edit_buttons');
+
+  // 포커스 생기면서 커서가 맨 뒤로 가게 하는 공식 1
+  const value = _editInput.value
+
+  if( e.target.className === 'todo_edit_button' ) {
+    _label.style.display = 'none'
+    _editInput.style.display = 'block'
+    _contentButtons.style.display = 'none'
+    _editButtons.style.display = 'block'
+    
+    // 포커스 생기면서 커서가 맨 뒤로 가게 하는 공식 2
+    _editInput.focus()
+    _editInput.value = ''
+    _editInput.value = value
+  }
+
+  if( e.target.className === 'todo_edit_cancel_button' ) {
+    _label.style.display = 'block'
+    _editInput.style.display = 'none'
+    _contentButtons.style.display = 'block'
+    _editButtons.style.display = 'none'
+    _editInput.value = _label.innerText
+  }
+}
+
+const editTodo = (e) => {
+  if( e.target.className !== 'todo_edit_confirm_button' ) return
+  const _item = e.target.closest('.item')
+  const id = _item.dataset.id
+  const _editInput = _item.querySelector('input[type="text"]')
+  const content = _editInput.value
+
+  fetch(`${API_URL}/${id}`,{
+    method: 'PATCH',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({content})
+  })
+    .then(getTodos)
+    .catch(err => console.log(err))
+}
+
+const removeTodo = (e) => {
+  if ( e.target.className !== 'todo_remove_button' ) return;
+  const _item = e.target.closest('.item');
+  const id = _item.dataset.id;
+
+  fetch(`${API_URL}/${id}`,{
+    method: 'DELETE'
+  })
+    .then(getTodos)
+    .catch(err => console.log(err))
+}
+
 
 const init = () => {
   window.addEventListener('DOMContentLoaded', () => {
@@ -109,6 +168,9 @@ const init = () => {
   });
   _form.addEventListener('submit', addTodo);
   _todos.addEventListener('click', toggleTodo);
+  _todos.addEventListener('click', changeEditMode);
+  _todos.addEventListener('click', editTodo);
+  _todos.addEventListener('click', removeTodo);
 };
 
 init();

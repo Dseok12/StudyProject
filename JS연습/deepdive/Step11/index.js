@@ -61,17 +61,17 @@ const 구구단한단씩 = (b) => {
 
 
 // 네모찍기
+let star = '*';
 const 네모찍기 = (a, b) => {
-  let star = '*'
-  for( let i = 1; i <= a; i++){
-    console.log(star += star);
+  for( let i = 1; i <= a; i++ ){
+    console.log(star);
     for( let j = 1; j <= b; j++ ){
-      console.log(star);
+      console.log(j);
     };
   };
 };
 
-네모찍기(5,5)
+네모찍기(5,5);
 
 
 

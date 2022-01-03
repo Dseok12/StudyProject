@@ -95,7 +95,7 @@ body{
   align-items: center;
   justify-content: center;
 }
-.contents_body .inner .btn{
+.contents_body .inner .content_buttons .todo_edit_button{
   width: 70px;
   outline: none;
   border: none;
@@ -103,19 +103,24 @@ body{
   cursor: pointer;
   border-radius: 20px;
   color: #fff;
-}
-.contents_body .inner .content_buttons .todo_edit_button{
   background-color: rgb(40, 132, 189);
-  transition: all .3s;
+  transition: all .1s;
 }
 .contents_body .inner .content_buttons .todo_edit_button:hover{
   background-color: rgb(66, 159, 218);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .contents_body .inner .content_buttons .todo_remove_button{
+  width: 70px;
+  outline: none;
+  border: none;
+  padding: 10px 0px;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #fff;
   margin-left: 20px;
   background-color: rgb(189, 40, 115);
-  transition: all .3s;
+  transition: all .1s;
 }
 .contents_body .inner .content_buttons .todo_remove_button:hover{
   background-color: rgb(209, 66, 138);
@@ -128,11 +133,35 @@ body{
   display: none;
 }
 .contents_body .inner .edit_buttons .todo_edit_confirm_button{
+  width: 70px;
+  outline: none;
+  border: none;
+  padding: 10px 0px;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #fff;
   background-color: rgb(40, 132, 189);
+  transition: all .1s;
+}
+.contents_body .inner .edit_buttons .todo_edit_confirm_button:hover{
+  background-color: rgb(66, 159, 218);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .contents_body .inner .edit_buttons .todo_edit_cancel_button{
+  width: 70px;
+  outline: none;
+  border: none;
+  padding: 10px 0px;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #fff;
   margin-left: 20px;
   background-color: rgb(189, 40, 115);
+  transition: all .1s;
+}
+.contents_body .inner .edit_buttons .todo_edit_cancel_button:hover{
+  background-color: rgb(209, 66, 138);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 
