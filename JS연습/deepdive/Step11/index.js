@@ -43,8 +43,6 @@ for(let i=3; i<10; i+=2){
 
 /*
 
-
-
 const 구구단한단씩 = (b) => {
   for (let i = 1; i <= 9; i++){
     console.log(b*i)
@@ -77,15 +75,16 @@ const 네모찍기 = (a) => {
 */
 
 
-
-// const 좌측직각삼각형 = (a) => {
-//   let star1 = ''
-//   for(let i = 1; i <= a; i++){
-//     star1 += '*'
-//     console.log(star1)
-//   }
-// }
-// 좌측직각삼각형(5)
+/*
+const 좌측직각삼각형 = (a) => {
+  let star1 = ''
+  for(let i = 1; i <= a; i++){
+    star1 += '*'
+    console.log(star1)
+  }
+}
+좌측직각삼각형(5)
+*/
 
 /*
 const 좌측직각삼각형 = (a) => {
@@ -97,6 +96,8 @@ const 좌측직각삼각형 = (a) => {
 }
 좌측직각삼각형(5)
 */
+
+
 
 /*
 const 좌측역삼각형 = (a) => {
@@ -116,62 +117,195 @@ const 좌측역삼각형 = (a) => {
 
 
 // let a = 5
-// const 우측직각삼각형 = (a) => {
+/*
+const 우측직각삼각형 = (a) => {
   
-//   for(let i = 1; i < a; i++){
-//     let star1 = ''
-//     for(let k = 1; k < a-i; k++){
-//       star1 += ' '
-//     }
-//     for(let j = 0; j <= i-1; j++){
-//       star1 += '*'
-//     }
-//     console.log(star1)
-//   }
+  for(let i = 1; i < a; i++){
+    let star1 = ''
+    for(let k = 1; k < a-i; k++){
+      star1 += ' '
+    }
+    for(let j = 0; j <= i-1; j++){
+      star1 += '*'
+    }
+    console.log(star1)
+  }
 
-// }
-// 우측직각삼각형(5)
-
-
-
-// const 우측삼각형2 = (a) => {
-//   for(let i =1; i < a; i++){
-//     let star2 = '';
-//     for(let j = 1; j < a - i; j++){
-//       star2 += ' '
-//     }
-//     for(let k = 0; k <= i -1; k++){
-//       star2 += '*'
-//     }
-//     console.log(star2)
-//   }
-// }
-// 우측삼각형2(5)
+}
+우측직각삼각형(5)
+*/
 
 
-
-
-// const 정삼각형 = (a) => {
-//   for(let i =1; i <= a; i++){
-//     let star2 = '';
-//     for(let j = 1; j <= a - i; j++){
-//       star2 += ' '
-//     }
-//     for(let k = 1; k <= i * 2 -1; k++){
-//       star2 += '*'
-//     }
-//     console.log(star2)
-//   }
-// }
-// 정삼각형(5)
-
-
-
-
-
-const 역정삼각형 = (a) => {
-  for(let i = 0; i <= a; i++){
-    let star = ''
+/*
+const 우측삼각형2 = (a) => {
+  for(let i =1; i < a; i++){
+    let star2 = '';
+    for(let j = 1; j < a - i; j++){
+      star2 += ' '
+    }
+    for(let k = 0; k <= i -1; k++){
+      star2 += '*'
+    }
+    console.log(star2)
   }
 }
+우측삼각형2(5)
+*/
+
+
+
+/*
+const 정삼각형 = (a) => {
+  for(let i =1; i <= a; i++){
+    let star2 = '';
+    for(let j = 1; j <= a - i; j++){
+      star2 += ' '
+    }
+    for(let k = 1; k <= i * 2 -1; k++){
+      star2 += '*'
+    }
+    console.log(star2)
+  }
+}
+정삼각형(10)
+*/
+
+
+
+
+/*
+const 역정삼각형 = (a) => {
+  for(let i = 0; i < a; i++){
+    let star1 = ''
+    for(let j = a; j < a+i; j++ ){
+      star1 += ' '
+    }
+    for(let j = 1; j < a-i; j++ ){
+      star1 += '1'
+    }
+    for(let j = 1; j <= a-i; j++ ){
+      star1 += '*'
+    }
+    console.log(star1)
+  }
+}
+
+역정삼각형(5)
+*/
+
+
+/*
+const 마름모 = (a) => {
+  for(let i = 0; i <= a; i++){
+    let star2 = '';
+    for(let j = 1; j <= a - i; j++){
+      star2 += ' '
+    }
+    for(let k = 1; k <= i * 2 -1; k++){
+      star2 += '*'
+    }
+    console.log(star2)
+  }
+  for(let i = 1; i < a; i++){
+    let star1 = ''
+    for(let j = a; j < a+i; j++ ){
+      star1 += ' '
+    }
+    for(let j = 1; j < a-i; j++ ){
+      star1 += '*'
+    }
+    for(let j = 1; j <= a-i; j++ ){
+      star1 += '*'
+    }
+    console.log(star1)
+  }
+}
+
+마름모(8)
+*/
+
+
+
+/*
+const 마름모 = (a) => {
+  if( a === 1 ){
+    console.log(`입력하신 값이 ${a}으로 마름모를 만들 수 없습니다.`)
+  } else if( a === 2 ){
+    console.log(`입력하신 값이 ${a}으로 마름모를 만들 수 없습니다.`)
+  } else if ( a % 2 === 1) {
+    console.log(`입력하신 값이 홀수 ${a}`)
+    for(let i = a/2; i < a; i++){
+      let star = '';
+      for(let j = 1; j <= a -i; j++){
+        star += ' '
+      }
+      for(let k = 0; k < i*2-1; k++){
+        star += '*'
+      }
+      console.log(star)
+    }
+    for(let i = a/2; i < a; i++){
+      let star = ''
+      for(let j = a; j < a+i; j++ ){
+        star += ' '
+      }
+      for(let j = a; j < a-i; j++ ){
+        star += '1'
+      }
+      for(let j = a; j <= a-i; j++ ){
+        star += '*'
+      }
+      console.log(star)
+    }
+  } else {
+    console.log(`입력하신 값이 짝수 ${a}`)
+    // 위에 정삼각형
+    for(let i = a/2; i < a; i++){
+      let star = '';
+      for(let j = 1; j < a -i; j++){
+        star += ' '
+      }
+      for(let k = 2; k < i*2; k++){
+        star += '*'
+      }
+      console.log(star)
+    }
+    // 아래 역정삼각형
+    for(let i = a/2; i < a; i++){
+      let star = '';
+      for(let j = 1; j < a -i; j++){
+        star += ' '
+      }
+      for(let k = 2; k < i*2; k++){
+        star += '*'
+      }
+      console.log(star)
+    }
+  }
+}
+
+// 마름모(1)
+// 마름모(2)
+마름모(3)
+// 마름모(5)
+마름모(4)
+// 마름모(6)
+// 마름모(8)
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
