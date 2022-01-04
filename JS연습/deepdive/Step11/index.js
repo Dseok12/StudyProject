@@ -60,58 +60,118 @@ const 구구단한단씩 = (b) => {
 */
 
 
-// 네모찍기
-// const 네모찍기 = (a) => {
-//   let star1 = ''
-//   for(let j = 1; j < a ; j++){
-//     star1 += '*'
-//   }
-//   console.log(star1)
-//   for(let i = 1; i <= a-1; i++){
-//     star1 += ' '
-//     console.log(star1)
-//   }
-// }
-// 네모찍기(6)
-
-
-
-// const 좌측직각삼각형 = (a) => {
-//   let star1 = ''
-//   for(let i = 1; i <= a; i++){
-//     star1 += '*'
-//     console.log(star1)
-//   }
-// }
-// 좌측직각삼각형(5)
-
-// const 좌측직각삼각형 = (a) => {
-//   let star1 = ''
-//   for(let i = 1; i <= a; i++){
-//     star1 += '*'
-//     console.log(star1)
-//   }
-// }
-// 좌측직각삼각형(5)
-
-
-
-// a = 5
-const 우측직각삼각형 = (a) => {
+/*
+네모찍기
+const 네모찍기 = (a) => {
   let star1 = ''
-  // for(let k = 1; k <= a; k++){
-  // }
-  for(let j = 1; j <= a; j++){
-    star1 += '1'
+  for(let j = 1; j < a ; j++){
+    star1 += '*'
   }
   console.log(star1)
+  for(let i = 1; i <= a-1; i++){
+    star1 += ' '
+    console.log(star1)
+  }
+}
+네모찍기(6)
+*/
+
+
+
+// const 좌측직각삼각형 = (a) => {
+//   let star1 = ''
+//   for(let i = 1; i <= a; i++){
+//     star1 += '*'
+//     console.log(star1)
+//   }
+// }
+// 좌측직각삼각형(5)
+
+/*
+const 좌측직각삼각형 = (a) => {
+  let star1 = ''
   for(let i = 1; i <= a; i++){
     star1 += '*'
     console.log(star1)
   }
 }
-우측직각삼각형(5)
+좌측직각삼각형(5)
+*/
+
+/*
+const 좌측역삼각형 = (a) => {
+  for(let i = 0; i < a; i++){
+    let star1 = ''
+    for(let j = 1; j <= a-i; j++ ){
+      star1 += '*'
+    }
+    console.log(star1)
+  }
+}
+
+좌측역삼각형(5)
+*/
 
 
 
+
+// let a = 5
+// const 우측직각삼각형 = (a) => {
+  
+//   for(let i = 1; i < a; i++){
+//     let star1 = ''
+//     for(let k = 1; k < a-i; k++){
+//       star1 += ' '
+//     }
+//     for(let j = 0; j <= i-1; j++){
+//       star1 += '*'
+//     }
+//     console.log(star1)
+//   }
+
+// }
+// 우측직각삼각형(5)
+
+
+
+// const 우측삼각형2 = (a) => {
+//   for(let i =1; i < a; i++){
+//     let star2 = '';
+//     for(let j = 1; j < a - i; j++){
+//       star2 += ' '
+//     }
+//     for(let k = 0; k <= i -1; k++){
+//       star2 += '*'
+//     }
+//     console.log(star2)
+//   }
+// }
+// 우측삼각형2(5)
+
+
+
+
+// const 정삼각형 = (a) => {
+//   for(let i =1; i <= a; i++){
+//     let star2 = '';
+//     for(let j = 1; j <= a - i; j++){
+//       star2 += ' '
+//     }
+//     for(let k = 1; k <= i * 2 -1; k++){
+//       star2 += '*'
+//     }
+//     console.log(star2)
+//   }
+// }
+// 정삼각형(5)
+
+
+
+
+
+const 역정삼각형 = (a) => {
+  for(let i = 0; i <= a; i++){
+    let star = ''
+  }
+}
 
