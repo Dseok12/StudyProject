@@ -167,3 +167,12 @@ let elem5 = {
 let length3 = elem5?.length;
 console.log(length3)
 */
+
+
+// var p = 80;
+
+// console.log(p, c)
+
+// p = 100
+// var c = p;
+// console.log(p,c)
