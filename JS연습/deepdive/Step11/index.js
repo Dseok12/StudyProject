@@ -227,7 +227,6 @@ const 마름모 = (a) => {
 
 
 /*
-*/
 const 마름모 = (a) => {
   if( a === 1 ){
     console.log(`입력하신 값이 ${a}으로 마름모를 만들 수 없습니다.`)
@@ -274,10 +273,10 @@ const 마름모 = (a) => {
     // 아래 역정삼각형
     for(let i = a/2; i < a; i++){
       let star = '';
-      for(let j = 3; j < i-1; j++){
+      for(let j = 2; j < i-1; j++){
         star += ' '
       }
-      for(let k = 2; k < (a-i)*3; k++){
+      for(let k = 2; k < (a-i)*2+a; k++){
         star += '*'
       }
       console.log(star)
@@ -287,19 +286,53 @@ const 마름모 = (a) => {
 
 // 마름모(1)
 // 마름모(2)
-// 마름모(3)
+마름모(3)
 // 마름모(5)
-마름모(6)
+// 마름모(6)
 // 마름모(8)
 // 마름모(10)
 // 마름모(12)
+*/
 
 
+/*
+*/
+const 마름모2 = (a) => {
+  if(a === 1){
+    return console.log(`입력하신 값이 ${a}이므로 마름모를 만들수가 없습니다.`)
+  }else if(a === 2){
+    return console.log(`입력하신 값이 ${a}이므로 마름모를 만들수가 없습니다.`)
+  } else if(a % 2 === 0) {
+    console.log(`입력하신 값이 ${a}입니다.`)
+    for(let i = 0; i < a; i++){
+      let star = ''
+      for(let k = 1; k < a-i; k++){
+        star += '1'
+      }
+      for(let j = 0; j < i * 2 -1; j++){
+        star += '*'
+      }
+      console.log(star)
+    }
+  } else {
+    console.log(`입력하신 값이 ${a}입니다.`)
+    for(let i = 0; i < a; i++){
+      let star = ''
+      for(let k = 1; k < a-i; k++){
+        star += '1'
+      }
+      for(let j = 0; j < i * 2 -1; j++){
+        star += '*'
+      }
+      console.log(star)
+  }
+}
 
 
-
-
-
+// 마름모2(1)
+// 마름모2(2)
+마름모2(3)
+마름모2(4)
 
 
 
