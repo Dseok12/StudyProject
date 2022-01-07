@@ -249,10 +249,10 @@ const 마름모 = (a) => {
     // 아래 삼각형
     for(let i = a/2; i < a-1; i++){
       let star = '';
-      for(let j = 1; j <= a -i; j++){
-        star += ' '
+      for(let j = 1; j <= i; j++){
+        star += '1'
       }
-      for(let k = 1; k < i*2-1; k++){
+      for(let k = 1; k < (a-i); k++){
         star += '*'
       }
       console.log(star)
@@ -263,10 +263,10 @@ const 마름모 = (a) => {
     // 위에 정삼각형
     for(let i = a/2; i < a; i++){
       let star = '';
-      for(let j = 1; j < a -i; j++){
+      for(let j = 1; j < a - i; j++){
         star += ' '
       }
-      for(let k = 2; k < i*2; k++){
+      for(let k = 0; k < i*2; k++){
         star += '*'
       }
       console.log(star)
@@ -274,14 +274,11 @@ const 마름모 = (a) => {
     // 아래 역정삼각형
     for(let i = a/2; i < a; i++){
       let star = '';
-      for(let j = 1; j < a - i; j++){
-        star += '1'
+      for(let j = 3; j < i-1; j++){
+        star += ' '
       }
-      for(let k = 1; k < (i*2)-1; k++){
+      for(let k = 2; k < (a-i)*3; k++){
         star += '*'
-      }
-      for(let j = 1; j < a - i; j++){
-        star += '1'
       }
       console.log(star)
     }
@@ -291,10 +288,11 @@ const 마름모 = (a) => {
 // 마름모(1)
 // 마름모(2)
 // 마름모(3)
-마름모(5)
+// 마름모(5)
 마름모(6)
-// 마름모(6)
 // 마름모(8)
+// 마름모(10)
+// 마름모(12)
 
 
 
