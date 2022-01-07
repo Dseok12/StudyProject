@@ -275,10 +275,13 @@ const 마름모 = (a) => {
     for(let i = a/2; i < a; i++){
       let star = '';
       for(let j = 1; j < a - i; j++){
-        star += ' '
+        star += '1'
       }
-      for(let k = 2; k < i*2; k++){
+      for(let k = 1; k < (i*2)-1; k++){
         star += '*'
+      }
+      for(let j = 1; j < a - i; j++){
+        star += '1'
       }
       console.log(star)
     }
@@ -287,13 +290,11 @@ const 마름모 = (a) => {
 
 // 마름모(1)
 // 마름모(2)
-마름모(3)
-// 마름모(5)
+// 마름모(3)
+마름모(5)
 마름모(6)
 // 마름모(6)
 // 마름모(8)
-
-
 
 
 
