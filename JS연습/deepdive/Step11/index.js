@@ -303,37 +303,73 @@ const 마름모2 = (a) => {
   }else if(a === 2){
     return console.log(`입력하신 값이 ${a}이므로 마름모를 만들수가 없습니다.`)
   } else if(a % 2 === 0) {
-    console.log(`입력하신 값이 ${a}입니다.`)
-    for(let i = 0; i < a; i++){
+    // 짝수
+    console.log(`입력하신 값이 짝수 ${a}입니다.`)
+    // 상단 삼각형
+    for(let i = 2; i < a; i++){
       let star = ''
       for(let k = 1; k < a-i; k++){
-        star += '1'
+        star += ' '
+      }
+      for(let j = 1; j < i * 2 - 1; j++){
+        star += '*'
+      }
+      console.log(star)
+    }
+    // 하단 역삼각형
+    for(let i = 2; i < a; i++){
+      let star = ''
+      for(let k = 2; k < i; k++){
+        star += ' '
+      }
+      for(let j = 0; j < a-i; j++){
+        star += '*'
+      }
+      for(let j = 0; j < a-i; j++){
+        star += '*'
+      }
+      console.log(star)
+    }
+  } else {
+    // 홀수
+    console.log(`입력하신 홀수 값이 ${a}입니다.`)
+    // 상단 삼각형
+    for(let i = 1; i < a; i++){
+      let star = ''
+      for(let k = 0; k < a-i; k++){
+        star += ' '
       }
       for(let j = 0; j < i * 2 -1; j++){
         star += '*'
       }
       console.log(star)
     }
-  } else {
-    console.log(`입력하신 값이 ${a}입니다.`)
-    for(let i = 0; i < a; i++){
+    // 하단 삼각형
+    for(let i = 2; i < a; i++){
       let star = ''
-      for(let k = 1; k < a-i; k++){
-        star += '1'
+      for(let k = 0; k < i; k++){
+        star += ' '
       }
-      for(let j = 0; j < i * 2 -1; j++){
+      for(let j = 0; j < a-i; j++){
+        star += '*'
+      }
+      for(let j = 1; j < a-i; j++){
         star += '*'
       }
       console.log(star)
+    }
   }
 }
 
 
 // 마름모2(1)
 // 마름모2(2)
-마름모2(3)
-마름모2(4)
-
-
+// 마름모2(3)
+마름모2(5)
+// 마름모2(7)
+// 마름모2(4)
+마름모2(6)
+// 마름모2(8)
+// 마름모2(10)
 
 
