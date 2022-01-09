@@ -391,7 +391,7 @@ const 마름모3 = (a) =>{
 
 /*
 // 세진님이 짠거
-export const _repeat = (target, count) => {
+const _repeat = (target, count) => {
   let str = "";
   for (let i = 0; i < count; i++) {
     str += target;
@@ -436,7 +436,7 @@ const createBottomRowShape = (rhombus, blankCount, columnCount, type) => {
   return rhombus;
 };
 
-export const topShape = (topColumnCount, type) => {
+const topShape = (topColumnCount, type) => {
   let rhombus = "";
 
   for (let i = 1; i <= topColumnCount; i++) {
@@ -454,7 +454,7 @@ const middleShape = (col, type) => {
     : _repeat(`${_repeat("*", col)}\n`, 2); // 짝
 };
 
-export const bottomShape = (bottomColumnCount, type) => {
+const bottomShape = (bottomColumnCount, type) => {
   // 홀수 식일 때
   let rhombus = "";
   for (let i = 1; i <= bottomColumnCount; i++) {
@@ -481,9 +481,31 @@ const solution = (col) => {
 log(solution(6));
 */
 
+/*
+*/
+const 빈사각형 = (a) => {
+  let star = '';
+  for(let i = 1; i <= a; i++){
+    star = '*';
+    for(let j = 0; j < a; j++){
+      // star += '*'
+      if( i === 1 ){
+        star += '*'
+      } else if( i === a ) {
+        star += '*'
+      } else {
+        star += ' '
+      }
+    }
+    console.log(star)
+  }
+}
 
 
-
+// 빈사각형(2)
+// 빈사각형(3)
+빈사각형(4)
+// 빈사각형(5)
 
 
 
