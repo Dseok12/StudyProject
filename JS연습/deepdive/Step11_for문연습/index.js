@@ -482,36 +482,99 @@ log(solution(6));
 */
 
 /*
-*/
+// 파라미터 값은 세로 줄이다.
+// 
+
+
 const 빈사각형 = (a) => {
   let star = '';
   for(let i = 1; i <= a; i++){
     star = '*';
-    for(let j = 1; j <= a; j++){
+    for(let j = 2; j <= a; j++){
       // star += '*'
       if( i === 1 ){
         star += '*'
       } else if( i === a ) {
         star += '*'
       } else if( i === j ) {
+        star += '1'
+      } else {
+        star += '2'
+      }
+    }
+    console.log(star)
+  }
+}
+// 빈사각형(2)
+// 빈사각형(3)
+// 빈사각형(4)
+빈사각형(5)
+*/
+
+
+
+/*
+// 파라미터 값은 세로 줄이다.
+// 첫번째 세로 그리고 첫번째 가로 그리고 a번째 가로 그리고 a번째 세로에는 *을 찍어라
+// 나머지는 짝수일 때 공백처리하고 홀수 일때는 a/2번째 가로는 *을 찍어라
+
+// 2차원
+/*
+if( i === 1 ){
+  for(let j = 2; j <= a; j++) {
+    star += '*'
+  }
+} else if ( i === a ){
+  for(let j = 2; j <= a; j++) {
+    star += '*'
+  }
+} else {
+  for(let j = 1; j <= a-2; j++) {
+    star += '1'
+  }
+}
+*/
+
+const 빈사각형2 = (a) => {
+  let star = ''
+  for( let i = 1; i <= a; i++ ) {
+    star = '*'
+
+    // 2차원
+    for(let j = 1; j <= a; j++){
+      if( i === 1 || j === a ){
+        star += '*'
+      } else if( i === a) {
+        star += '*'
+      } else if ( i === Math.ceil(a/2) ){
         star += '*'
       } else {
         star += ' '
       }
     }
+
     console.log(star)
   }
-  // for(let i = 1; i <= a; i++){
-  //   star = '*';
-  //   console.log(star)
-  // }
 }
 
+// 빈사각형2(3)
+// 빈사각형2(4)
+// 빈사각형2(5)
+빈사각형2(6)
+// 빈사각형2(8)
 
-// 빈사각형(2)
-// 빈사각형(3)
-빈사각형(4)
-// 빈사각형(5)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
