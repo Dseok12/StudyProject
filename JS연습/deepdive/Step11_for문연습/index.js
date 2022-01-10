@@ -487,11 +487,13 @@ const 빈사각형 = (a) => {
   let star = '';
   for(let i = 1; i <= a; i++){
     star = '*';
-    for(let j = 0; j < a; j++){
+    for(let j = 1; j <= a; j++){
       // star += '*'
       if( i === 1 ){
         star += '*'
       } else if( i === a ) {
+        star += '*'
+      } else if( i === j ) {
         star += '*'
       } else {
         star += ' '
@@ -499,6 +501,10 @@ const 빈사각형 = (a) => {
     }
     console.log(star)
   }
+  // for(let i = 1; i <= a; i++){
+  //   star = '*';
+  //   console.log(star)
+  // }
 }
 
 
