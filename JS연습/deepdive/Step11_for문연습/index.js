@@ -537,32 +537,56 @@ if( i === 1 ){
 
 const 빈사각형2 = (a) => {
   let star = ''
-  for( let i = 1; i <= a; i++ ) {
-    star = '*'
+  if( a % 2 === 0 ){
+    console.log(`입력하신 값은 짝수 ${a}입니다.`)
 
-    // 2차원
-    for(let j = 2; j <= a; j++){
-      if( i === 1 || j === a ){
-        star += '*'
-      } else if( i === a) {
-        star += '*'
-      } else if ( i === Math.ceil(a/2) ){
-        star += '*'
-      } else {
-        star += ' '
+    for( let i = 1; i <= a+1; i++ ) {
+      star = '*'
+  
+      // 2차원
+      for( let j = 2; j <= a; j++){
+        if( i === 1 || j === a ){
+          star += '*'
+        } else if( i === a+1) {
+          star += '*'
+        } else if ( i === Math.ceil(a/2)+1 ){
+          star += '*'
+        } else {
+          star += ' '
+        }
       }
+  
+      console.log(star)
     }
-
-    console.log(star)
+  } else {
+    console.log(`입력하신 값은 홀수 ${a}입니다.`)
+    for( let i = 1; i <= a; i++ ) {
+      star = '*'
+  
+      // 2차원
+      for( let j = 2; j <= a; j++){
+        if( i === 1 || j === a ){
+          star += '*'
+        } else if( i === a) {
+          star += '*'
+        } else if ( i === Math.ceil(a/2) ){
+          star += '*'
+        } else {
+          star += ' '
+        }
+      }
+  
+      console.log(star)
+    }
   }
 }
 
 // 빈사각형2(3)
 // 빈사각형2(4)
-// 빈사각형2(5)
-빈사각형2(7)
+빈사각형2(5)
+// 빈사각형2(7)
 // 빈사각형2(6)
-// 빈사각형2(8)
+빈사각형2(8)
 
 
 
