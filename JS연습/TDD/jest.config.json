@@ -1,0 +1,6 @@
+{
+  "clearMocks": true,
+  "collectCoverage": true,
+  "verbose": true,
+  "testEnvironment": "jsdom"
+}
