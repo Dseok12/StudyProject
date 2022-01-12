@@ -56,10 +56,20 @@ foo()
 bar()
 */
 
+class Obj {
+  constructor (name, age) {
+    this.name = name
+    this.age = age
+  }
+}
 
+function createObj(name, role) {
 
-
-
+  return  {name:name, role:role}
+  
+}
+let bird = createObj('raven',30)
+console.log(bird)
 
 
 
