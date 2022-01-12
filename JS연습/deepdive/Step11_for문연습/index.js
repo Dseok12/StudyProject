@@ -632,24 +632,40 @@ const 화살표 = (a) => {
 */
 
 const 화살표2 = (a) => {
+  // 화살표를 만들 수 없는 경고 메시지
+  if( a <= 2 ) {
+    return console.log(`입력하신 값은 ${a}이므로 화살표를 만들 수 없습니다.`)
+  }
+
+  // 화살표는 3 이상부터 만들 수 있음
   let star = ''
   for(let i = 0; i <= a; i++){
-    if( i === 0){
-      star = ' '
-    } else if ( i === a ){
-      star = ' '
-    } else {
-      star = '*'
-      for(let j = 1; j <= a-1; j++){
-        star +='*'
+    // 사각형 세로를 나눔
+    if( i === 0 || i === a){
+      star = ''
+      for(let j = 1; j <= a; j++){
+        star += ' '
       }
-      
+    } else {
+      // 사각형 가로를 찍음
+      star = ''
+      for(let j = 1; j <= a; j++){
+        star += '*'
+      }
     }
     
+    for(let j = 0; j <= i; j++){
+      for(let k = 0; k <= a-i; k++){
+        star += '*'
+      }
+    }
     console.log(star)
   }
 }
 
+// 화살표2(-1)
+// 화살표2(1)
+// 화살표2(2)
 // 화살표2(3)
 화살표2(4)
 // 화살표2(5)
