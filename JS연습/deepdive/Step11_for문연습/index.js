@@ -766,34 +766,40 @@ const 소수갯수찾기 = (n) => {
   console.log(소수그릇)
   */
 
+  /*
+  */
   let 나눠질놈 = []
   let 소수그릇 = []
   let 소수가아닌그릇 = []
 
   for(let i = 2; i <= n; i++){
-    // let 나눠질놈그릇 = 나눠질놈.push(i)
-    for(let j = 1; j <= n; j++){
-      if( i / 1 === n || i % n === 0 ) {
+    for(let j = 1; j <= i; j++){
+      if( i % j === 0 && i / 1 === i) {
         console.log(`[${i},${j}] if 부분`)
+        // 소수그릇.push(i)
       } else {
-        console.log(`[${i},${j} else 부분]`)
+        // 소수가 아닌 애들 부분
+        console.log(`[${i},${j}] else 부분`)
+        소수가아닌그릇.push(j)
       }
     }
   }
-  // console.log(소수그릇)
   // console.log(나눠질놈)
+  // console.log(소수그릇)
   // console.log(소수가아닌그릇)
+
 
 }
 
 // 소수갯수찾기(2)
 // 소수갯수찾기(3)
-소수갯수찾기(4)
+// 소수갯수찾기(4)
 // 소수갯수찾기(5)
 // 소수갯수찾기(6)
 // 소수갯수찾기(7)
 // 소수갯수찾기(8)
 // 소수갯수찾기(9)
+소수갯수찾기(10)
 // 소수갯수찾기(11)
 
 
