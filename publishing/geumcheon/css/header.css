@@ -1,0 +1,209 @@
+@charset "utf-8";
+/* side_popup */
+.side_menu_wrap{
+  width: 140px;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.side_menu_wrap .side_menu{
+  background: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+}
+.side_menu_wrap .side_menu li{
+  text-align: center;
+  padding: 18px 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.side_menu_wrap .side_menu li:first-child{
+  background-color: #000;
+  padding: 15px 5px;
+  border-bottom: none;
+}
+.side_menu_wrap .side_menu li:first-child a{
+  color: rgb(228, 176, 6);
+  font-weight: bold;
+}
+.side_menu_wrap .side_menu li a{
+  color: #fff;
+  font-size: 15px;
+}
+/* //side_popup */
+/* header_top */
+.header_top{
+  width: 100%;
+  background-color: #383c4c;
+  border-bottom: 3px solid orange;
+}
+.header_top ul li{
+  line-height: 43px;
+}
+.header_top ul li a{
+  color: #fff;
+}
+.header_top ul li a:hover{
+  text-decoration: underline;
+}
+.gnb_top_left{}
+.gnb_top_left li:first-child{
+  border-left: 1px solid #5e657e;
+}
+.gnb_top_left li{
+  width: 126px;
+  height: 43px;
+  text-align: center;
+  border-right: 1px solid #5e657e;
+}
+.gnb_top_right{}
+.gnb_top_right > li{
+  width: 82px;
+  text-align: center;
+  background: #272a35;
+}
+
+.gnb_top_right > li a{
+  position: relative;
+}
+.gnb_top_right > li a::before{
+  content: '';
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  right: -25%;
+  top: 0;
+  z-index: 2;
+}
+.gnb_top_right > li:last-child a::before{
+  display: none;
+}
+.gnb_top_right > li:last-child{
+  width: 140px;
+  position: relative;
+}
+.gnb_top_right > li .depth2_lang{
+  position: absolute;
+  left: 0;
+  top: 43px;
+  width: 100%;
+  text-align: center;
+  background: #272a35;
+  display: none;
+}
+.gnb_top_right > li .depth2_lang > li{
+  border-bottom: 1px solid #fff;
+}
+.gnb_top_right > li .depth2_lang > li:last-child{
+  border-bottom: none;
+}
+
+
+
+
+
+
+
+
+/* //header_top */
+
+@media screen and (max-width:1503px) {
+  .side_menu_wrap{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
