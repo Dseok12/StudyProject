@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @font-face {
   font-family: 'encobki';
   src: url('./ENCOBKI.TTF') format('truetype');
@@ -5,29 +6,4 @@
 @font-face {
   font-family: 'takota';
   src: url('./Takota.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'notosans';
-  src: url('./NotoSansCJKkr-DemiLight.otf') format('truetype');
-  font-weight: 500;
-}
-@font-face {
-  font-family: 'notosans';
-  src: url('./NotoSansCJKkr-Medium.otf') format('truetype');
-  font-weight: normal;
-}
-@font-face {
-  font-family: 'notosans';
-  src: url('./NotoSansCJKkr-Regular.otf') format('truetype');
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'notosans';
-  src: url('./NotoSansCJKkr-Bold.otf') format('truetype');
-  font-weight: 800;
-}
-@font-face {
-  font-family: 'notosans';
-  src: url('./NotoSansCJKkr-Black.otf') format('truetype');
-  font-weight: bold;
 }
