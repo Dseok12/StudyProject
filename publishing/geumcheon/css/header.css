@@ -49,20 +49,49 @@
 /* header-top 왼쪽 */
 .gnb_top_left li{
   text-align: center;
-  padding: 12px 25px 12px 25px;
+  padding: 12px 25px 12px 40px;
   border-right: 1px solid #5e657e;
 }
 .gnb_top_left li a{
   position: relative;
+  font-size: 14px;
 }
 .gnb_top_left li:first-child{
   background: #000;
   border-left: 1px solid #5e657e;
 }
+.gnb_top_left li a::before{
+  content: '';
+  display: inline-block;
+  width: 21px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+  position: absolute;
+  left: -25px;
+  top: 0px;
+}
+.gnb_top_left li:first-child a::before{
+  background: url("../img/main/gnb_sprite.png") no-repeat 0 0;
+}
+.gnb_top_left li:nth-child(2) a::before{
+  background: url("../img/main/gnb_sprite.png") no-repeat 0 -250px;
+}
+.gnb_top_left li:nth-child(3) a::before{
+  background: url("../img/main/gnb_sprite.png") no-repeat 0 -25px;
+}
+.gnb_top_left li:nth-child(4) a::before{
+  background: url("../img/main/gnb_sprite.png") no-repeat 0 -83px;
+}
+.gnb_top_left li:nth-child(5) a::before{
+  background: url("../img/main/gnb_sprite.png") no-repeat 0 -143px;
+}
+.gnb_top_left li:last-child a::before{
+  background: url("../img/main/gnb_sprite.png") no-repeat 0 -200px;
+}
 /* header-top 왼쪽 */
 
 /* header-top 오른쪽 */
-.gnb_top_right{}
 .gnb_top_right > li{
   padding: 12px 15px 12px 15px;
   text-align: center;
@@ -70,8 +99,6 @@
   position: relative;
 }
 
-.gnb_top_right > li a{
-}
 .gnb_top_right > li a::before{
   content: '';
   display: block;
