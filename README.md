@@ -4,13 +4,11 @@
 
 
 ### 웹디자인 기능사
-- 필기시험 합격 2021년도 2회차
-- 실기시험 준비중
+- 2021년도 9월 합격
 
 
 ### Languages Study(공부중)
 - React.js
-- JAVA
 - Vue.js
 - Node.js
 
