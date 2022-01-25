@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+body, div, header, footer, aside, article, section, nav, ul, li, ol, form, span, input, img,
+p, span, em, strong, h1, h2, h3, a {margin:0; padding: 0;}
+
+header, footer, aside, article, section, nav {display: block;}
+
+body, input, select{
+    font-size: 12px;
+    color: #222;
+    font-family: 'Nanum', '나눔고딕', '돋움', 'dotum', sans-serif; /* 앞에 나온 폰트 대표 폰트, 뒤에는 대체폰트(한글폰트는 한글명과 영어명 모두 써줘야함, 한글폰트아님 상관없음)*/
+
+}
+
+ul, ol{
+    list-style: none;
+}
+/* 디폴트 값으로 ul은 점이, ol은 숫자가 들어가므로
+reset으로 없애 줘야함. */
+
+em, address, i{
+    font-size: normal;
+}
+/*em, address, i태그는 기울임으로 표현됨,
+가독성이 떨어지기 때문에 reset에서 다시 반듯하게 해주기*/
+
+strong{
+    font-weight: 400;
+}
+/* strong태그의 굵기도 reset.css에서 정할 수 있음 */
+
+img, fieldset{
+    border: 0 none;
+}
+
+/*IE10버전 부터 img 디폴트 값으로 border값이 설정되어있다.
+다른 버전은 안보여서 없는 것으로 착각가능하기 때문에
+무조건 reset에서 border없애 줘야함*/
+
+img, input, select{
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: #222;
+    text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus{
+    color: #222;
+    text-decoration: underline;
+
+}
+.clearfix:after,
+.clearfix:before{
+    content: '';
+    display: block;
+    clear: both;
+    width: 100%;
+}

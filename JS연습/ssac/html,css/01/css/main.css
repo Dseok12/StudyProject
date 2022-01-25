@@ -1,0 +1,290 @@
+@charset "utf-8";
+
+.container{
+  width: 100%;
+  position: relative;
+}
+
+.visual_wrap{
+  width: 1920px;
+  position: relative;
+  margin: 0 auto;
+  height: 510px;
+}
+
+.visual_wrap .visual_btn_left{
+  left: 150px;
+  transform: rotate(-45deg);
+}
+
+.visual_wrap .visual_btn_right{
+  right: 150px;
+  transform: rotate(135deg);
+}
+
+.visual_wrap .btn{
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  border-top:1px solid #222;
+  border-left: 1px solid #222;
+}
+
+.visual_wrap .btn a{
+    display: block;
+  text-indent: -999px;
+}
+
+.visual_btn{
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0;
+}
+/*정중앙으로 보내고 싶을때
+left:50%
+transform: translateX(-50%)
+*/
+
+.visual_btn .on{
+  width: 80px;
+  background-color: #07c;
+}
+.visual_btn a{
+  width: 40px;
+  height: 5px;
+  background-color: #7c7c7c;
+  display: inline-block;
+  /* font-size: 12px;
+  display: block
+  float:left */
+  margin-left: 10px;
+  text-indent: -9999px;
+    
+}
+
+.visual_btn a:first-child{
+  margin-left: 0;
+}
+
+/*display: inline-block을 쓰면 옆으로 배열은 되지나
+원하지 않은 공백이 필수불가결 생김
+그때는 부모 엘리먼트에
+font-size: 0을 해주면 공백 사라지고
+자식 엘리먼트에 font-size:12 다시 설정해주면 
+font-size는 유지하면서 공백은 없앨수 있음 
+
+혹은 display: block 처리후 
+float:left값을 설정하면
+결과값은 동일하다 */
+
+.text_wrap{
+  position: absolute;
+  top: 100px;
+  left: 350px;
+}
+
+.text_wrap .visual_title{
+  font-size: 50px;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.text_wrap .visual_title span{
+  font-weight: 300;
+}
+.text_wrap .visual_text{
+  font-size: 30px;
+}
+.text_wrap .visual_btn_our{
+  display: block;
+  margin-top: 50px;
+  width: 200px;
+  height: 30px;
+  background-color: #999;
+  border-radius: 30px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.visual li a:hover{
+  color: #222;
+}
+
+.visual li a:hover .visual_btn_our{
+  background-color: #07c;
+  color: #fff;
+}
+
+.visual li{
+  width: 1920px;
+  height: 510px;
+}
+
+.visual li:nth-of-type(1){
+  background: url(../img/main_img01.jpg) no-repeat center;
+}
+
+
+.visual li:nth-of-type(2){
+  background: url(../img/main_img02.jpg) no-repeat center;
+  display: none;
+}
+
+
+.visual li:nth-of-type(3){
+  background: url(../img/main_img03.jpg) no-repeat center;
+  display: none;
+}
+
+/*
+차이점?
+.visual li:nth-of-type(1)
+남자중에 몇번쨰
+.visual li:nth-child(1)
+남자여자남자여자남자여자중에 몇번째 */
+
+/* 
+웹사이타 상에 그림 넣을때 기준 (소수자를 생각하면서- 모든 사용자 맞춤 )
+스크린리더기가 읽어야 하면 1) img 처리 / 2) 안읽어도 되면 background처리 하면됨 */
+
+
+.content_wrap{
+  width: 1200px;
+  margin: 50px auto;
+  position: relative;
+}
+
+/*padding은 안쪽 내용에 영향을 주기 때문에 margin처리를 해야 컨텐츠 영향 없이 공백처리 가능 */
+.content_wrap .contents_1{
+  float: left;
+  width: 770px;
+}
+
+.content_wrap .contents_2{
+  float: left;
+  width: 430px;
+}
+
+/*굳이 float:left , float:right할 필요없이
+둘다 left주고 width값만 잘 계산하면 된다. */
+
+.contents_1 .cont_div1{}
+
+.cont_div1 .company{
+  width: 385px;
+  float: left;
+  height: 250px;
+  background: url(../img/main_banner01.jpg) no-repeat 0 0;
+  background-size: cover;
+  position: relative;
+
+}
+
+.cont_div1 .company:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* --------------------------------------
+  이렇게 굳이 넓이 지정안해주고도
+  top,left,right,bottom 위치만 지정해주면
+  부모의 넓이로 부터 (100%, 100% 동일하게 만들어짐) 
+  width: 100%, height:100과 같은 의미이다*/
+  background-color: rgba(0,0,0,0.3);
+}
+
+.cont_div1 .company a,
+.cont_div1 .product_cont a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+  padding: 80px 30px 20px; /*위, 좌우, 하*/
+  text-decoration: none;
+  background: url('../img/icon_main_banner01.png') no-repeat center 20px;
+  /*background위치설정은 backgroun 맨 뒤에 넣으면됨, center 20px*/
+  box-sizing: border-box;
+}
+/*z-index는 position과 무조건 같이 써야함!!*/
+
+.cont_div1 .cont_h3{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 2px #ccc;
+}
+
+.cont_div1 .cont_text{
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  line-height: 25px;
+}
+
+.cont_div1 .product_cont{
+  width: 385px;
+  float: left;
+  height: 250px;
+  background-color: #bcbcbc;
+}
+
+.product_cont .cont_h3{
+  color: #222;
+}
+
+.product_cont .cont_text{
+  color: #222;
+}
+
+.cont_div2{
+  text-align: center;
+  float: left;
+}
+
+.cont_div2 .customer{
+  width: 385px;
+  height: 250px;
+  float: left;
+  background-color: #f0f0f0;
+}
+
+.cont_div2 .notice{
+  width: 385px;
+  height: 250px;
+  float: left;
+  background-color: #f5f5f5;
+}
+
+.cont_div2 .cont_div_h3{
+  font-size: 30px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

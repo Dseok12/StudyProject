@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+@font-face {
+  font-family:'Nanum';
+  font-weight:400;
+  src: url('../font/NanumGothic.eot');
+  src: url('../font/NanumGothic.eot?#iefix') format('embedded-opentype'),
+        url('../font/NanumGothic.woff') format('woff'),
+        url('../font/NanumGothic.ttf') format('truetype');
+}
+@font-face {
+  font-family:'NanumBold';
+  font-weight:600;
+  src: url('../font/NanumGothicBold.eot');
+  src: url('../font/NanumGothicBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/NanumGothicBold.woff') format('woff'),
+        url('../font/NanumGothicBold.ttf') format('truetype');
+}
+@font-face {
+  font-family:'NanumEX';
+  font-weight:900;
+  src: url('../font/NanumGothicExtraBold.eot');
+  src: url('../font/NanumGothicExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/NanumGothicExtraBold.woff') format('woff'),
+        url('../font/NanumGothicExtraBold.ttf') format('truetype');
+}

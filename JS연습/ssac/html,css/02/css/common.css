@@ -1,0 +1,130 @@
+@charset "utf-8";
+/*
+모든 회사에서 common.css파일을 굉장히 중요하게 본다. 
+common.css파일에는 매 페이지마다 반복되는 요소를 넣는다
+예를 들어, 
+폰트크기, 폰트색상, 
+서브페이지가 버튼이 모두 동일할 때 버튼,
+글자간 여백이 동일하게 반복될 때,
+float:left, right에서 float해제,
+컨텐츠 정렬(센터) 반복적으로 적용시,
+*/
+
+.fl{float: left;}
+.fr{float: right;}
+.fn{float: none;}
+
+/*우리가 float적용 원할때 픽해서 삽입만 하면 됨*/
+
+.tal{text-align: left;}
+.tar{text-align: right;}
+.tac{text-align: center;}
+
+/* ----margin---- */
+
+.mt5{margin-top: 5px;}
+.mt10{margin-top: 10px;}
+.mt15{margin-top: 15px;}
+.mt20{margin-top: 20px;}
+
+
+.mr5{margin-right: 5px;}
+.mr10{margin-right: 10px;}
+.mr15{margin-right: 15px;}
+.mr20{margin-right: 20px;}
+
+
+.mb5{margin-bottom: 5px;}
+.mb10{margin-bottom: 10px;}
+.mb15{margin-bottom: 15px;}
+.mb20{margin-bottom: 20px;}
+
+
+.ml5{margin-left: 5px;}
+.ml10{margin-left: 10px;}
+.ml15{margin-left: 15px;}
+.ml20{margin-left: 20px;}
+
+/* ----padding----- */
+
+.pt5{padding-top: 5px;}
+.pt10{padding-top: 10px;}
+.pt15{padding-top: 15px;}
+.pt20{padding-top: 20px;}
+
+
+.pr5{padding-right: 5px;}
+.pr10{padding-right: 10px;}
+.pr15{padding-right: 15px;}
+.pr20{padding-right: 20px;}
+
+
+.pb5{padding-bottom: 5px;}
+.pb10{padding-bottom: 10px;}
+.pb15{padding-bottom: 15px;}
+.pb20{padding-bottom: 20px;}
+
+
+.pl5{padding-left: 5px;}
+.pl10{padding-left: 10px;}
+.pl15{padding-left: 15px;}
+.pl20{padding-left: 20px;}
+
+/* -----font, color, button ... 모든 페이지에서 반복하여 적용되는 css를 설정----- */
+
+/*field set과 legend는 짝꿍 ---------------- field set과 legend가 정확하게 뭐징...? ---- */
+
+.skip,legend {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    /*text-indent:-9999px*/
+    /*text-indent는 인라인요소에서는 먹히질 않음. 반드시 블럭요소로 변환한 후 적용가능*/
+    position: absolute;
+    left: -999px;
+    line-height: 0;
+    display: block; /*inline-block도 가능,인라인요소만 아니면 됨*/
+
+    /*스크린 리더기는 읽지만 화면에는 안보여도 될때 쓰는 방법*/
+}
+
+#skipMenu{
+    position: relative;
+    width: 100%;
+    z-index: 999;
+}
+
+#skipMenu a{
+    position: absolute;
+    top: -100px;
+    /*화면 바깥으로 빠져서 skipMenu가 안보이면 됨*/
+}
+
+#skipMenu a:hover,
+#skipMenu a:active,
+#skipMenu a:focus {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: block;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*block요소이든, inline요소이든 width:100%주고
+height값 별도 설정 안했을때는 글자 크기 만큼만 크기를 잡음
+(대신 width는 100%적용됨)
+추후에 padding혹은 height값으로 변경해주기 */
+.btn{
+	border: 1px solid #fff;
+	border-radius: 3px;
+	text-align: center;
+	padding: 8px 10px;
+	cursor: pointer;
+	transition: all .3s;
+}
+.none{display: none;}
