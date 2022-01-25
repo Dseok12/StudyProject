@@ -30,6 +30,55 @@
       <input type="text" name="text" placeholder="이름을 입력하세요"><br/>
 
       <input type="search" name="search" title="제품검색" /><br/>
+      <input type="tel" name="tel" placeholder="010-0000-0000" /><br/>
+      <input type="url" name="url" value="http://" title="홈페이지 주소 입력" /><br/>
+      <input type="email" name="email" placeholder="이메일을 입력하세요" /><br/>
+      <input type="month" name="month" /><br/> <!-- ie 12 -->
+      <input type="date" name="date" /><br/> <!-- ie 12 -->
+      <input type="time" name="time" /><br/> <!-- ie 12 -->
+      <input type="week" name="week" /><br/> <!-- ie 12 -->
+      <input type="number" name="number" max="10" min="1" step="2" /><br/> <!-- ie 10 이상부터 지원-->
+      <input type="color" name="color" /><br/>
+      <input type="range" name="range" min="0" max="10" /><br/>
+      
+      <input list="web" name="web"/><br/>
+      <datalist id="web">
+        <option value="웹디자이너">
+        <option value="웹퍼블리셔">
+        <option value="프론트엔드">
+        <option value="백엔드">
+        <option value="웹기획">
+      </datalist>
+
+      <select name="select">
+        <option value="">다음</option>
+        <option value="">네이버</option>
+        <option value="">구글</option>
+      </select><br/>
+
+      <select name="ss">
+        <optgroup label="퍼블리셔">
+          <option value="">HTML</option>
+          <option value="">CSS</option>
+          <option value="">Javascript</option>
+          <option value="">jQuery</option>
+        </optgroup>
+        <optgroup label="프론트">
+          <option value="">HTML</option>
+          <option value="">CSS</option>
+          <option value="">Javascript</option>
+          <option value="">jQuery</option>
+          <option value="">Vue</option>
+        </optgroup>
+      </select><br/>
+
+      <input type="file" title="파일업로드"><br/>
+
+      <button>버튼전송</button><br/>
+      <input type="submit" value="전송"><br/>
+      <input type="reset" value="취소"><br/>
+      <input type="image" src="" alt="" title="검색"><br/>
+
     </fieldset>
   </form>
   <script src="./js/index.js"></script>
