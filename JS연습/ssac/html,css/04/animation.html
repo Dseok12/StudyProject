@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        ul,li,a,span,em{margin:0;padding:0;}
+        em{font-style:normal;}
+        ul{list-style:none;}
+        a{
+            text-decoration:none;
+            color:#222;
+        }
+
+        li{
+            display:inline-block;
+            width:150px;
+            text-align:center;
+        }
+
+        .link_box .link_icon{
+            display:block;
+            width:70px;
+            height:70px;
+            background-color:#d9d9d9;
+            border-radius:100%;
+            margin: 0 auto;
+        }
+
+        .shadow{
+            display:block;
+            width:100%;
+            height:100%;
+            box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+            border-radius:100%;
+        }
+
+        .link_icon1{
+            background:url(img/link_icon02-1.png) no-repeat 50% 50%;
+        }
+
+        .link_icon2{
+            background:url(img/link_icon03-1.png) no-repeat 50% 50%;
+        }
+
+        .link_icon3{
+            background:url(img/link_icon04-1.png) no-repeat 50% 50%;
+        }
+
+        .link_group a:hover .shadow{
+            animation: icon-shadow 1s linear 0s infinite;
+        }
+
+        @keyframes icon-shadow{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="link_group">
+            <a href="" class="link_box">
+                <span class="link_icon link_icon1">
+                    <em class="shadow"></em>
+                </span>
+                <em>일자리소식</em>
+            </a>
+        </li>
+
+        <li class="link_group">
+            <a href="" class="link_box">
+                <span class="link_icon link_icon2">
+                    <em class="shadow"></em>
+                </span>
+                <em>전자도서관</em>
+            </a>
+        </li>
+
+        <li class="link_group">
+            <a href="" class="link_box">
+                <span class="link_icon link_icon3">
+                    <em class="shadow"></em>
+                </span>
+                <em>당직병원</em>
+            </a>
+        </li>
+    </ul>
+</body>
+</html>

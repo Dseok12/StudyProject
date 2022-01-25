@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation3</title>
+    <style>
+        ul,li,a,span,em,div,p{margin:0;padding:0;}
+        em{font-style:normal;}
+        ul{list-style:none;}
+        a{text-decoration:none;
+            color:#222;}
+        img{border:none;}
+
+
+        .wrap{
+            width:800px;
+            height:230px;
+            background-color:#07c;
+            margin:50px auto;
+        }
+
+        .icon_wrap{
+            width:200px;
+            height:230px;
+            float:left;
+            transition: height 0.4s ease;
+        }
+
+        .icon1{background-color: rgb(0, 55, 94);}
+        .icon2{background-color:rgb(45, 165, 250)}
+        .icon3{background-color:rgb(148, 211, 255)}
+        .icon4{background-color:rgb(23, 116, 182)}
+
+        .shadow{
+            display:block;
+            margin: 70px auto 30px auto;
+            width:40px;
+            background-color:rgba(255,255,255,0.15);
+            padding:20px;
+            border-radius:100%;
+            box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
+            transition:box-shadow 0.4s ease;
+        }
+
+        .icon_wrap:hover .shadow{
+            box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.5)
+        }
+
+        .icon_wrap:hover{
+            height: 250px;
+        }
+
+        .text{
+            color:#fff;
+            margin-top:30px;
+            text-align:center;
+            transition: all 0.5 ease;
+        }
+
+        .icon_wrap:hover .text{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="icon_wrap icon1">
+            <img src="img/slide_banner_ico01.png" alt="" class="shadow">
+            <p class="text">Home</p>
+        </div>
+
+        <div class="icon_wrap icon2">
+            <img src="img/slide_banner_ico02.png" alt="" class="shadow">
+            <p class="text">Html</p>
+        </div>
+
+        <div class="icon_wrap icon3">
+            <img src="img/slide_banner_ico03.png" alt="" class="shadow">
+            <p class="text">Css</p>
+        </div>
+
+        <div class="icon_wrap icon4">
+            <img src="img/slide_banner_ico04.png" alt="" class="shadow">
+            <p class="text">Jquery</p>
+        </div>
+    </div>
+</body>
+</html>

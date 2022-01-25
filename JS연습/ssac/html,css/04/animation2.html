@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation2</title>
+    <style>
+        ul,li,a,span,em,div{margin:0;padding:0;}
+        em{font-style:normal;}
+        ul{list-style:none;}
+        a{text-decoration:none;
+            color:#222;}
+        img{border:none;}
+
+        .icon_wrap{
+            width:500px;
+            background-color:#07c;
+            margin:50px auto;
+        }
+
+        .icon_list{
+            width:500px;
+            height:85px;
+            overflow:hidden;
+        }
+
+        .icon_list li{
+            float:left;
+            position: relative;
+            width:83px;
+            height:85px;
+            overflow:hidden;
+        }
+
+        .icon_list li a{
+            display:block;
+        }
+
+        .icon_list li a img{
+            position:relative;
+            z-index:2;
+        }
+
+        .icon_list li a:hover img{
+            margin-top:-100px;
+        }
+
+        .icon_list li .bg{
+            position:absolute;
+            left:0;
+            bottom:-80px;
+            width:83px;
+            height:85px;
+            display:block;
+            background-color:red;
+            z-index:1;
+            transition: bottom 0.5s cubic-bezier(.33,1.42,.81,-0.53);
+        }
+
+        .icon_list li a:hover .bg{
+            bottom:0px;
+        }
+
+        .icon_list .welf .bg{
+            background:url(img/section_bg_welf.gif) repeat-x center top;
+        }
+        .icon_list .citybuild .bg{
+            background:url(img/section_bg_citybuild.gif) repeat-x center top;
+        }
+        .icon_list .economy .bg{
+            background:url(img/section_bg_economy.gif) repeat-x center top;
+        }
+        .icon_list .safe .bg{
+            background:url(img/section_bg_safe.gif) repeat-x center top;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="icon_wrap">
+        <ul class="icon_list">
+            <li class="icon welf">
+                <a href="">
+                    <img src="img/section_h_welf.png" alt="복지">
+                    <span class="bg"></span>
+                </a>
+            </li>
+
+            <li class="icon citybuild">
+                <a href="">
+                    <img src="img/section_h_citybuild.png" alt="주택도시계획">
+                    <span class="bg"></span>
+                </a>
+            </li>
+
+            <li class="icon economy">
+                <a href="">
+                    <img src="img/section_h_economy.png" alt="경제">
+                    <span class="bg"></span>
+                </a>
+            </li>
+
+            <li class="icon safe">
+                <a href="">
+                    <img src="img/section_h_safe.png" alt="안전">
+                    <span class="bg"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

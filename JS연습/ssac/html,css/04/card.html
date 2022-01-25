@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        ul,li,a,span,em,div,p{margin:0;padding:0;}
+        em{font-style:normal;}
+        ul{list-style:none;}
+        a{text-decoration:none;
+            color:#222;}
+        img{border:none;}
+
+        .card_wrap{
+            width:250px;
+            height:320px;
+            margin: 50px auto;
+        }
+
+        .card{
+            width:250px;
+            height:320px;
+            border-radius: 7px;
+            padding:10px;
+            box-sizing:border-box;
+            color:#fff;
+            position:absolute;
+            backface-visibility: hidden;
+            transition: transform 0.5s linear 0s;
+        }
+
+        .card h3{
+            margin-bottom:20px;
+        }
+
+        .back{
+            background-color: #07c;
+            transform:perspective(600px) rotateY(180deg);
+
+        }
+        .front{
+            background-color: #ffa500;
+            transform:perspective(600px) rotateY(0deg);
+        }
+
+
+        /* hover */
+
+        .card_wrap:hover .back{
+            transform:perspective(600px) rotateY(0deg);
+        }
+        .card_wrap:hover .front{
+            transform:perspective(600px) rotateY(-180deg);
+        }
+
+    </style>
+</head>
+<body>  
+    <div class="card_wrap">
+        <div class="back card">
+            <h3>백석여승</h3>
+            <p>여승은 합장하고 절을 했다
+                가지취의 내음새가 났다
+                쓸쓸한 낯이 옛날같이 늙었다
+                나는 불경처럼 시러워졌다.</p>
+        </div>
+        <div class="front card">
+            <h3>백석여승2</h3>
+            <p>평안도의 어늬 산 깊은 금덤판
+                나는 파리한 여인에게서 옥수수를 샀다.
+                여인은 나어린 딸아이를 따리며 가을밤같이 차게 울었다.</p>
+        </div>
+    </div>
+</body>
+</html>
