@@ -1,0 +1,178 @@
+@charset "utf-8";
+body,div,p,span,h3{
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    width: 800px;
+    height: 579px;
+    position: relative;
+    margin: 50px auto;
+    background: url(../img/flow_bg.jpg) no-repeat  0 0;
+}
+
+.spring{
+    font-size: 80px;
+    position: absolute;
+    top:150px;
+    left:280px;
+    color:#fff;
+    text-shadow: 1px 1px 2px rgba(1, 46, 21, 0.6);
+}
+
+.right_flower{
+    position: absolute;
+    top:0;
+    right:0;
+    width: 411px;
+    height: 439px;
+}
+.right_bg{
+    position: absolute;
+    top:0px;
+    right:0px;
+    background: url(../img/right_flow.png) no-repeat 0 0;
+    width: 411px;
+    height: 439px;
+
+}
+.bg_left1{
+    background: url(../img/leaf5.png) no-repeat;
+    width: 153px;
+    height: 134px;
+    position: absolute;
+    top:-40px;
+    right:40px;
+    display: inline-block;
+    animation: leaf1 7s ease 0s infinite normal;
+    transform-origin: ;
+}
+.bg_left2{
+    background: url(../img/leaf7.png) no-repeat;
+    width: 90px;
+    height:129px;
+    position: absolute;
+    top:120px;
+    right:70px;
+    display: inline-block;
+    
+}
+.bg_left3{
+    background: url(../img/leaf6.png) no-repeat;
+    width: 90px;
+    height: 138px;
+    position: absolute;
+    top:90px;
+    right:140px;
+    display: inline-block;
+}
+
+.bg_flower1{
+    background: url(../img/leaf1.png) no-repeat 0 0;
+    width: 21px;
+    height: 38px;
+    display: inline-block;
+    position: absolute;
+    top:180px;
+    right:180px;
+
+}
+.bg_flower2{
+    background: url(../img/leaf2.png) no-repeat 0 0;
+    width: 18px;
+    height: 35px;
+    display: inline-block;
+    position: absolute;
+    top:100px;
+    right:140px;
+}
+
+.bg_dot{
+    position: absolute;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 80%);
+    /*background:radial-gradient(#fff,transparent)*/
+    border-radius: 100%;
+    opacity: 0;
+}
+.dot1{
+    width: 10px;
+    height: 10px;
+    top:120px;
+    right:150px;
+    z-index:10
+}
+.dot2{
+    width: 16px;
+    height: 16px;
+    top:105px;
+    right:170px;
+    z-index:10
+}
+.dot3{
+    width: 12px;
+    height: 12px;
+    top:60px;
+    right:100px;
+    z-index:10
+}
+
+
+
+.left_flower{
+    position: absolute;
+    bottom:50px;
+    left:100px;
+    background: url(../img/fox.png) no-repeat 0 0;
+    width: 260px;
+    height: 230px;
+}
+.left_bg{
+    position: absolute;
+    bottom:-30px;
+    left:-10px;
+    background: url(../img/left_flow.png) no-repeat 0 0;
+    width: 405px;
+    height: 448px;
+}
+
+.bg_left4{
+    background: url(../img/leaf3.png) no-repeat;
+    width: 101px;
+    height:141px;
+    position: absolute;
+    bottom:-58px;
+    left:160px;
+    display: inline-block;
+}
+.bg_left5{
+    background: url(../img/leaf4.png) no-repeat;
+    width: 88px;
+    height:150px;
+    position: absolute;
+    top:-150px;
+    left:-120px;
+    display: inline-block;
+}
+
+.dot4{
+    width: 10px;
+    height: 10px;
+    bottom:120px;
+    left:100px;
+    z-index:10
+}
+.dot5{
+    width: 16px;
+    height: 16px;
+    bottom:105px;
+    left:120px;
+    z-index:10
+}
+.dot6{
+    width: 12px;
+    height: 12px;
+    bottom:60px;
+    left:80px;
+    z-index:10
+}
