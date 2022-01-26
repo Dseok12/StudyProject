@@ -14,10 +14,11 @@ body,div,p,span,h3{
 .spring{
     font-size: 80px;
     position: absolute;
-    top:150px;
+    top:200px;
     left:280px;
     color:#fff;
     text-shadow: 1px 1px 2px rgba(1, 46, 21, 0.6);
+    animation: slideY 2s linear;
 }
 
 .right_flower{
@@ -89,6 +90,8 @@ body,div,p,span,h3{
     position: absolute;
     top:100px;
     right:140px;
+    animation: flower2 5s ease 0s infinite alternate;
+    transform-origin: 100% 0%;
 }
 
 .bg_dot{
@@ -104,21 +107,27 @@ body,div,p,span,h3{
     height: 10px;
     top:120px;
     right:150px;
-    z-index:10
+    z-index:10;
+    animation: dot1 5s ease .2s infinite alternate;
+    transform-origin: 100% 0%;
 }
 .dot2{
     width: 16px;
     height: 16px;
     top:105px;
     right:170px;
-    z-index:10
+    z-index:10;
+    animation: dot2 3s ease 1s infinite alternate;
+    transform-origin: 100% 0%;
 }
 .dot3{
     width: 12px;
     height: 12px;
     top:60px;
     right:100px;
-    z-index:10
+    z-index:10;
+    animation: dot3 4s ease .5s infinite alternate;
+    transform-origin: 100% 0%;
 }
 
 
@@ -148,6 +157,8 @@ body,div,p,span,h3{
     bottom:-58px;
     left:160px;
     display: inline-block;
+    animation: leaf4 5s ease 0s infinite alternate;
+    transform-origin: 100% 100%;
 }
 .bg_left5{
     background: url(../img/leaf4.png) no-repeat;
@@ -157,6 +168,8 @@ body,div,p,span,h3{
     top:-150px;
     left:-120px;
     display: inline-block;
+    animation: leaf5 5s ease 0s infinite alternate;
+    transform-origin: 100% 100%;
 }
 
 .dot4{
@@ -183,7 +196,7 @@ body,div,p,span,h3{
 
 @keyframes leaf1{
     20%{
-        transform: rotate(-1deg)
+        transform: rotate(-1deg);
     }
     60%{
         transform: rotate(1deg);
@@ -194,7 +207,7 @@ body,div,p,span,h3{
 }
 @keyframes leaf2{
     20%{
-        transform: rotate(-1deg)
+        transform: rotate(-1deg);
     }
     60%{
         transform: rotate(1deg);
@@ -205,7 +218,7 @@ body,div,p,span,h3{
 }
 @keyframes leaf3{
     20%{
-        transform: rotate(-3deg)
+        transform: rotate(-3deg);
     }
     60%{
         transform: rotate(3deg);
@@ -214,14 +227,93 @@ body,div,p,span,h3{
         transform: rotate(0deg);
     }
 }
-@keyframes flower1{
+@keyframes leaf4{
     20%{
-        transform: scale(1,1) rotate(-100deg) translate(-40px, -40px)
+        transform: rotate(-2deg);
     }
-    80%{
-        transform: scale(0.5,0.5) rotate(16deg) translate(-150px, -160px)
+    60%{
+        transform: rotate(6deg);
     }
     100%{
-        transform: scale(0.5,0.5) rotate(20deg) translate(-10px, 250px)
+        transform: rotate(0deg);
+    }
+}
+@keyframes leaf5{
+    20%{
+        transform: rotate(-1deg);
+    }
+    60%{
+        transform: rotate(6deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes flower1{
+    20%{
+        transform: scale(1,1) rotate(0deg) translate(-150px, 150px);
+        opacity: 0;
+    }
+    80%{
+        transform: scale(0.5,0.5) rotate(0deg) translate(-150px, 150px);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(0.5,0.5) rotate(20deg) translate(-230px, 300px);
+        opacity: 1;
+    }
+}
+@keyframes flower2{
+    20%{
+        transform: scale(1,1) rotate(-100deg) translate(-50px, -90px);
+        opacity: 0;
+    }
+    80%{
+        transform: scale(0.5,0.5) rotate(16deg) translate(-100px, -80px);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(0.5,0.5) rotate(10deg) translate(-20px, 600px);
+        opacity: 1;
+    }
+}
+@keyframes dot1{
+    0%{
+        transform: scale(1,1) translate(-50px, -90px);
+        opacity: 0.8;
+    }
+    100%{
+        transform: scale(0.7,0.7) translate(-20px, 600px);
+        opacity: 0;
+    }
+}
+@keyframes dot2{
+    0%{
+        transform: scale(1,1) translate(-50px, -90px);
+        opacity: 0.8;
+    }
+    100%{
+        transform: scale(0.7,0.7) translate(-20px, 600px);
+        opacity: 0;
+    }
+}
+@keyframes dot3{
+    0%{
+        transform: scale(1,1) translate(-50px, -90px);
+        opacity: 0.8;
+    }
+    100%{
+        transform: scale(0.7,0.7) translate(-20px, 600px);
+        opacity: 0;
+    }
+}
+@keyframes slideY{
+    0%{
+        transform:translateY(200px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateY(0px);
+        opacity: 1;
     }
 }
