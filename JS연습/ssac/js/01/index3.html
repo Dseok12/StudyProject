@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main3.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrap">
+    <div class="typeBox">
+      <ul>
+        <li>
+          <input type="radio" name="selectType" checked="checked" id="celIp" onclick="showIpin()" />
+          <label for="celIp"><img src="./img/ipinTxt.jpg" alt="아이핀"></label>
+        </li>
+        <li>
+          <input type="radio" name="selectType" id="celPhone" onclick="showCellPhone()" />
+          <label for="celPhone"><img src="./img/celPhoneTxt.jpg" alt="휴대폰"></label>
+        </li>
+      </ul>
+    </div>
+    <div class="info" id="txtContainer">
+      아이핀 인증으로 실명확인을 진행하려면 아래 <span>'아이핀인증받기'</span>를 클릭해 주세요.
+    </div>
+    <div class="okBtn" id="btnContainer">
+      <a href="">
+        <img src="./img/ipinOkBtn.jpg" alt="아이핀인증받기">
+      </a>
+    </div>
+  </div>
+  <script type="text/javascript" src="./js/index3.js"></script>
+</body>
+</html>
