@@ -44,7 +44,7 @@ body,div,p,span,h3{
     top:-40px;
     right:40px;
     display: inline-block;
-    animation: leaf1 7s ease 0s infinite normal;
+    animation: leaf1 5s ease 0s infinite alternate;
     transform-origin: 100% 100%;
 }
 .bg_left2{
@@ -55,7 +55,8 @@ body,div,p,span,h3{
     top:120px;
     right:70px;
     display: inline-block;
-    
+    animation: leaf2 5s linear 0s infinite alternate;
+    transform-origin: 100% 0%;
 }
 .bg_left3{
     background: url(../img/leaf6.png) no-repeat;
@@ -65,6 +66,8 @@ body,div,p,span,h3{
     top:90px;
     right:140px;
     display: inline-block;
+    animation: leaf3 5s ease 0s infinite alternate;
+    transform-origin: 100% 0%;
 }
 
 .bg_flower1{
@@ -75,7 +78,8 @@ body,div,p,span,h3{
     position: absolute;
     top:180px;
     right:180px;
-
+    animation: flower1 5s ease 0s infinite alternate;
+    transform-origin: 100% 0%;
 }
 .bg_flower2{
     background: url(../img/leaf2.png) no-repeat 0 0;
@@ -175,4 +179,49 @@ body,div,p,span,h3{
     bottom:60px;
     left:80px;
     z-index:10
+}
+
+@keyframes leaf1{
+    20%{
+        transform: rotate(-1deg)
+    }
+    60%{
+        transform: rotate(1deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes leaf2{
+    20%{
+        transform: rotate(-1deg)
+    }
+    60%{
+        transform: rotate(1deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes leaf3{
+    20%{
+        transform: rotate(-3deg)
+    }
+    60%{
+        transform: rotate(3deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes flower1{
+    20%{
+        transform: scale(1,1) rotate(-100deg) translate(-40px, -40px)
+    }
+    80%{
+        transform: scale(0.5,0.5) rotate(16deg) translate(-150px, -160px)
+    }
+    100%{
+        transform: scale(0.5,0.5) rotate(20deg) translate(-10px, 250px)
+    }
 }
