@@ -45,7 +45,7 @@ body,div,p,span,h3{
     right:40px;
     display: inline-block;
     animation: leaf1 7s ease 0s infinite normal;
-    transform-origin: ;
+    transform-origin: 100% 100%;
 }
 .bg_left2{
     background: url(../img/leaf7.png) no-repeat;
