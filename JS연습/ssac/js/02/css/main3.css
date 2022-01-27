@@ -1,10 +1,58 @@
 @charset "utf-8";
+.linkwrap{
+  width: 30%;
+  margin: 50px auto;
+  position: relative;
+  border: 5px solid #4c5260;
+}
 
+h3{
+  background-color: #4c5260;
+  line-height: 40px;
+}
 
+h3 a{
+  display: block;
+  color: #fff;
+}
 
+.list li {
+  line-height: 36px;
+  border-bottom: 1px dotted #d9d9d9;
+  transition: background .3s;
+}
+.list li:hover {
+  background-color: #f1f1f1;
+}
+.list li a{
+  display: block;
+  padding-left: 20px;
+  transition: color .3s;
+  color: #222;
+}
+.list li:hover a{
+  background-color: #f1f1f1;
+  color: #000;
+}
 
+.on{
+  position: absolute;
+  right: -5px;
+  bottom: -28px;
+  background-color: #4c5260;
+  padding: 5px;
+  color: #fff;
+  cursor: pointer;
+}
 
+.off{
+  display: none;
+  transition: all .3s;
+}
 
+.over{
+  display: block;
+}
 
 
 

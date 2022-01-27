@@ -1,1 +1,33 @@
 @charset "utf-8";
+
+.banner{
+  width: 697px;
+  height: 326px;
+  overflow: hidden;
+  position: relative;
+  margin: 50px auto;
+}
+
+/* 움직이는건 bannerList */
+.bannerList{
+  width: 3485px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.bannerList li{
+  float: left;
+}
+
+.banner span{
+  position: absolute;
+  top: 150px;
+  z-index: 10;
+}
+.banner .leftBtn{
+  left: 0;
+}
+.banner .rightBtn{
+  right: 0;
+}
