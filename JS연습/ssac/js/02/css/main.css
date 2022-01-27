@@ -1,5 +1,104 @@
 @charset "utf-8";
+body, div, h3, input, img, dl, dt, dd, ul, li, a, button, span{margin: 0; padding: 0;}
+body{ 
+    font-size: 12px;
+    color: #222;
+    font-family: 'Courier New', Courier, monospace;
+}
 
+ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+img{border: none}
+a{text-decoration: none;}
+.wrap{
+    width: 900px;
+    height: 500px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.product_list{
+    border-bottom: 2px solid #222;
+    margin-bottom: 10px;
+}
+
+.product_list li{
+    float:left;
+    width: 200px;
+    line-height: 30px;
+    text-align: center;
+}
+.product_list li a{
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    color: #222;
+}
+
+.select{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 16px;
+    /* display: none; */
+}
+#product {overflow: hidden;}
+.productImg{
+    float: left;
+    margin-right: 20px;
+    width: 494px;
+    display: block;
+
+    /* float: left;display: inline-block;같이 쓰면 두개가 중복되는 내용이라 문제있다고 
+    엔진이 잡아준다. (둘다 옆으로 보내는 성질) 따라서 display를 block으로 변경해주면 됨. */
+}
+.product_text{
+    float: left;
+    width: 350px;
+}
+
+.product_text strong{
+    font-style: 22px;
+    letter-spacing: -0.02em;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+/*strong은 인라인 요소이기 때문에 그냥 margin-bottom하면 안먹힘
+display: inline-block설정해줘야함*/
+
+.product_text dl{
+    font-size: 16px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+/*자식요소들이 모두 float라 float해제를 위해 overflow:hidden처리*/
+.product_text dl dt{
+    float: left;
+    padding: 20px 0;
+    margin-right: 30px;
+}
+
+.product_text dl dd{
+    padding: 20px 0;
+    letter-spacing: -0.05em;
+}
+
+.product_btn{
+height: 40px;
+width: 100px;
+background-color: #222;
+color: #fff;
+border : none;
+margin-right: 10px;
+
+}
+
+.off{
+display: none;
+}
 
 
 

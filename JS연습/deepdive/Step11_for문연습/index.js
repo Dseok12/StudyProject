@@ -770,16 +770,16 @@ const 소수갯수찾기 = (n) => {
   */
 
   let answer = 0;
-  let 갯수 = 0;
+  let count = 0;
 
   for(let i = 2; i <= n; i++){
     for(let j = 1; j <= i; j++){
       if( i % j === 0 && i / 1 === i) {
-        // console.log(`[${i},${j}] if 부분`)
-        갯수++
+        console.log(`[${i},${j}] if 부분`)
+        count++
       } else {
         // 소수가 아닌 애들 부분
-        // console.log(`[${i},${j}] else 부분`)
+        console.log(`[${i},${j}] else 부분`)
         answer++
       }
     }
@@ -793,7 +793,7 @@ const 소수갯수찾기 = (n) => {
 // 소수갯수찾기(2)
 // 소수갯수찾기(3)
 // 소수갯수찾기(4)
-소수갯수찾기(5)
+// 소수갯수찾기(5)
 // 소수갯수찾기(6)
 // 소수갯수찾기(7)
 // 소수갯수찾기(8)
