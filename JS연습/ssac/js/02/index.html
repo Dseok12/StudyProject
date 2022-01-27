@@ -11,34 +11,34 @@
 <body>
   <div class="wrap">
     <ul class="product_list">
-        <li>
-            <a href="" onclick="product_btn(); return false;">PRODUCT</a>
-            <!--return false;를 넣지 않으면 a링크와 onclick이 두번 실행되기 때문에 (순서:onclick-> a링크)
-            console.log로 나타나지 않는다. -->
-        </li>
-        <li>
-            <a href="">EVENT</a>
-        </li>
+      <li>
+        <a href="" onclick="product_btn(); return false;">PRODUCT</a>
+        <!--return false;를 넣지 않으면 a링크와 onclick이 두번 실행되기 때문에 (순서:onclick-> a링크)
+        console.log로 나타나지 않는다. -->
+      </li>
+      <li>
+        <a href="">EVENT</a>
+      </li>
     </ul>
     <div class="select">
-        PRODUCT를 선택시 제품을 확인할 수 있습니다.
+      PRODUCT를 선택시 제품을 확인할 수 있습니다.
     </div>
 
-    <div class="off" id="product">
-        <span class="productImg">
-            <img src="./images/product.png" alt="">
-        </span>
-        <div class="product_text">
-            <strong>[1+1] 아르간 대용량 클렌징오일</strong>
-            <dl>
-                <dt>정상가</dt><dd><s>36,000원</s></dd>
-                <dt>판매가</dt><dd>18,000원</dd>
-                <dt>제품설명</dt><dd>영양과 보습이 뛰어난 아르간<br/>커넬오일을 담은 건강한 딥클렌징 오일</dd>
-            </dl>
-            <button class="product_btn">바로구매</button>
-            <button class="product_btn">취소</button>
-        </div>
+  <div class="off" id="product">
+    <span class="productImg">
+      <img src="./img/product.png" alt="">
+    </span>
+    <div class="product_text">
+      <strong>[1+1] 아르간 대용량 클렌징오일</strong>
+      <dl>
+          <dt>정상가</dt><dd><s>36,000원</s></dd>
+          <dt>판매가</dt><dd>18,000원</dd>
+          <dt>제품설명</dt><dd>영양과 보습이 뛰어난 아르간<br/>커넬오일을 담은 건강한 딥클렌징 오일</dd>
+      </dl>
+      <button class="product_btn" onclick="purchase_btn();">바로구매</button>
+      <button class="product_btn" onclick="cancel_btn()">취소</button>
     </div>
+  </div>
 </div>
   <script src="./js/index.js"></script>
 </body>

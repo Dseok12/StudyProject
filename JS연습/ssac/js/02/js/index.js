@@ -8,9 +8,35 @@ function product_btn(){
 className호출시에는 여러개 선택가능하므로 몇번째 클래스인지 꼭 지정해줘야 함. 
 필요한 곳에는 off를 넣고, 필요없는 곳에서는 off를 빼면서 작업함.*/
 
+function purchase_btn() {
+  document.getElementsByTagName('button')[0].setAttribute('class', 'product_btn select_btn')
+  var newNode = document.createElement('div');
+  // console.log(newNode)
+  var newText = "<span>[1+1] 아르간 대용량 클렌징오일을 선택하셨습니다.</span><br/>구매시 <strong>환불 또는 교환</strong>이 어려우니 다시 한번 더 확인 부탁드립니다."
+  // console.log(newText)
+  newNode.innerHTML = newText;
+  // console.log(newNode)
 
+  // createElement에서 만든 div에 class="insertText" 를 만들어주는 것
+  var newAtt = document.createAttribute('class');
+  newAtt.value = "insertText";
 
+  // setAttributeNode는 속성장착
+  newNode.setAttributeNode(newAtt)
+  console.log(newNode)
 
+  // 자식 노드를 찾는거를 childNode
+  var newTag = document.getElementsByClassName('product_text')[0];
+  // console.log(newTag.children)
+  // console.log(newTag.childNodes)
+  newTag.insertBefore(newNode, newTag.childNodes[8])
+
+  // 계속 추가하는거 막기
+}
+
+function cancel_btn() {
+
+}
 
 
 
