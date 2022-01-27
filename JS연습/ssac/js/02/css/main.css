@@ -103,9 +103,25 @@ display: none;
 .select_btn{
   background-color: rgb(225, 0, 119);
 }
-
-
-
+.insertText{
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.8;
+  border: 1px solid hotpink;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+.insertText strong{
+  color: rgb(225, 0, 119);
+  font-weight: bold;
+  font-size: 18px;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+.cancelText {
+  margin-top: 50px;
+  text-align: center;
+}
 
 
 
