@@ -19,13 +19,22 @@ input{
   border: none;
   cursor: pointer;
   border-radius: 10px;
-  transition: background .3s;
 }
 .submitBtn:hover{
   background-color: rgb(49, 131, 224);
 }
-
-
+.removeBtn{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: rgb(228, 5, 143);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.removeBtn:hover{
+  background-color: rgb(221, 61, 160);
+}
 
 
 

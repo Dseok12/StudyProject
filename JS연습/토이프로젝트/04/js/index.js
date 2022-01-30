@@ -3,6 +3,15 @@ const _get = (target) => {
   return document.querySelector(target)
 }
 
+function _remove () {
+  var _remove = _get('.removeBtn')
+  _remove.addEventListener('click', () => {
+    localStorage.removeItem('id')
+    localStorage.removeItem('pw')
+  })
+}
+
+
 function _submit (e) {
   e.preventDefault();
   e.stopPropagation();
@@ -12,15 +21,25 @@ function _submit (e) {
   var _id = idInput.value;
   var _pw = pwInput.value;
   
-  if(_id === '' || _pw === ''){
+  if(_id === ''){
     idInput.focus()
-    alert('아이디 혹은 비밀번호를 입력하세요.')
+    alert('아이디를 입력하세요.')
+  } else if(_pw === '') {
+    pwInput.focus()
+    alert('비밀번호를 입력하세요.')
     return
   }
 
-  fetch('http://127.0.0.1:5500/04/index.html')
-    .then(console.log('Hi'))
-    .catch((err) => console.error(err))
+  try{
+    localStorage.setItem('id', _id)
+    localStorage.setItem('pw', _pw)
+    alert("로컬스토리지에 데이터 넣기 성공!!")
+    console.log("로컬스토리지에 데이터 넣기 성공!!")
+  } catch {
+    alert("로컬스토리지에 데이터 넣기 실패")
+    console.error(error)
+  }
+
 
 }
 
@@ -40,8 +59,8 @@ function bindSubmitBtn () {
 
 function main () {
   bindSubmitBtn()
-
-  var token = getToken();
+  _remove()
+  
 }
 
 window.addEventListener('DOMContentLoaded', main)
