@@ -1,10 +1,37 @@
 @charset "utf-8";
 .section01{
-  
+  width: 100%;
+  height: 100vh;
+  background: url('../img/bg01.jpg') no-repeat center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }
 
+.cover_bg{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  position: absolute;
+  left: 0; top: 0;
+}
 
-
+.section01 .text_box{
+  color: #fff;
+}
+.section01 .text_box .title h3{
+  font-family: 'encobki';
+  font-size: 50px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+.section01 .text_box .content{}
+.section01 .text_box .content p{
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
 
 
 
