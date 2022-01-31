@@ -26,6 +26,9 @@
 body{
   font-family: 'Noto Sans KR', sans-serif;
 }
+address{
+  font-style: normal;
+}
 
 .inner{
   width: calc(100% - 290px);
@@ -108,5 +111,5 @@ body{
   }
 }
 @media screen and (max-width:450px){
-  
+
 }

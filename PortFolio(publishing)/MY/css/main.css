@@ -1,4 +1,7 @@
 @charset "utf-8";
+.section01{
+  
+}
 
 
 
@@ -72,8 +75,18 @@
 
 
 
-
-
+@media screen and (max-width:1600px){
+  
+}
+@media screen and (max-width:1024px){
+  
+}
+@media screen and (max-width:769px){
+  
+}
+@media screen and (max-width:450px){
+  
+}
 
 
 

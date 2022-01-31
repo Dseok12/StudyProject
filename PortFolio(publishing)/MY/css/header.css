@@ -1,6 +1,8 @@
 @charset "utf-8";
 .header{
   width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(20, 94, 206);
 }
 .sub_inner .logo_box{
   width: 285px;
