@@ -27,7 +27,11 @@ const _get = (target) => {
 
 
 
+function main () {
 
+}
+
+window.addEventListener('DOMContentLoaded', main)
 
 
 

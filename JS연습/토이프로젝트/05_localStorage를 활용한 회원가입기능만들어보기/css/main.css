@@ -1,8 +1,41 @@
 @charset "utf-8";
+.wrap_box{
+  width: 60%;
+  margin: 80px auto;
+  background-color: rgb(241, 241, 241);
+  padding: 15px 10px;
+}
+.wrap_box form{
+  width: 90%;
+  margin: 0 auto;
+}
+.wrap_box label{
+  margin-left: 3.5%;
+}
+.wrap_box input{
+  display: block;
+  width: 90%;
+  height: 30px;
+  margin: 0 auto;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 
-
-
-
+.wrap_box .submitBtn{
+  width: 80%;
+  height: 40px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(218, 66, 6);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+.wrap_box .submitBtn:hover{
+  background-color: rgb(243, 134, 91);
+}
 
 
 

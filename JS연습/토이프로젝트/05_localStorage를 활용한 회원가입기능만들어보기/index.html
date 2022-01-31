@@ -6,10 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
-  <title>Document</title>
+  <title>localStorage 활용해보기 02</title>
 </head>
 <body>
-  
+  <div class="wrap_box">
+    <form action="" class="form_box" id="formBox">
+      <label for="id">아이디: </label>
+        <input
+          type="text"
+          value=""
+          class="id"
+          id="id"
+          required
+          placeholder="아이디를 입력해주세요"
+        />
+      <label for="nickName">닉네임: </label>
+        <input
+          type="text"
+          value=""
+          class="nickname"
+          id="nickName"
+          required
+          placeholder="닉네임을 입력해주세요"
+        />
+      <label for="pw01">비밀번호: </label>
+        <input
+          type="password"
+          value=""
+          class="pw01"
+          id="pw01"
+          required
+          placeholder="비밀번호를 입력해주세요."
+        />
+      <label for="pw02">비밀번호 확인: </label>
+        <input
+          type="password"
+          value=""
+          class="pw02"
+          id="pw02"
+          required
+          placeholder="비밀번호를 확인해주세요."
+        />
+      <input type="submit" value="회원가입하기" class="submitBtn" />
+    </form>
+  </div>
   <script src="./js/index.js"></script>
 </body>
 </html>
