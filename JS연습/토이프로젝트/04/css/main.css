@@ -1,9 +1,14 @@
 @charset "utf-8";
-#form_box{
+
+.wrap_box{
   width: 50%;
   margin: 50px auto;
   padding: 10px;
   background-color: #eee;
+}
+
+#form_box{
+  width: 100%;
 }
 input{
   display: block;
@@ -36,7 +41,12 @@ input{
   background-color: rgb(221, 61, 160);
 }
 
-
+.user_name{
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 10px 0;
+}
 
 
 
