@@ -64,30 +64,25 @@ function _submit (e) {
 }
 
 
-function getToken () {
-  return localStorage.getItem('token');
-}
-
-
 function inputInfo () {
   var formBox = document.querySelector('#form_box')
   formBox.addEventListener('submit', _submit)
 }
-
 
 function bindSubmitBtn () {
   var _submitBtn = document.querySelector('.submitBtn')
   _submitBtn.addEventListener('click', _submit)
 }
 
-
-window.addEventListener('DOMContentLoaded', main)
-
 function main () {
   bindSubmitBtn()
   _remove()
   isUserName()
 }
+
+window.addEventListener('DOMContentLoaded', main)
+
+
 
 
 

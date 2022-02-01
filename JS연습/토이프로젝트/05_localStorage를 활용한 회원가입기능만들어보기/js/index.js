@@ -8,43 +8,68 @@ function makeId() {
   var _id = _get('.id');
   var idValue = _id.value;
 
-  localStorage.setItem('ID', idValue)
+  try{
+    localStorage.setItem('ID', idValue)
+  } catch {
+    console.error(error)
+  }
 }
 
 function makeNick() {
   var _nick = _get('.nickname');
   var nickValue = _nick.value;
 
-  localStorage.setItem('nickname', nickValue);
+  try{
+    localStorage.setItem('nickname', nickValue);
+  } catch {
+    console.error(error)
+  }
 }
 
 function makePw() {
   var _makePw = _get('.pw01');
   var _makePwValue = _makePw.value;
 
-  localStorage.setItem('password', _makePwValue);
+  try{
+    localStorage.setItem('password', _makePwValue);
+  } catch {
+    console.error(error)
+  }
 }
 
+// 2차 비밀번호 확인하기
 function comparePw() {
   var _comparePw = _get('.pw02')
   var _comparePwValue = _comparePw.value
   var compare01 = localStorage.getItem('password')
 
-  if(_comparePwValue !== compare01){
-    alert('비밀번호가 다릅니다!!!!')
+  try{
+    if(_comparePwValue !== compare01){
+      alert('비밀번호가 다릅니다!!!!')
+    } else {
+      location.assign('http://www.ostone.co.kr/')
+    }
+  } catch {
+    console.error(error)
   }
 }
+// //2차 비밀번호 확인하기
 
 function submitForm() {
+  comparePw();
   makeId();
   makeNick();
   makePw();
-  comparePw();
 }
 
-function submitBtn(e) {
+function bindBtn (e) {
   e.preventDefault();
-  e.stopPropagation();
+  var _form = _get('#formBox')
+
+  _form.addEventListener('submit', submitForm)
+}
+
+function submitBtn() {
   var _submit = _get('.submitBtn')
   
   _submit.addEventListener('click', submitForm)
