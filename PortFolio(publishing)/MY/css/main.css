@@ -1,7 +1,7 @@
 @charset "utf-8";
 .section01{
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background: url('../img/bg01.jpg') no-repeat center bottom;
   background-size: cover;
   background-attachment: fixed;
@@ -18,25 +18,69 @@
 
 .section01 .text_box{
   color: #fff;
+  margin-top: 150px;
 }
 .section01 .text_box .title h3{
   font-family: 'encobki';
   font-size: 50px;
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 30px;
   letter-spacing: 2px;
 }
 .section01 .text_box .content{}
 .section01 .text_box .content p{
   font-size: 20px;
   font-weight: 600;
-  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 13px;
   letter-spacing: 1px;
 }
 
-
-
-
-
+.section01_banner{
+  width: 100%;
+  background-color: rgb(20, 94, 206);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.section01_banner .inner{
+  padding: 2.5rem 0 3rem 0;
+}
+.section01_banner .inner .text_info{
+  float: left;
+  vertical-align: middle;
+}
+.section01_banner .inner .text_info span{
+  display: block;
+  font-family: 'encobki';
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
+.section01_banner .inner a{
+  display: block;
+  float: right;
+  font-family: 'encobki';
+  font-size: 20px;
+  color: #fff;
+  background-color: rgb(104, 150, 235);
+  padding: 1rem;
+  border-radius: 50px;
+  transition: all .3s;
+}
+.section01_banner .inner a:hover{
+  background-color: rgb(133, 174, 252);
+  box-shadow: 3px 3px 5px #000;
+}
+/* //section01 */
+/* section02 */
+.section02{
+  width: 100%;
+  position: relative;
+}
+.section02 .inner{}
+/* //section02 */
 
 
 
@@ -106,13 +150,33 @@
   
 }
 @media screen and (max-width:1024px){
-  
+  .section01_banner .inner{
+    padding: 1.8rem 0 2.8rem 0;
+  }
+  .section01_banner .inner .text_info span{
+    font-size: 25px;
+    margin-top: 8px;
+  }
+  .section01_banner .inner a{
+    font-size: 18px;
+    padding: .8rem;
+  }
 }
 @media screen and (max-width:769px){
   
 }
 @media screen and (max-width:450px){
-  
+  .section01_banner .inner{
+    padding: 1.8rem 0 2.8rem 0;
+  }
+  .section01_banner .inner .text_info span{
+    font-size: 20px;
+    margin-top: 8px;
+  }
+  .section01_banner .inner a{
+    font-size: 18px;
+    padding: .5rem;
+  }
 }
 
 
