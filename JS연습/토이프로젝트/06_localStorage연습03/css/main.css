@@ -1,10 +1,71 @@
 @charset "utf-8";
-
-
-
-
-
-
+.wrap{
+  width: 100%;
+}
+.inner{
+  width: 90%;
+  margin: 50px auto;
+  background-color: #eee;
+  padding: 2rem 0;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+form{
+  width: 90%;
+  margin: 0 auto;
+}
+.id_box{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.id_box label{
+  margin-right: 10px;
+}
+.id_box input{
+  width: 70%;
+  padding: 5px;
+}
+.pw_box{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pw_box label{
+  margin-right: 10px;
+}
+.pw_box input{
+  width: 68%;
+  padding: 5px;
+}
+.btn_box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn_box input{
+  display: block;
+  width: 30%;
+  margin-left: 10px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+.btn_box .login_btn{
+  background-color: rgb(32, 114, 236);
+}
+.btn_box .login_btn:hover{
+  background-color: rgb(63, 136, 247);
+}
+.btn_box .loginout_btn{
+  background-color: rgb(236, 32, 168);
+}
+.btn_box .loginout_btn:hover{
+  background-color: rgb(247, 63, 201);
+}
 
 
 
