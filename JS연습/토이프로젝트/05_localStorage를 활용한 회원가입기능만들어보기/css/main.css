@@ -36,8 +36,20 @@
 .wrap_box .submitBtn:hover{
   background-color: rgb(243, 134, 91);
 }
-
-
+.wrap_box .removeBtn{
+  width: 80%;
+  height: 40px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(170, 0, 0);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+.wrap_box .removeBtn:hover{
+  background-color: rgb(192, 55, 55);
+}
 
 
 

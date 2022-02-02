@@ -3,6 +3,17 @@ const _get = (target) => {
   return document.querySelector(target)
 }
 
+function removeLocal() {
+  localStorage.removeItem('ID')
+  localStorage.removeItem('password')
+  localStorage.removeItem('nickname')
+}
+
+function removeBtn() {
+  var _removeBtn = _get('.removeBtn')
+
+  _removeBtn.addEventListener('click', removeLocal)
+}
 
 function makeId() {
   var _id = _get('.id');
@@ -41,13 +52,16 @@ function makePw() {
 function comparePw() {
   var _comparePw = _get('.pw02')
   var _comparePwValue = _comparePw.value
-  var compare01 = localStorage.getItem('password')
+  var _makePw = _get('.pw01');
+  var _makePwValue = _makePw.value;
 
   try{
-    if(_comparePwValue !== compare01){
+    if(_comparePwValue !== _makePwValue){
       alert('비밀번호가 다릅니다!!!!')
+      return
     } else {
-      location.assign('http://www.ostone.co.kr/')
+      alert('회원가입을 축하드립니다!!!')
+      location.assign('https://www.naver.com/')
     }
   } catch {
     console.error(error)
@@ -77,6 +91,7 @@ function submitBtn() {
 
 function main() {
   submitBtn()
+  removeBtn()
 }
 
 window.addEventListener('DOMContentLoaded', main)
