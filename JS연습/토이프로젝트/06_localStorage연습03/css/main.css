@@ -14,6 +14,12 @@ form{
   width: 90%;
   margin: 0 auto;
 }
+form .wellcome_user{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
 .id_box{
   margin-bottom: 20px;
   display: flex;
