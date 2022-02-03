@@ -6,23 +6,11 @@ var user = {
 var _setLocal = localStorage.setItem('user', JSON.stringify(user))
 var _getLocal = JSON.parse(localStorage.getItem('user'))
 // var strGetLocal = JSON.stringify(_getLocal)
-console.log(_setLocal)
 console.log(_getLocal)
 const _get = (target) => {
   return document.querySelector(target)
 }
 
-var _idInput = _get('.id_input');
-var _pwInput = _get('.pw_input');
-var _idValue = _idInput.value;
-var _pwValue = Number(_pwInput.value);
-
-console.log(typeof _idValue)
-console.log(typeof _pwValue)
-console.log(typeof _getLocal.id)
-console.log(typeof _getLocal.pw)
-console.log(_getLocal.id)
-console.log(_getLocal.pw)
 
 // localStorage 삭제
 function _removeLocal(e) {
@@ -31,6 +19,7 @@ function _removeLocal(e) {
   _get('.login_btn').style.display = 'block'
   alert('로그아웃이 되었습니다.')
   localStorage.removeItem('user')
+  location.reload();
 }
 
 function _bindRemoveLocal() {
@@ -43,6 +32,11 @@ function _bindRemoveLocal() {
 function compare(e) {
   e.preventDefault();
 
+  var _idInput = _get('.id_input');
+  var _pwInput = _get('.pw_input');
+  var _idValue = _idInput.value;
+  var _pwValue = Number(_pwInput.value);
+
   if(_idValue == _getLocal.id && _pwValue == _getLocal.pw){
     alert(`환영합니다!! ${_getLocal.id}님!`)
     console.log('로그인에 성공하였습니다.')
@@ -51,6 +45,7 @@ function compare(e) {
   } else {
     alert('로그인에 실패하였습니다!!')
     console.error('로그인에 실패하였습니다.')
+    _idInput.focus()
   }
 
 }
