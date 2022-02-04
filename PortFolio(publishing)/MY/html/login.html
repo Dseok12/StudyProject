@@ -10,7 +10,57 @@
   <title>D.seok || Login</title>
 </head>
 <body>
-  
+  <div class="wrap">
+    <header class="header">
+      <div class="header_box">
+        <div class="sub_inner clearfix">
+          <div class="logo_box fl">
+            <h1 class="fl"><a href="index.html">D.seok</a></h1>
+            <h2 class="fr">
+              Copyright &copy Jeong Won Seok<br/>
+              <span>WellCome My PortFoilo</span>
+            </h2>
+          </div>
+          <nav class="fl clearfix">
+            <ul class="pc_menu clearfix"">
+              <li><a href="">About</a></li>
+              <li><a href="">PortFolio</a></li>
+              <li><a href="">Skill</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+          <ul class="fr gnb clearfix">
+            <li><a href="./html/login.html">로그인</a></li>
+            <li><a href="./html/signin.html">회원가입</a></li>
+          </ul>
+        </div>
+        <!-- mobile -->
+        <nav class="m_box">
+          <div class="m_btn">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul class="m_menu">
+            <li><a href="">About</a></li>
+            <li><a href="">PortFolio</a></li>
+            <li><a href="">Skill</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <!--// mobile -->
+      </div>
+    </header>
+    <div class="inner">
+      <form action="">
+        <label for="loginInput">아이디: </label>
+        <input type="text" value="" id="loginInput" class="id_input" placeholder="아이디를 입력하세요." />
+        <label for="pwInput">비밀번호: </label>
+        <input type="password" value="" id="pwInput" class="pw_input" placeholder="비밀번호를 입력하세요." />
+        <input type="submit" value="로그인" />
+      </form>
+    </div>
+  </div>
   <script src="../js/index.js"></script>
 </body>
 </html>
