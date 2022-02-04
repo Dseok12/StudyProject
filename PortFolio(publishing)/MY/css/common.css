@@ -68,7 +68,20 @@ address{
 .btnColor:hover{
   background-color: rgb(69, 133, 228);
 }
-
+.confirm_btn{
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: all .2s;
+  background-color: rgb(20, 94, 206);
+}
+.confirm_btn:hover{
+  box-shadow: 3px 3px 5px #000;
+  background-color: rgb(69, 133, 228);
+}
 .html_bg{
   background-color: #e64c18;
 }
