@@ -7,9 +7,131 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>Document</title>
+  <style type="text/css">
+    body,div, a, img, p,h3,br,ul, li{margin:0;padding:0}
+    img{border:none }
+    ul{list-style-type:none;}
+    body{font-size:12px;
+      background:#f1f1f1;
+    color:#333;
+    font-family:'나눔고딕',"돋움",dotum;}
+ 
+ #visual{position:relative;
+         width:1200px;
+         margin:50px auto;
+         height:400px;
+         background:#fff;
+         padding:10px 20px;
+     }
+ 
+ h3{font-size:20px;
+              margin:20px 0;}
+ .visual_w{background:#faa345;
+           width:200px;
+           color:#fff;
+           float:left;
+           height:400px;
+           padding:20px;
+           box-sizing:border-box;
+          float:left;
+          display:none;
+          
+           }
+  #visual_b{
+   position:absolute;
+   left:0;
+   top:0;
+  }
+  #visual_b img{width:971px;
+               height:400px;}
+  #visual_wrap{position:relative;
+   float:right;
+   width:971px;
+   height:400px;
+   overflow:hidden;
+   border:1px solid #d5d5d5}
+  .more{position:absolute;
+       bottom:100px;
+       left:50px;
+       border:1px solid #fff;
+       padding:10px 30px;
+       }
+    .visual_1{
+      line-height:2;
+    }
+    .btn{
+      width:200px;
+      position:absolute;
+      height:60px;
+      bottom:0;
+      text-align:center;
+      line-height:60px;
+      margin-bottom:10px;
+    }
+    .left{
+      width:100px;
+      height:60px;
+      position:absolute;
+      background:#c97b27;
+      display:inline-block;
+      left:0;
+    }
+    .right{
+      width:100px; 
+      height:60px;
+      background:#db882e;
+      display:inline-block;
+      position:absolute;
+      right:0;
+    }
+    .on{
+      display:block;
+    }
+    .more a{
+      text-decoration:none;
+      color:#fff;
+    }
+    .more a:hover{
+      text-decoration:underline
+    }
+  </style>
 </head>
 <body>
-  
+  <div id="visual">
+    <ul>
+      <li class="visual_w on" >
+        <h3>전기전자 추천과정</h3>
+        <p class="visual_1">e-koreatech의 전기전자<br/> 분야에서 가장 인기가 많은<br/> 과정들입니다.</p>
+        <p class="more"><a href="#">더많은과정보기</a></p>
+      </li>
+      <li class="visual_w "  >
+        <h3>메카트로닉스 추천과정</h3>
+        <p class="visual_1">e-koreatech의 메카트로닉스<br/> 분야에서 가장 인기가 많은<br/> 과정들입니다.</p>
+        <p class="more"><a href="#">더많은과정보기</a></p>
+      </li>
+      
+      <li class="visual_w"  >
+        <h3>정보통신 추천과정</h3>
+        <p class="visual_1">e-koreatech의 정보통신 <br/> 분야에서 가장 인기가 많은<br/> 과정들입니다.</p>
+        <p class="more"><a href="#">더많은과정보기</a></p>
+      </li>
+      </ul>
+      <div class="btn">
+        <a href="#"class="left" onclick="leftbtn()">
+          <img src="./img/img_arrowL.png"  alt="" />
+        </a>
+        <a href="#"class="right" id="right" onclick="rightbtn()">
+          <img src="./img/img_arrowR.png"  alt="" />
+        </a>
+      </div>
+      <div id="visual_wrap" >
+        <ul id="visual_b">
+          <li><img src="./img/visual1.png"  alt=""/></li>
+          <li><img src="./img/visual2.png"  alt=""/></li>
+          <li><img src="./img/visual3.png"  alt=""/></li>
+        </ul>
+    </div>
+  </div>
   <script src="./js/index3.js"></script>
 </body>
 </html>
