@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+.service{
+  width: 170px;
+  margin: 50px auto;
+  position: relative;
+  background: url("../img/bg_service.gif") repeat-x 0 0;
+}
+h3{
+  color: #fff;
+  text-align: center;
+  padding: 5px 0 0 0;
+  font-weight: 300;
+  letter-spacing: -0.05em;
+}
+ul li {
+  border-top: 1px solid #68a6eb;
+  position: relative;
+}
+.acc_trigger{
+  cursor: pointer;
+  width: 170px;
+  height: 33px;
+  overflow: hidden;
+}
+.on .acc_trigger{
+  margin-top: -33px;
+}
+.acc_container{
+  display: none;
+}
+.on .acc_container{
+  display: block;
+}
