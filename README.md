@@ -59,4 +59,4 @@
 
 
 ## 🤷‍♂️Team Project List🤷‍♀️
-- 준비중입니다.
+- https://github.com/Bigdooor-studycourse/SSAC-community.git
