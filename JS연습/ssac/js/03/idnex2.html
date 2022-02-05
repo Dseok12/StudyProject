@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Document</title>
+  <style>
+    *{margin:0;padding:0; font-size:12px;color:#333;font-family:"나눔고딕",sans-serif;}
+	ul{list-style-type:none;}
+	img{border:none}
+	a{text-decoration:none}
+     .banner_wrap{width:900px;
+	            margin:150px auto;
+				height:220px;
+				position:relative;
+				
+				}
+	  
+			
+	 .topbtn{width:600px;
+	        height:20px;
+			text-align:center;
+			}
+	 .bottombtn{width:600px;
+	        height:20px;
+			text-align:center;
+			
+			}
+    .bannerz{width:600px;
+	        height:200px; 
+			overflow:hidden;
+			float:left;
+			margin-top:22px;
+			border:1px solid #e4e4e4}
+	.banner_{width:4600px;
+	        height:200px;
+			position:relative;
+			}
+	 .banner_list{position:absolute;
+	              top:0;
+				  height:600px;
+				  width:600px;
+				  }
+	.thumb{float:left;
+	       width:190px;
+		   margin:0 0 0 10px;
+		   }
+	.banner_list li{width:600px;
+	                height:200px;
+					}
+	.thumb span a{width:190px;
+	             height:60px;
+				 border:1px solid #d5d5d5;
+				 display:inline-block;
+				margin:3px 0;}
+	.thumb span a:hover,
+	.thumb span a:active{border:1px solid #ff6600}
+  </style>
+</head>
+<body>
+  <div class="banner_wrap">
+    <p class="topbtn"><a href="#" onclick="topbtn();return false;"><img src="./img/btnbottom.jpg"  alt="" width="40" height="40"/></a></p> 
+      <div class="bannerz">
+      <div class="banner_" id="bannerzone">
+        <ul class="banner_list" id="photo">
+        <li><img src="./img/img1.jpg" width="600" height="200" alt=""/></li>
+        <li><img src="./img/img2.jpg" width="600" height="200" alt=""/></li>
+        <li><img src="./img/img3.jpg" width="600" height="200" alt=""/></li>
+        </ul>
+        </div>
+      </div>
+      <p class="bottombtn"><a href="#" onclick="bottombtn();return false;"><img src="./img/btntop.jpg"  alt="" width="40" height="40"/></a></p>
+    
+      <div class="thumb">
+        <span><a href="#" onclick="banner(1);return false;"><img src="./img/img1.jpg" width="190" height="60" alt=""/></a></span>
+        <span><a href="#" onclick="banner(2);return false;"><img src="./img/img2.jpg" width="190" height="60" alt=""/></a></span>
+        <span><a href="#" onclick="banner(3);return false;"><img src="./img/img3.jpg" width="190" height="60" alt=""/></a></span>
+      </div>
+    </div>
+  <script src="./js/index2.js"></script>
+</body>
+</html>
