@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Document</title>
+  <style>
+    div{
+      border: 1px solid #999;
+      padding: 5px;
+    }
+    h3{
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h3>1. 숫자 1부터 10까지 출력하세요</h3>
+    <script>
+      for(var i = 1; i <= 10; i++){
+        document.write(' '+i)
+      }
+    </script>
+  </div>
+
+  <div>
+    <h3>2. 숫자 10부터 1까지 출력하세요</h3>
+    <script>
+      for(var i = 10; i >= 1; i--){
+        document.write(' '+i)
+      }
+    </script>
+  </div>
+  
+  <div>
+    <h3>3 .숫자 1부터 10중에서 짝수만 출력하세요</h3>
+    <script>
+      for(var i = 2; i <= 10; i+=2){
+        document.write(' '+ i)
+      }
+    </script>
+  </div>
+
+  <div>
+    <h3>4 .숫자 1부터 10중에서 홀수만 출력하세요</h3>
+    <script>
+      for(var i = 1; i <= 10; i+=2){
+        document.write(' ' + i)
+      }
+    </script>
+  </div>
+
+  <div>
+    <h3>5 .숫자 1부터 10중에서 5, 10을 *처리하세요.</h3>
+    <script>
+      for(var i = 1; i <= 10; i++){
+        if(i%5 == 0){
+          document.write(' *')
+        } else {
+          document.write(' ' + i)
+        }
+      }
+    </script>
+  </div>
+
+  <div>
+    <h3>6 .숫자 1부터 10중에서 3,6,9을 제외하고 처리하세요.</h3>
+    <script>
+      for(var i = 1; i <= 10; i++){
+        if(i%3 == 0){
+          continue
+        }
+        document.write(' ' + i)
+      }
+    </script>
+  </div>
+
+  <div>
+    <h3>7 .2단 구구단을 출력하세요.</h3>
+    <script>
+      for(var i = 1; i <= 9; i++){
+        document.write(' 2 X ' + i + '=' + 2*i,'<br/>')
+      }
+    </script>
+  </div>
+
+  <div>
+    <h3>8 .숫자 1부터 10중에서 3번째 짝수까지만 출력하세요.</h3>
+    <script>
+      var cnt = 0;
+      for(var i = 1; i <= 10; i++){
+        document.write(i, '<br>')
+        if(i%2 == 0){
+          cnt++;
+          document.write('<' + i +'는(은) ' + cnt + '번째 짝수')
+        }
+        if(cnt == 3){
+          break
+        }
+        // document.write('<br>')
+      }
+    </script>
+  </div>
+  <script src="./js/index4_2.js"></script>
+</body>
+</html>
