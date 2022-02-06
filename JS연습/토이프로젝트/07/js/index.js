@@ -8,12 +8,16 @@ sessionStorage.newUser = {
   password: ''
 }
 
+const saveUser = {
+  id: '',
+  password: ''
+}
 
 const _getNewUser = () => {
 
 }
 
-const compareUser = () => {
+const comparePassword= () => {
   const pwInput = _get('.make_pw');
   const pwInputValue = pwInput.value;
   const comparePw = _get('.make_pw2');
@@ -33,8 +37,7 @@ const _setNewUser = () => {
   const storageId = sessionStorage.setItem('user', JSON.stringify(saveUser.id));
   const storagePw = sessionStorage.setItem('user', JSON.stringify(saveUser.password));
   
-  console.log(idInputValue);
-  console.log(pwInputValue);
+
 
 }
 
@@ -49,13 +52,14 @@ const submitBtn = () => {
   const formBox = _get('.form_box')
 
   formBox.addEventListener('submit', _submit)
-
+  // console.log('dkssud')
 }
 
 const bindSubmitBtn = () => {
   const _bindBtn = _get('.sub_btn')
 
   _bindBtn.addEventListener('click', submitBtn)
+  
 
 }
 
@@ -66,9 +70,9 @@ const main = () => {
 
 const init = () => {
   window.addEventListener('DOMContentLoaded', main);
-  compareUser();
 }
 init();
+comparePassword();
 
 
 
