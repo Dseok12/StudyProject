@@ -6,10 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
-  <title>Document</title>
+  <title>sessionStorage를 활용한 회원가입기능 만들기</title>
 </head>
 <body>
-  
+  <div class="wrap">
+    <div class="inner">
+      <form action="" method="POST" class="form_box">
+        <label for="makeId">아이디 </label>
+        <input
+          type="text"
+          id="makeId"
+          class="make_id"
+          value=""
+          placeholder="아이디를 입력하세요."
+        />
+        <label for="makePw">비밀번호 </label>
+        <input
+          type="text"
+          id="makePw"
+          class="make_pw"
+          value=""
+          placeholder="비밀번호를 입력하세요."
+        />
+        <label for="makePw2">비밀번호 확인 </label>
+        <input
+          type="text"
+          id="makePw2"
+          class="make_pw2"
+          value=""
+          placeholder="비밀번호를 입력하세요."
+        />
+        <input type="submit" value="회원가입" class="sub_btn" />
+      </form>
+    </div>
+  </div>
   <script src="./js/index.js"></script>
 </body>
 </html>
