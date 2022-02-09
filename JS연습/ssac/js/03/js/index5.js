@@ -12,6 +12,7 @@ var liList;
 
 function init() {
   liList = document.getElementById('serviceList').getElementsByTagName('li')
+  // console.log(liList)
   for(var i = 0; i < liList.length; i++){
     liList[i].num = i;
     liList[i].onmouseover = function() {
