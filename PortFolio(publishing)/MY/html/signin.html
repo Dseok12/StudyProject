@@ -42,19 +42,25 @@
             <div></div>
             <div></div>
           </div>
-          <ul class="m_menu">
-            <li><a href="">About</a></li>
-            <li><a href="">PortFolio</a></li>
-            <li><a href="">Skill</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
+          <div class="m_menu_box">
+            <ul class="m_menu">
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./portfolio.html">PortFolio</a></li>
+              <li><a href="./skill.html">Skill</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <ul class="clearfix m_login_box">
+              <li><a href="./login.html">로그인</a></li>
+              <li><a href="./signin.html">회원가입</a></li>
+            </ul>
+          </div>
         </nav>
         <!--// mobile -->
       </div>
     </header>
     <!-- // header -->
     <div class="inner">
-      <form action="">
+      <form action="" method="POST" class="sign_up_form">
         <div class="form_wrap">
           <label for="loginInput">아이디 </label>
           <input type="text" value="" id="loginInput" class="id_input" placeholder="아이디를 입력하세요." />
@@ -62,7 +68,7 @@
           <input type="password" value="" id="pwInput" class="pw_input" placeholder="비밀번호를 입력하세요." />
           <label for="pwInput2">비밀번호 확인 </label>
           <input type="password" value="" id="pwInput2" class="pw_input2" placeholder="비밀번호를 확인하세요." />
-          <input type="submit" value="회원가입" class="confirm_btn login_btn"/>
+          <input type="submit" value="회원가입" class="confirm_btn sign_up_btn login_btn"/>
         </div>
       </form>
     </div>
