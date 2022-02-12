@@ -1,5 +1,68 @@
 @charset "utf-8";
+body, div,h3, ul, li,a, form, input, button, table, thead,tfoot, tbody,
+tr, th, td,colgroup,col,img{
+  margin: 0;
+  padding: 0;
+}
+body,input,button{
+  font-size: 12px;
+  color:#222;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+img{border: none;}
+a{
+  text-decoration: none;
+  color:#222
+}
+ul{
+    list-style: none;
+}
+input,img,button{vertical-align: middle;}
 
+.hide{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  line-height: 0;
+  display:block;
+  text-indent: -9999px;
+}
+.module{
+  width:233px;
+  margin: 50px auto;
+  position: relative;
+}
+.tabList{
+  position: absolute;
+  bottom:3px;
+  left:10px;
+}
+.tabList li{
+  float: left;
+}
+.tabList li a{
+  background: url('../img/hp_coupon_point.png') no-repeat 0 0;
+  width: 58px;
+  display: block;
+  float: left;
+  height: 28px;
+  text-indent: -999em;
+  overflow: hidden;
+  margin-left: -3px;
+}
+.tabPanel{display:none;}
+.active{display: block;}
+
+.tabList .tab-1{background-position: 0 0;}
+.tabList .tab-2{background-position: -58px 0;}
+.tabList .tab-3{background-position: -116px 0;}
+.tabList .tab-4{background-position: -174px 0;}
+
+
+.tabList .selected .tab-1{background-position: 0 -38px;}
+.tabList .selected .tab-2{background-position: -58px -38px;}
+.tabList .selected .tab-3{background-position: -116px -38px;}
+.tabList .selected .tab-4{background-position: -174px -38px;}
 
 
 
