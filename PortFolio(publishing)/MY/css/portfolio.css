@@ -125,6 +125,42 @@
 
 
 
+@media screen and (max-width:1600px){
+  
+}
+@media screen and (max-width:1024px){
+  
+}
+@media screen and (max-width:769px){
+  .inner .real{
+    width: 95%;
+    margin: 0 auto;
+  }
+  .inner .real li a p br{
+    display: none;
+  }
+  .inner .real li a img{
+    width: 40%;
+    margin-right: 4%;
+  }
+  .inner .real li a .port_text_box{
+    width: 90%;
+    margin: 0 auto;
+    padding: 4% 0;
+  }
+  .inner .study{
+    width: 95%;
+    margin: 0 auto;
+  }
+  .inner .study li a .port_text_box{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 3.5%;
+  }
+}
+@media screen and (max-width:450px){
+  
+}
 
 
 
