@@ -122,51 +122,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width:1600px){
   
 }
@@ -184,7 +139,19 @@
   }
 }
 @media screen and (max-width:769px){
-  
+  .section02 .section02_inner .main_port{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .section02 .section02_inner .main_port li{
+    width: 100%;
+    margin: 0 auto 50px;
+    margin-right: 0%;
+    clear: both;
+    border-radius: 80px 10px 80px 10px;
+    box-shadow: 3px 3px 10px #eee;
+    overflow: hidden;
+  }
 }
 @media screen and (max-width:450px){
   .section01_banner .inner{
