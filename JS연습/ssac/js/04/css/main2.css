@@ -1,0 +1,99 @@
+@charset "utf-8";
+body, div,h3, ul, li,a, form, input, button, table, thead,tfoot, tbody,
+tr, th, td,colgroup,col,img{
+  margin: 0;
+  padding: 0;
+}
+body,input,button{
+  font-size: 12px;
+  color:#222;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+img{border: none;}
+a{
+  text-decoration: none;
+  color:#222
+}
+ul{
+    list-style: none;
+}
+input,img,button{vertical-align: middle;}
+
+.hide{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  line-height: 0;
+  display:block;
+  text-indent: -9999px;
+}
+
+.todayWrap{
+  width: 1000px;
+  margin: 100px auto;
+  position: relative;
+}
+.menuList{
+  float: left;
+  width: 752px;
+}
+.menuList a{
+  display: none;
+}
+.menuList a.on{
+  display: block;
+}
+
+.tabList {
+  width: 195px;
+  background-color: #07c;
+  float: left;
+  /* border: 2px solid blue; */
+}
+
+.tabList li {
+  width: 195px;
+  height: 102px;
+  position: relative;
+}
+.tabList li span {
+  width: 11px;
+  height: 20px;
+  background: url('../img/bg_main_stripe_20121023.png') no-repeat -620px -58px;
+  display: none;
+  position: absolute;
+  margin-top: -9px;
+  top: 50%;
+  left: -9px;
+}
+
+.tabList li.on {}
+.tabList li span.on {
+  display: block;
+}
+
+#thdm1{background: url('../img/tab1.jpg') no-repeat;}
+#thdm2{background: url('../img/tab2.jpg') no-repeat;}
+#thdm3{background: url('../img/tab3.jpg') no-repeat;}
+#thdm4{background: url('../img/tab4.jpg') no-repeat; height: 103px;}
+
+#thdm1.on{background-position: -195px 0;}
+#thdm2.on{background-position: -195px 0;}
+#thdm3.on{background-position: -195px 0;}
+#thdm4.on{background-position: -195px 0; height: 103px;}
+
+.band{
+  background: url('../img/bg_main_stripe_20121023.png') no-repeat -575px -102px;
+  width: 150px;
+  height: 70px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+
+
+
+
+
+
