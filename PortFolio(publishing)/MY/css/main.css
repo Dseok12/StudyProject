@@ -76,7 +76,31 @@
   width: 100%;
   position: relative;
 }
-.section02 .inner{}
+.section02 .section02_inner{
+  width: 90%;
+  margin: 0 auto;
+}
+.section02 .section02_inner .main_port{
+  width: 100%;
+}
+.section02 .section02_inner .main_port li{
+  width: 20%;
+  float: left;
+  margin-right: 5%;
+}
+.section02 .section02_inner .main_port li:last-child{
+  margin-right: 0;
+}
+.section02 .section02_inner .main_port li a{
+  width: 100%;
+}
+.section02 .section02_inner .main_port li a img{
+  width: 100%;
+}
+
+
+
+
 /* //section02 */
 
 

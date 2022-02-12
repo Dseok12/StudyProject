@@ -1,8 +1,21 @@
 @charset "utf-8";
 
-
-
-
+.about_inner h3{
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+.about_inner ul{
+  margin: 100px auto 0;
+}
+.about_inner ul li{
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.about_inner ul li span{
+  font-weight: 600;
+}
 
 
 
