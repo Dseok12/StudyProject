@@ -8,11 +8,17 @@ function _comparePw () {
   var _pwInput2 = document.querySelector('.pw_input2')
   var _pwInputValue2 = document.querySelector('.pw_input2').value
   var _setSession = sessionStorage.getItem('userPw')
+  // var _loginBox = document.querySelector('.login_box')
+  // var _userBox = document.querySelector('.user_box')
+  // var _userName = document.querySelector('.user_name')
 
   if(_pwInputValue2 === _setSession){
     alert('회원가입에 성공하였습니다.')
     console.log('회원가입에 성공하였습니다.')
     location.assign('/index.html')
+    // _loginBox.style.display = 'none'
+    // _userBox.style.display = 'block'
+    // _userName.innerText = sessionStorage.getItem('userId')
   } else {
     alert('비밀번호를 확인해주세요.')
     console.log('비밀번호를 확인해주세요.')

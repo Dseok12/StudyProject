@@ -82,6 +82,25 @@ nav .pc_menu li:hover a {
 .gnb li:hover a {
   text-decoration: underline;
 }
+.user_box{
+  float: right;
+  display: none;
+}
+.user_box li{
+  float: left;
+}
+.user_box li:first-child{
+  padding-top: 10px;
+  margin-right: 10px;
+}
+.user_box li .logout{
+  border-radius: 50px;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  background-color: rgb(238, 68, 96);
+  cursor: pointer;
+}
 /* // 로그인 쪽 */
 
 
