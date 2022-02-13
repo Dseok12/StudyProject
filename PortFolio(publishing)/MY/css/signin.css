@@ -35,8 +35,16 @@ form .login_btn{
   margin-left: 50%;
   transform: translateX(-50%);
 }
-
-
+.warning{
+  color: rgb(92, 2, 2);
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+}
+.storng{
+  color: red;
+  font-weight: bold;
+}
 
 
 
