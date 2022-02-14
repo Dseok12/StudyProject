@@ -1,15 +1,177 @@
-<!DOCTYPE html>
-<html lang="ko">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/main3.css">
-  <title>Document</title>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>Document</title>
+<style type="text/css">
+  body,div, ul, li,a, img, h1{margin:0; padding:0}
+  ul{list-style-type:none;}
+  img{border:none
+  }
+  a{text-decoration:none;
+    color:#fff;}
+    .header{width:100%;
+          position:relative;
+          background:#ff8601;}
+    .nav{width:1200px;
+          margin:0 auto;
+          height:100px;
+          position:relative;
+          }
+      h1{
+        padding:33px  0 0 0;
+        float: left;
+      }
+      .gnb{float: left;
+          height:100px;
+          line-height:100px;}
+      .gnb > li{float:left;
+          margin-left:50px;
+          font-size:20px;
+          color:#fff;
+          font-family:"나눔고딕",sans-serif;
+          font-weight:600;
+          }
+        .allmenu{background:url(images/allmenu_icon.gif) no-repeat 0 4px; 
+                padding-left:30px;
+                position:absolute;
+                right:20px;
+                top:22px;
+                font-size:20px;
+                color:#fff;
+                font-family:"나눔고딕",sans-serif;
+                font-weight:600;
+                } 
+
+          .submenu{width:100%;
+                  background:#fff;
+                  border-bottom:1px solid #ff8601;
+                  position: absolute;
+                  top: 100px;
+                  left: 0;
+                  display: none;
+                  }
+          
+          .submenu ul{width:1200px;
+                      margin:0 auto;
+                    }
+          .submenu.on{
+            display: block;
+          }
+          .gnb li.over a{
+            background-color: #fff;
+            border-radius: 3px;
+            color: #ff8601;
+            padding: 10px;
+          }
+          .subbg{
+            width: 100%;
+            border-bottom: 2px solid orange;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 500px;
+            z-index: -1;
+          }
+</style>
+<script>
+var currentNum = 0;
+var gnblist;
+
+function init() {
+  gnblist = document.getElementById('gnb').getElementsByTagName('li');
+  for(var i = 0; i < gnblist.length; i++){
+    gnblist[i].num = i;
+    gnblist[i].onmouseenter = function() {
+      selectMenu(this.num)
+      var bgElement = document.createElement('div')
+      var bgElementCss = document.createAttribute('class')
+      bgElementCss.value = 'subbg'
+      bgElement.setAttributeNode(bgElementCss)
+      var newTag = document.getElementById('header')
+      newTag.insertBefore(bgElement, newTag.lastChild)
+    }
+    gnblist[i].onmouseleave = function() {
+      gnblist[currentNum].childNodes[2].className = 'submenu'
+      gnblist[currentNum].className = ''
+      var removeTag = document.getElementById('header')
+      removeTag.removeChild(removeTag.lastElementChild)
+    }
+  }
+}
+
+function selectMenu(num) {
+  gnblist[currentNum].className = ''
+  gnblist[num].className = 'over'
+
+  gnblist[currentNum].childNodes[2].className='submenu'
+  gnblist[num].childNodes[2].className='submenu on'
+  currentNum = num;
+}
+
+window.onload = init;
+
+</script>
 </head>
 <body>
-  
-  <script src="./js/index3.js"></script>
+  <div class="header" id="header">
+    <div class="nav">
+    <h1><a href="#"><img src="images/h1.gif"  alt=""/></a></h1>
+      <ul class="gnb" id="gnb">
+
+        <li>
+          <a href="#">기업소개</a>
+          <div class="submenu">
+            <a href="">
+              <img src="img/sub1.gif" alt="">
+            </a>
+          </div>
+        </li>
+
+        <li>
+          <a href="#">제품정보</a>
+          <div class="submenu">
+            <a href="">
+              <img src="img/sub1.gif" alt="">
+            </a>
+          </div>
+        </li>
+
+        <li><a href="#">투자정보</a>
+          <div class="submenu">
+            <a href="">
+              <img src="img/sub2.gif" alt="">
+            </a>
+          </div>
+        </li>
+        <li><a href="#">지속가능경영</a>
+          <div class="submenu">
+            <a href="">
+              <img src="img/sub3.gif" alt="">
+            </a>
+          </div>
+        </li>
+        <li><a href="#">홍보센터</a>
+          <div class="submenu">
+            <a href="">
+              <img src="img/sub4.gif" alt="">
+            </a>
+          </div>
+        </li>
+        <li><a href="#">인재채용</a>
+          <div class="submenu">
+            <a href="">
+              <img src="img/sub5.gif" alt="">
+            </a>
+          </div>
+        </li>
+      </ul>
+      <p class="allmenu"><a href="#">전체보기</a></p>
+      </div>
+  </div>
 </body>
 </html>
