@@ -94,6 +94,30 @@ address{
 .vue_bg{
   background-color: #41b883;
 }
+.skill_btn{
+  padding: 5px 8px;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+}
+.html{
+  background-color: #e64c18;
+}
+.css{
+  background-color: #1472b6;
+}
+.js{
+  background-color: #e5a228;
+}
+.jquery{
+  background-color: #f1bf26;
+}
+.vue{
+  background-color: #41b883;
+}
+.scss{
+  background-color: #ed54ba;
+}
 
 
 @media screen and (max-width:1600px){
