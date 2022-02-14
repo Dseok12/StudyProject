@@ -1,15 +1,150 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, div, img, ul, li,a{margin: 0; padding: 0;}
+        ul{list-style-type: none;}
+        a{text-decoration: none;
+          color:#333}
+        img{border: none;}
+        body{font-size: 12px;
+            color:#333;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+        .gallery{
+            width: 510px;
+            margin: 50px auto;
+            border: 1px solid #999;
+            padding: 1px;
+            height: 560px;
+        }    
+        .photo img{width: 510px; 
+                  height: 390px;}
+
+        .photo_list{width: 480px; margin: 0 auto; height: 160px; overflow: hidden; }
+        .photo_list .list{ width: 1300px;}
+        .photo_list .list li{float: left;  margin:5px;}
+
+        .btn_group{
+            position: relative;
+            bottom: 120px;
+            width: 510px;
+            height: 71px;
+        }
+        .btn_group a{
+            width: 31px;
+            height: 71px;
+            display: inline-block;
+            position: absolute;
+        }
+        .btn_group .leftBtn{
+            left:0
+        }
+        .btn_group .rightBtn{
+            right:0
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var list_zone=document.getElementById('inner_list');
+            var list_a=list_zone.getElementsByTagName('a');
+            //console.log(list_a)
+            for(var i=0; i<list_a.length; i++){
+                list_a[i].num=i;
+                list_a[i].onclick=function(){
+                    var isnum=this.num;
+                    //console.log(isnum)
+                    var ph=document.getElementById('photo').children[0];
+                    ph.setAttribute('src','./img/pic_'+(isnum+1)+'.jpg');
+                    return false;
+                }
+
+            }
+
+            var before_btn=document.getElementById('before_btn');
+            var next_btn=document.getElementById('next_btn');
+            var bnum=0;
+            before_btn.onclick=function(){
+                if(bnum<=0) return false;
+                bnum--;
+                list_zone.style.marginLeft=-160*bnum+'px';
+                return false;
+            }
+
+            next_btn.onclick=function(){
+                if(bnum>=list_a.length-3) return false;
+                bnum++;
+                list_zone.style.marginLeft=-160*bnum+'px';
+                return false;
+
+            }
+        }
+    </script>
 </head>
 <body>
-  
-  <script src="./js/index.js"></script>
+    <div class="gallery">
+        <div class="photo" id="photo">
+            <img src="./img/pic_1.jpg" alt="">
+        </div>
+        <div class="photo_list" >
+            <ul class="list" id="inner_list">
+                <li>
+                    <a href="" >
+                        <img src="./img/btn1.png" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" >
+                        <img src="./img/btn2.png" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="./img/btn3.png" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="./img/btn4.png" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="./img/btn5.png" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="./img/btn6.png" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="./img/btn7.png" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="./img/btn8.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="btn_group">
+            <a href="" class="leftBtn" id="before_btn"><img src="./img/left.png" alt=""></a>
+            <a href="" class="rightBtn" id="next_btn"><img src="./img/right.png" alt=""></a>
+        </div>
+    </div>
 </body>
 </html>
