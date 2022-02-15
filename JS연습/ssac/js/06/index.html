@@ -1,15 +1,151 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body, div, ul,li, a, img, span{
+          margin: 0;
+          padding: 0;
+      }
+      body{font-size: 12px;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:#222}
+    img{
+        border:none
+    }
+    a{text-decoration: none;
+      color:#222}
+    ul{list-style: none;}
+
+    .wrap{
+        width: 100%; 
+        height: 282px;
+        border: 1px solid #d9d9d9;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .content_left{
+        width: 60%;
+        float:left;
+        background-color: #7f3bcb;
+        position: relative;
+        height: 280px;
+    }
+    .content_left ul{
+        width: 780px;
+        float:right;
+        
+    }
+    .content_left ul li{
+        height: 70px;
+        width: 150px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        
+    }
+    
+    .content_left ul li.on a{
+        background: url(images/icon_set.png) no-repeat 120px -52px; 
+        padding-right: 15px;
+    }
+
+
+    .content_left div{}
+    .content_left div a{
+        display: block;
+        width: 120px;
+        margin-right: 20px;
+        color:#fff
+    }
+    .content_left div span{
+        width: 640px;
+        height: 280px;
+        position: absolute;
+        top:0;
+        right:0;
+        display: none;
+    }
+    .content_left div span.on{
+        display: block;
+
+    }
+
+
+
+   .content_right{
+       width: 40%;
+       background-color: #f8f8f8;
+       height: 280px;
+       float: left;
+   }
+
+    </style>
 </head>
 <body>
-  
-  <script src="./js/index.js"></script>
+    <div class="wrap">
+        <div class="content_left">
+            <ul>
+                <li class="on">
+                    <div>
+                        <a href="">
+                            슬기로운 여행계획 4가지 여행 비법!
+                        </a>
+                        <span class="banner on">
+                            <img src="./img/banner_308.jpg" alt="">
+                        </span>
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <a href="">
+                            신개념 여행 퍼즐백 1만원대부터~
+                        </a>
+                        <span class="banner">
+                            <img src="./img/banner_302.jpg" alt="">
+                        </span>
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <a href="">
+                            미술이 있어 더 풍성한 여행
+                        </a>
+                        <span class="banner">
+                            <img src="./img/banner_298.jpg" alt="">
+                        </span>
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <a href="">
+                            항공권은 셀프예약 투어는 내맘대로!
+                        </a>
+                        <span class="banner">
+                            <img src="./img/banner_270.jpg" alt="">
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="content_right">
+            <img src="./img/contents_right.png" alt="">
+        </div>
+    </div>
+    <script>
+      var currentNum = 0;
+      var tabList;
+      var photoList;
+      function init () {
+
+      }
+
+      window.onload = init
+    </script>
 </body>
 </html>
