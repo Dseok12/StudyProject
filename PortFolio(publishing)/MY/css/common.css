@@ -118,6 +118,9 @@ address{
 .scss{
   background-color: #ed54ba;
 }
+.git{
+  background-color: #222;
+}
 
 
 @media screen and (max-width:1600px){

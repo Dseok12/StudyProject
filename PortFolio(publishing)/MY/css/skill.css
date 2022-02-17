@@ -1,8 +1,55 @@
 @charset "utf-8";
-
-
-
-
+.skill_box{}
+.skill_box li{
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.skill_box li .progress_box{}
+.skill_box li .progress_box h4{
+  float: left;
+  font-size: 20px;
+  line-height: 40px;
+}
+.skill_box li .progress_box .back_pro{
+  position: relative;
+  width: 90%;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #eee;
+  float: right;
+  overflow: hidden;
+}
+.skill_box li .progress_box .fill{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+.html_fill{
+  width: 95%;
+  background-color: #e64c18;
+}
+.css_fill{
+  width: 90%;
+  background-color: #1472b6;
+}
+.js_fill{
+  width: 85%;
+  background-color: #e5a228;
+}
+.jquery_fill{
+  width: 90%;
+  background-color: #f1bf26;
+}
+.vue_fill{
+  width: 75%;
+  background-color: #41b883;
+}
+.scss_fill{
+  width: 75%;
+  background-color: #ed54ba;
+}
 
 
 
