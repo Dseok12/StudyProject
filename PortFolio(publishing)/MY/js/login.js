@@ -1,3 +1,5 @@
+/*
+// 개선 하기 전
 // 로그인 로직 
 
 function _login (e) {
@@ -39,3 +41,6 @@ function loginMain () {
 
 window.addEventListener('DOMContentLoaded', loginMain)
 // //로그인 로직 실행
+*/
+
+
