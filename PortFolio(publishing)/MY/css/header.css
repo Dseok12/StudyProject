@@ -211,6 +211,9 @@ nav .pc_menu li:hover a {
     width: 80%;
     opacity: 0;
   }
+  .login_box{
+    display: none;
+  }
   .on div:nth-of-type(3){
     width: 80%;
     margin-top: -12px;

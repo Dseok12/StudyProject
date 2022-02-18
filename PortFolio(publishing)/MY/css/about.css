@@ -1,5 +1,8 @@
 @charset "utf-8";
-
+.about_inner {
+  padding: 6rem 0;
+  position: relative;
+}
 .about_inner h3{
   font-size: 32px;
   font-weight: bold;
@@ -17,13 +20,152 @@
   font-weight: 600;
 }
 
+.about_text_box p{
+  position: absolute;
+  z-index: 21;
+  color: #222;
+  font-size: 3rem;
+}
+.about_text_box p .bold{
+  font-weight: 800;
+}
+.about_text_box .about_p1{
+  right: 0px;
+  top: 140px;
+}
+.about_text_box .about_p2{
+  left: 0px;
+  bottom: 50px;
+}
+.about_text_box .about_p3{
+  left: 0px;
+  top: 140px;
+}
+.about_text_box .about_p4{
+  right: 0px;
+  top: 290px;
+}
+.about_text_box .about_p5{
+  right: 0px;
+  bottom: 70px;
+}
+
+.license_box .license{
+  width: 49%;
+  margin: 130px auto 0 auto;
+  padding: 2rem 0;
+}
+.license_box .license li{
+  float: left;
+  width: 200px;
+  background-color: rgba(20, 94, 206);
+  margin-right: 20px;
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+.license_box .license li:last-child{
+  margin-right: 0;
+}
+.license_box .license li .icon_box {
+  width: 100%;
+  height: 150px;
+}
+.license_box .license li .icon_box svg{
+  width: 70%;
+  margin: 0 auto;
+  fill: #fff;
+}
+.license_box .license li h4{
+  margin: 20px 0 20px 0;
+  font-size: 1.3rem;
+  color: #fff;
+}
+.license_box .license li p{
+  font-size: 14px;
+  color: #fff;
+}
 
 
 
 
 
-
-
+@media screen and (max-width:1600px){
+  .license_box .license{
+    width: 95%;
+    margin: 100px auto 0 auto;
+  }
+  .license_box .license li{
+    float: left;
+    width: 25%;
+  }
+  .license_box .license li .icon_box {
+    width: 80%;
+    margin: 0 auto;
+    height: 130px;
+  }
+  .license_box .license li h4{
+    margin: 40px 0 20px 0;
+    font-size: 1.3rem;
+    color: #fff;
+  }
+  .license_box .license li p{
+    font-size: 14px;
+    color: #fff;
+  }
+}
+@media screen and (max-width:1024px){
+  .license_box .license{
+    width: 95%;
+    margin: 80px auto 0 auto;
+  }
+  .license_box .license li .icon_box {
+    height: 60%;
+  }
+  .license_box .license li{
+    float: left;
+    width: 30%;
+  }
+}
+@media screen and (max-width:769px){
+  .license_box .license{
+    width: 95%;
+    margin: 35px auto 0 auto;
+  }
+  .license_box .license li{
+    clear: both;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  .license_box .license li .icon_box svg{
+    width: 47%;
+  }
+  .license_box .license li h4{
+    margin: 20px 0 20px 0;
+    font-size: 1.3rem;
+    color: #fff;
+  }
+  .license_box .license li p{
+    font-size: 14px;
+    color: #fff;
+  }
+  .about_text_box{
+    margin-top: 5rem;
+  }
+  .about_text_box p{
+    position: static;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width:450px){
+  .license_box .license li .icon_box svg{
+    width: 40%;
+  }
+  .about_text_box p{
+    font-size: 1.8rem;
+  }
+}
 
 
 
