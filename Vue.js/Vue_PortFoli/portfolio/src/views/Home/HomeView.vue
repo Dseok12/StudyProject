@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="inner">
+    <div class="wrap">
       <div class="section01">
         <div class="inner">
           <h2>
@@ -9,7 +9,7 @@
         </div>
       </div>
     </div>
-  </div>
+    </div>
 </template>
 
 <script>

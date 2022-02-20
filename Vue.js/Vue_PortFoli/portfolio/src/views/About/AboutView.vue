@@ -1,7 +1,7 @@
 <template>
   <div class="about">
-    <div class="wrap">
-      <div class="inner">
+    <div class="section01">
+      <div class="clearfix inner">
         <h1>This is an about page</h1>
       </div>
     </div>

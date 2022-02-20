@@ -1,6 +1,12 @@
 <template>
   <div class='SigninView'>
-
+    <div class="wrap">
+      <div class="section01">
+        <div class="clearfix inner">
+          <h2>여기는 회원가입 페이지입니다.</h2>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

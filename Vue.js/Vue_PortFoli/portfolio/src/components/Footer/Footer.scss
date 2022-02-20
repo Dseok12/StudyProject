@@ -1,10 +1,41 @@
 .wrap{
   border-top: 1px solid #d9d9d9;
+  background-color: rgb(20, 94, 206);
   .inner{
     padding: 2rem 0;
     .logo_box{
       float: left;
-      
+    }
+    .add_wrap{
+      float: left;
+      margin-left: 25%;
+      .add_ul{
+        li{
+          margin-top: 10px;
+          color: #fff;
+          a{
+            color: #fff;
+          }
+        }
+        li:first-child{
+          margin-top: 0px;
+        }
+      }
+    }
+    .blog_wrap{
+      float: right;
+      .blog_ul{
+        li{
+          float: left;
+          margin-right: 15px;
+          a{
+            color: #fff;
+          }
+        }
+        li:last-child{
+          margin-right: 0px;
+        }
+      }
     }
   }
 }

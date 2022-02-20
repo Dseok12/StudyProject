@@ -11,3 +11,32 @@ body{
   box-sizing: border-box;
 }
 
+
+@media (max-width: 1600px) {
+  .inner{
+    width: 1100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 1280px) {
+  .inner{
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 769px) {
+  .inner{
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 450px) {
+  .inner{
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
