@@ -25,6 +25,8 @@
   z-index: 21;
   color: #222;
   font-size: 3rem;
+  opacity: 0;
+  transition: all .3s;
 }
 .about_text_box p .bold{
   font-weight: 800;
@@ -32,23 +34,93 @@
 .about_text_box .about_p1{
   right: 0px;
   top: 140px;
+  animation: text_slide_p1 4s ease;
+}
+@keyframes text_slide_p1 {
+  0%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    right: 300px;
+    opacity: 0;
+  }
 }
 .about_text_box .about_p2{
   left: 0px;
   bottom: 50px;
+  animation: text_slide_p2 4s ease 1s;
+}
+@keyframes text_slide_p2 {
+  0%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    left: 250px;
+    opacity: 0;
+  }
 }
 .about_text_box .about_p3{
   left: 0px;
   top: 140px;
+  animation: text_slide_p3 4s ease-in 2s;
+}
+@keyframes text_slide_p3 {
+  0%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    left: 250px;
+    opacity: 0;
+  }
 }
 .about_text_box .about_p4{
   right: 0px;
   top: 290px;
+  animation: text_slide_p4 4s ease-in 3s;
+}
+@keyframes text_slide_p4 {
+  0%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    right: 350px;
+    opacity: 0;
+  }
 }
 .about_text_box .about_p5{
   right: 0px;
   bottom: 70px;
+  animation: text_slide_p5 4s ease-in 4s;
 }
+@keyframes text_slide_p5 {
+  0%{
+    opacity: 0;
+  }
+  40%{
+    opacity: 1;
+  }
+  0%{
+    opacity: 1;
+  }
+  100%{
+    right: 500px;
+    opacity: 0;
+  }
+}
+
+
 
 .license_box .license{
   width: 49%;
@@ -84,6 +156,9 @@
   font-size: 14px;
   color: #fff;
 }
+
+
+
 
 
 

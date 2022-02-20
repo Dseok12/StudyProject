@@ -37,6 +37,17 @@
   border-radius: 10px;
   transition: all .3s;
 }
+.inner .real li:nth-child(2n) h4{
+  text-align: right;
+}
+.inner .real li:nth-child(2n) .skill_box{
+  float: right;
+}
+.inner .real li:nth-child(2n) a img{
+  float: right;
+  margin-right: 0;
+  margin-left: 5%;
+}
 .inner .real li:hover img{
   transform: scale(1.05);
 }
@@ -105,6 +116,17 @@
   font-size: 18px;
   color: #222;
   line-height: 25px;
+}
+.inner .study li:nth-child(2n) h4{
+  text-align: right;
+}
+.inner .study li:nth-child(2n) .skill_box{
+  float: right;
+}
+.inner .study li:nth-child(2n) a img{
+  float: right;
+  margin-right: 0;
+  margin-left: 5%;
 }
 
 .skill_box{

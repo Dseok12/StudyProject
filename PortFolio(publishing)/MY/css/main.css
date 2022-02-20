@@ -27,7 +27,6 @@
   margin-bottom: 30px;
   letter-spacing: 1px;
 }
-/* .section01 .text_box .content{} */
 .section01 .text_box .content p{
   font-size: 20px;
   font-weight: 400;
@@ -71,6 +70,8 @@
   box-shadow: 1px 1px 4px rgba(0, 12, 177, 0.6);
 }
 /* //section01 */
+
+
 /* section02 */
 .section02{
   width: 100%;
@@ -88,6 +89,7 @@
   float: left;
   margin-right: 5%;
 }
+
 .section02 .section02_inner .main_port li:last-child{
   margin-right: 0;
 }
