@@ -82,6 +82,9 @@ nav .pc_menu li:hover a {
 .gnb li:hover a {
   text-decoration: underline;
 }
+/* // 로그인쪽 끝 */
+
+/*  */
 .user_box{
   float: right;
   display: none;
@@ -193,8 +196,8 @@ nav .pc_menu li:hover a {
   nav .pc_menu{
     display: none;
   }
-  .gnb{
-    display: none;
+  .sub_inner .gnb{
+    display: none !important;
   }
   .m_box{
     display: block;
@@ -211,7 +214,7 @@ nav .pc_menu li:hover a {
     width: 80%;
     opacity: 0;
   }
-  .login_box{
+  .sub_inner .gnb{
     display: none;
   }
   .on div:nth-of-type(3){

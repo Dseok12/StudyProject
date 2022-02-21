@@ -4,7 +4,7 @@
       <div class="section01">
         <div class="inner">
           <h2>
-            여기는 메인 자리입니다.
+            여기는 메인 페이지입니다.
           </h2>
         </div>
       </div>

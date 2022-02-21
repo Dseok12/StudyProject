@@ -9,7 +9,6 @@
         </div>
         <div class="menu_wrap">
           <ul class="menu_ul">
-            <li><router-link to="/">HOME</router-link></li>
             <li><router-link to="/about">ABOUT</router-link></li>
             <li><router-link to="/portfolio">PORTFOLIO</router-link></li>
           </ul>
@@ -22,7 +21,6 @@
           </div>
           <div class="m_menu_box">
             <ul class="m_menu_ul">
-              <li><router-link to="/">HOME</router-link></li>
               <li><router-link to="/about">ABOUT</router-link></li>
               <li><router-link to="/portfolio">PORTFOLIO</router-link></li>
             </ul>

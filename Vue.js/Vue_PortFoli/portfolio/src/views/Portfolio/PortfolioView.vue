@@ -3,7 +3,7 @@
     <div class="wrap">
       <div class="section01">
         <div class="clearfix inner">
-          <h1>여기는 포트폴리오 자리입니다.</h1>
+          <h1>여기는 포트폴리오 페이지입니다.</h1>
         </div>
       </div>
     </div>

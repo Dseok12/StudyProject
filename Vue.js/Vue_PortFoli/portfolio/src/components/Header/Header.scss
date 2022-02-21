@@ -67,6 +67,9 @@
   
 }
 @media (max-width: 1280px) {
+  
+}
+@media (max-width: 1024px) {
   .wrap{
     position: relative;
     
@@ -76,7 +79,6 @@
       float: right;
       .ham_btn{
         width: 40px;
-        height: 40px;
         cursor: pointer;
         overflow: hidden;
         div{

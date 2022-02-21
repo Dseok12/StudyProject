@@ -8,77 +8,11 @@
   <link rel="stylesheet" href="./css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean" rel="stylesheet">
     
-    <style type="text/css">
-        body, div, ul, li,a, img, span, strong, form, input, label{margin: 0; padding: 0}
-        body{font-size: 12px; color:#333; font-family: 'Nanum Gothic', sans-serif; }
-        ul{list-style: none}
-        a{text-decoration: none}
-        
-        
-        .event_tab {overflow: hidden}
-        .event_tab li{width:180px; height: 30px; float:left; background-color:#07c; text-align:center; line-height: 30px;border-radius: 3px; margin:0 10px}
-        .event_tab li:first-child{margin-left: 0}
-        
-        .event_tab li a{font-weight: 700; font-size: 12px; color:#fff; display: block}
-        .event_wrapper{width: 600px; margin: 50px auto; border: 1px solid #d9d9d9; padding:20px; border-radius:3px;}
-        .thumb_wrap{float:left; margin-right:20px;}
-        
-        
-        .event_box{margin-top:30px; background-color:#fff; line-height: 1.6;overflow: hidden}
-        .title{font-size: 14px;}
-        .subject{font-size: 20px;font-weight: 500; display:inline-block; }
-        .date{font-size: 11px; color:#666; display: inline-block; margin-bottom: 20px;}
-        
-        
-        .event_btn{border:1px solid #d9d9d9; padding: 10px 20px; text-align: center;color:#222; 
-            background-color:#f1f1f1; display: inline-block; margin-top:20px; float: right;}
-        
-        
-        .event_frm{ margin-top: 20px;background-color:#808080; padding: 10px 0; color:#fff; font-size: 16px;text-align: center; display:none}
-        input[type="text"]{width:400px; height: 24px; border:none; padding-left:10px;}
-        button{width: 80px; height:26px; background-color:#7e1818; border:none; color:#fff; margin-left:10px}
-        
-        input, img, button{vertical-align: middle}
-			
-			.save{background-color:#7e1818; color:#fff}
-    </style>
+
   <title>Document</title>
 </head>
 <body>
-  <div class="event_wrapper">
-    <ul class="event_tab">
-      <li><a href="#" class="on" onclick="eventBtn(this)" >이벤트응모</a></li>
-      <li><a href="#" onclick="eventSearchBtn()">연락처확인</a></li>
-      <li><a href="#" onclick="event3()">응모확인</a></li>
-    </ul>
-    <div class="event_box">
-      <span class="thumb_wrap"> <img src="./img/thumb_img_review1.jfif" alt=""  class="thumb"/></span>
-      <div>
-        <span class="title">아시아,태국</span><br/>
-        <strong class="subject">즐거웠던 여행</strong><br/>
-        <span class="date">2019.09.04</span><br/>
-        늦은 후기지만 아직도 기억이 생생하네요<br/>
 
-        즐거웠던 여행이었습니다.<br/>
-
-        여행가는 비행기에서 생각지 못한 케익선물부터<br/>
-
-        코사무이 도착해서 마지막까지 신경써주신 가이드님<br/>
-
-        모두 즐거웠던 여행이었습니다<br/>
-
-        특히 콘래드는 강추합니다. 마음편히 좋은곳에서 쉴수 있어서 좋았네요<br/>
-
-        기회되면 다시한번 가보고 싶습니다<br/>
-      </div>
-      <a href="#" class="event_btn"  onclick="eventBtn2(this)" id="event_btn">이벤트응모하기</a>
-        
-    </div>
-    <form method="post"  action="#" name="event_frm" class="event_frm">   
-      <label for="tel">Tel : </label>
-      <input type="text"  id="tel"  name="user_tel"  class="tel" value="" />
-    </form>
-  </div>
   <script src="./js/index4_1.js"></script>
 </body>
 </html>
