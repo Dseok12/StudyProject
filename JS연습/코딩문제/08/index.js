@@ -26,4 +26,10 @@ let answer3 = a.reduce(function(acc, v){
 console.log(answer3)
 
 
+// forEach, map, filter, reduce 실전연습
+const arr = [];
+const listArr = document.getElementsByClassName('test1')[0].getElementsByTagName('li')
+console.log(listArr)
+
+
 
