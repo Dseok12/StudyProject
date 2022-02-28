@@ -43,6 +43,9 @@
 .footer .sns_box ul li a{
   color: #fff;
 }
+.footer .sns_box ul li:last-child a{
+  fill: #fff;
+}
 .footer .sns_box ul li:hover a{
   text-decoration: underline;
 }
@@ -77,7 +80,36 @@
   }
 }
 @media screen and (max-width:769px){
-  
+  .sub_inner{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer address {
+    text-align: center;
+    margin-left: 0%;
+    margin-top: 0px;
+  }
+  .footer address ul{
+    width: 100%;
+  }
+  .footer address ul li{
+    clear: both;
+    width: 100%;
+    text-align: center;
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+  .sns_box{
+    width: 100%;
+  }
+  .sns_box ul{
+    width: 100%;
+  }
+  .sns_box ul li{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
 }
 @media screen and (max-width:450px){
   

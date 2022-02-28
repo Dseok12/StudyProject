@@ -4,7 +4,7 @@
   position: relative;
 }
 .about_inner h3{
-  font-size: 32px;
+  font-size: 48px;
   font-weight: bold;
   text-align: center;
 }
@@ -24,7 +24,7 @@
   position: absolute;
   z-index: 21;
   color: #222;
-  font-size: 3rem;
+  font-size: 2rem;
   opacity: 0;
   transition: all .3s;
 }
@@ -33,7 +33,7 @@
 }
 .about_text_box .about_p1{
   right: 0px;
-  top: 140px;
+  top: 200px;
   animation: text_slide_p1 4s ease;
 }
 @keyframes text_slide_p1 {
@@ -67,7 +67,7 @@
 } */
 .about_text_box .about_p3{
   left: 0px;
-  top: 140px;
+  top: 210px;
   animation: text_slide_p3 4s ease-in 1s;
 }
 @keyframes text_slide_p3 {

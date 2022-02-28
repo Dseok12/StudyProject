@@ -169,13 +169,15 @@ nav .pc_menu li:hover a {
 }
 .m_login_box {
   margin-top: 30px;
-  margin-left: 37%;
 }
 .m_login_box li {
-  width: 20%;
+  width: 45%;
   float: left;
+}.m_login_box li:last-child {
+  margin-left: 4%;
 }
 .m_login_box li a {
+  display: block;
   font-size: 18px;
   color: rgb(20, 94, 206);
 }
@@ -206,7 +208,7 @@ nav .pc_menu li:hover a {
     transition: all .2s;
   }
   .on div:nth-of-type(1){
-    width: 80%;
+    width: 100%;
     margin-top: 15px;
     transform: rotate(45deg);
   }
@@ -218,8 +220,8 @@ nav .pc_menu li:hover a {
     display: none;
   }
   .on div:nth-of-type(3){
-    width: 80%;
-    margin-top: -12px;
+    width: 100%;
+    margin-top: -17px;
     transform: rotate(-45deg);
   }
 }
@@ -241,6 +243,9 @@ nav .pc_menu li:hover a {
   }
   .m_box{
     display: block;
+  }
+  .on div:nth-of-type(3){
+    margin-top: -13px;
   }
 }
 @media screen and (max-width:450px){

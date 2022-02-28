@@ -13,8 +13,8 @@
   margin: 0 auto;
 }
 .inner .real li{
-  width: 100%;
-  margin-right: 8%;
+  width: 80%;
+  margin: 0 auto;
   margin-bottom: 30px;
   border-radius: 10px;
   overflow: hidden;
@@ -49,7 +49,7 @@
   margin-left: 5%;
 }
 .inner .real li:hover img{
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 .inner .real li a .port_text_box{
   width: 80%;
@@ -72,8 +72,8 @@
   margin: 0 auto;
 }
 .inner .study li{
-  width: 100%;
-  margin-right: 8%;
+  width: 80%;
+  margin: 0 auto;
   margin-bottom: 30px;
   border-radius: 10px;
   overflow: hidden;
@@ -100,7 +100,7 @@
   transition: all .3s;
 }
 .inner .study li:hover img{
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 .inner .study li a .port_text_box{
   width: 80%;
