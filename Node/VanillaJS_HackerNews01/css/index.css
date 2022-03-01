@@ -1,5 +1,24 @@
 @charset "utf-8";
-
-
+.section_wrap{
+  width: 100%;
+}
+.section_wrap .inner{
+  padding: 3rem;
+  box-sizing: border-box;
+}
+.list_box{}
+.list_box li{
+  border-bottom: 1px solid #d3d3d3;
+  padding: 1.2rem;
+  box-sizing: border-box;
+}
+.list_box li a.title{
+  font-size: 20px;
+  color: rgb(24, 24, 24);
+  font-weight: bold;
+}
+.list_box li a.title:hover{
+  text-decoration: underline;
+}
 
 

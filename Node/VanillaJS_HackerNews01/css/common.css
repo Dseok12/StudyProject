@@ -12,10 +12,39 @@
 /* header */
 header{
   width: 100%;
+  background-color: rgb(24, 24, 24);
 }
-
-
-
+.header_inner{
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+.header_inner h1{
+  float: left;
+  vertical-align: middle;
+}
+.header_inner h1 a{
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav{
+  float: left;
+  margin-left: 80px;
+}
+nav ul{
+  vertical-align: middle;
+}
+nav ul li{
+  float: left;
+  margin-right: 20px;
+}
+nav ul li a{
+  color: #fff;
+  font-size: 18px;
+}
+nav ul li a:hover{
+  text-decoration: underline;
+}
 
 
 
@@ -28,7 +57,16 @@ header{
 /* footer */
 footer{
   width: 100%;
+  background-color: rgb(24, 24, 24);
 }
-
+.footer_inner{
+  padding: 20px;
+  box-sizing: border-box;
+}
+.footer_inner h2{
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
 
 /* //footer */
