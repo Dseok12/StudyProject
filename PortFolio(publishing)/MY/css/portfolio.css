@@ -1,4 +1,7 @@
 @charset "utf-8";
+.port_wrap, .port_section01{
+  position: relative;
+}
 .inner{
   padding: 5rem 0;
 }
@@ -136,8 +139,59 @@
   margin-right: 10px;
 }
 
-
-
+/* 애니매이션 시작 */
+.ball_1{
+  width: 8%;
+  position: absolute;
+  left: 180px;
+  top: 300px;
+  opacity: 1;
+  animation: ball01 2s 0.2s linear infinite alternate;
+}
+.ball_1 img{
+  width: 100%;
+}
+@keyframes ball01 {
+  0%{
+    top: 300px;
+  }
+  0%{
+    top: 280px;
+  }
+}
+.ball_2{
+  width: 10%;
+  position: absolute;
+  right: 100px;
+  top: 1200px;
+  animation: ball02 3s 0.5s ease infinite alternate;
+}
+@keyframes ball02 {
+  100%{
+    top: 1235px;
+  }
+}
+.ball_2 img{
+  width: 100%;
+}
+.ball_3{
+  width: 30%;
+  position: absolute;
+  right: 0px;
+  top: 2750px;
+  opacity: 0;
+  z-index: -1;
+  animation: ball03 3s 0.5s ease forwards;
+}
+@keyframes ball03 {
+  100%{
+    opacity: 1;
+  }
+}
+.ball_3 img{
+  width: 100%;
+}
+/* 애니매이션 끝 */
 
 
 
@@ -162,6 +216,9 @@
     width: 95%;
     margin: 0 auto;
   }
+  .inner .real li{
+    width: 100%;
+  }
   .inner .real li a p br{
     display: none;
   }
@@ -178,10 +235,46 @@
     width: 95%;
     margin: 0 auto;
   }
+  .inner .study li{
+    width: 100%;
+  }
   .inner .study li a .port_text_box{
     width: 90%;
     margin: 0 auto;
     padding-top: 3.5%;
+  }
+  .ball_1{
+    width: 8%;
+    position: absolute;
+    left: 10px;
+    top: 336px;
+    opacity: 1;
+    z-index: -1;
+    animation: ball01 2s 0.2s linear infinite alternate;
+  }
+  .ball_1 img{
+    width: 100%;
+  }
+  @keyframes ball01 {
+    0%{
+      top: 356px;
+    }
+  }
+  .ball_2{
+    width: 15%;
+    position: absolute;
+    right: 10px;
+    top: 1280px;
+    z-index: -1;
+    animation: ball02 3s 0.5s ease infinite alternate;
+  }
+  @keyframes ball02 {
+    0%{
+      top: 1300px;
+    }
+  }
+  .ball_2 img{
+    width: 100%;
   }
 }
 @media screen and (max-width:450px){
