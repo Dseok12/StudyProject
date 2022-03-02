@@ -13,12 +13,23 @@
   box-sizing: border-box;
 }
 .list_box li a.title{
+  display: inline-block;
+  width: 65%;
   font-size: 20px;
   color: rgb(24, 24, 24);
   font-weight: bold;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }
-.list_box li a.title:hover{
+.list_box li .info{
+  float: right;
+}
+.list_box li span{
+  vertical-align: sub;
+  color: rgb(24, 24, 24);
+}
+.list_box li a:hover{
   text-decoration: underline;
 }
-
 
