@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p class="main_json"></p>
+  <p class="name"></p>
+  <p class="country"></p>
+</body>
+<script>
+  const API = `https://api.instantwebtools.net/v1/airlines`
+  const _get = (target) => {
+    return document.querySelector(target)
+  }
+  const handleLoadData = async () => {
+    await fetch(API)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data)
+        data.forEach((m) => {
+        _get('.name').innerHTML = m.name
+        _get('.country').innerHTML = m.country
+        console.log(m)
+        })
+      })
+      .catch((err) => console.error(err))
+  }
+  handleLoadData()
+</script>
+</html>
