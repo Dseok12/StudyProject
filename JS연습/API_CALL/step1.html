@@ -20,11 +20,11 @@
     await fetch(API)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data)
+        // console.log(data)
         data.forEach((m) => {
         _get('.name').innerHTML = m.name
         _get('.country').innerHTML = m.country
-        console.log(m)
+        // console.log(m)
         })
       })
       .catch((err) => console.error(err))
