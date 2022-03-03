@@ -10,6 +10,9 @@
   <p class="main_json"></p>
   <p class="name"></p>
   <p class="country"></p>
+  <p class="counter">0</p>
+  <button class="plus" onclick="plus();">+1</button>
+  <button class="minus">-1</button>
 </body>
 <script>
   const API = `https://api.instantwebtools.net/v1/airlines`
@@ -30,5 +33,14 @@
       .catch((err) => console.error(err))
   }
   handleLoadData()
+
+  const plusBtn = _get('.plus')
+  const minusBtn = _get('.minus')
+  const currentNum = _get('.counter').innerText;
+
+  function plus () {
+    parseInt(currentNum) + 1
+  }
+
 </script>
 </html>
