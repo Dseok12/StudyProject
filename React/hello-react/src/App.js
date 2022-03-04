@@ -1,9 +1,9 @@
 import React from "react";
-import Counter from './Counter'
+import EventPractice from './EventPractice'
 
 const App = () => {
   return (
-    <Counter />
+    <EventPractice />
   );
 }
 
