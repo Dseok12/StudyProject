@@ -94,6 +94,14 @@ address{
 .vue_bg{
   background-color: #41b883;
 }
+.pc{
+  background-color: #222;
+  color: #fff;
+}
+.mobile{
+  background-color: rgb(177, 0, 97);
+  color: #fff;
+}
 .skill_btn{
   padding: 5px 8px;
   border: none;
@@ -134,7 +142,7 @@ address{
 }
 @media screen and (max-width:1024px){
   .inner{
-    width: calc(100% - 230px);
+    width: 90%;
     padding: 6rem 0;
   }
   .sub_inner{

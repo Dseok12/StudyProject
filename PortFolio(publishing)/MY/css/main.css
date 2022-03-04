@@ -155,6 +155,12 @@
     box-shadow: 3px 3px 10px #eee;
     overflow: hidden;
   }
+  .section01 .text_box {
+    margin-top: 230px;
+  }
+  .section01 .text_box .content p{
+    font-size: 18px;
+  }
 }
 @media screen and (max-width:450px){
   .section01_banner .inner{
