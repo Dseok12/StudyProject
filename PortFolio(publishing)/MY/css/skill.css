@@ -5,6 +5,9 @@
   margin: 0 auto;
   margin-bottom: 30px;
 }
+.skill_inner{
+  height: 100vh;
+}
 /* .skill_box li .progress_box{} */
 .skill_box li .progress_box h4{
   float: left;
@@ -71,7 +74,9 @@
   
 }
 @media screen and (max-width:769px){
-  
+  .skill_inner{
+    height: auto;
+  }
 }
 @media screen and (max-width:450px){
   
