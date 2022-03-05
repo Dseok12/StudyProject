@@ -171,6 +171,9 @@
   .inner .real li{
     width: 100%;
   }
+  .inner .study li {
+    width: 100%;
+  }
 }
 @media screen and (max-width:769px){
   .inner .real{
