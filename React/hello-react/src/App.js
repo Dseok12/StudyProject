@@ -1,9 +1,9 @@
 import React from "react";
-import ValidationSample from './ValidationSample'
+import ScrollBox from './ScrollBox'
 
 const App = () => {
   return (
-    <ValidationSample />
+    <ScrollBox />
   );
 }
 
