@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import InterationSample from './InterationSample'
-import Counter2 from './Counter2'
+// import Counter2 from './Counter2'
+import Info from './Info'
 
 
 class App extends Component{
@@ -17,7 +18,9 @@ class App extends Component{
         </button>
       */}
       {/* <InterationSample /> */}
-      <Counter2 />
+      {/* <Counter2 /> */}
+      {/* <Counter2 /> */}
+      <Info />
     </div>
     );
   }
