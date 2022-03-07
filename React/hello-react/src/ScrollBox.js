@@ -1,6 +1,16 @@
 import React, { Component } from "react";
 
 class ScrollBox extends Component {
+  
+  scrollToBottom = () => {
+    const { scrollHeight, clientHeight } = this.box;
+    /*
+      다음 코드와 같은 의미
+      const scrollHeight = this.box.scrollheight;
+      const clientHeigt = this.box.clientHeight;
+    */
+    this.box.scrollTop = scrollHeight - clientHeight;
+  }
 
   render(){
     const style = {
