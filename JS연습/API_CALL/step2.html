@@ -4,12 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.min.css">
+  <link rel="stylesheet" href="./css/step2.css">
   <title>Document</title>
 </head>
 <body>
-  <p class="main_json"></p>
-  <p class="name"></p>
-  <p class="country"></p>
+  <form action="" class="form">
+    <div class="name_box">
+      <label for="userName">사용자이름</label>
+      <input
+        type="text"
+        id="userName"
+        placeholder="사용자이름"
+        value=""
+        name="user_name"
+        class="user_name"
+      />
+    </div>
+    <div class="country_box">
+      <label for="country">국적</label>
+      <input
+        type="text"
+        id="country"
+        placeholder="국적"
+        value=""
+        class="country"
+      />
+    </div>
+    <input
+      type="submit"
+      value="보내기"
+      class="submit_btn"
+    />
+  </form>
   <script src="./js/step2.js"></script>
 </body>
 </html>
