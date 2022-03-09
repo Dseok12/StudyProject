@@ -8,10 +8,10 @@ import cn from 'classnames'
 import './TodoListItem.scss'
 
 
-const TodoListItem = ({ todo, onRemove, onToggle }) => {
-  const { id, text, checked } =todo;
+const TodoListItem = ({ todo, onRemove, onToggle, style }) => {
+  const { id, text, checked } = todo;
   return (
-    <div className="TodoListItem">
+    <div className="TodoListItem" style={style}>
 
       <div
         className={cn('checkbox', {checked})}
@@ -30,4 +30,7 @@ const TodoListItem = ({ todo, onRemove, onToggle }) => {
 
 
 
-export default React.memo(TodoListItem);
+export default React.memo(
+  TodoListItem,
+  (prevProps, nextProps) => prevProps.todo === nextProps.todo
+);
