@@ -14,7 +14,7 @@ const handleLoadData = async (e) => {
   await fetch(API, {
     method: 'POST',
     headers: { 'Content-type': 'application/json' },
-    body: JSON.stringify()
+    body: JSON.stringify(address)
   })
   .then((res) => res.json())
   .then(() => {
