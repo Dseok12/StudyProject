@@ -1,0 +1,83 @@
+@charset "utf-8";
+.wrap{
+  position: relative;
+}
+.wrap_box{
+  width: 1200px;
+  height: 300px;
+  margin: 50px auto;
+  /* overflow: hidden; */
+}
+.box{
+  /* position: absolute;
+  left: 0;
+  top: 0; */
+  font-size: 0;
+  float: left;
+  width: 300px;
+  height: 100%;
+}
+.box p{
+  text-align: center;
+  line-height: 300px;
+  font-size: 30px;
+}
+.box1{
+  background-color: rgb(180, 195, 207);
+}
+.box2{
+  background-color: rgb(150, 188, 221);
+}
+.box3{
+  background-color: rgb(8, 179, 179);
+}
+.box4{
+  background-color: rgb(211, 121, 37);
+}
+.box5{
+  background-color: rgb(190, 23, 149);
+}
+.box6{
+  background-color: rgb(75, 212, 21);
+}
+.touchflow-scrollbar{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.touchflow-scrollbar div{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
