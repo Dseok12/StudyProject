@@ -10,7 +10,8 @@ const handleLoadData = async () => {
   .then((data) => {
     // console.table(data)
     for( var i = 0; i <= 10; i++){
-      document.write('<p class="name">' + data[i].name + '</p>')
+      _get('.name').innerHTML = `${data[i].name}`
+      // document.write('<p class="name">' + data[i].name + '</p>')
     }
     })
     .catch((err) => console.error(err))
