@@ -1,0 +1,33 @@
+.header_wrap{
+  width: 100%;
+  background-color: rgb(8, 110, 194);
+  position: relative;
+  .inner{
+    width: calc(100% - 400px);
+    margin: 0 auto;
+    padding: 20px 0;
+    h1{
+      float: left;
+      a{
+        color: #fff;
+        font-size: 1.5vw;
+        font-weight: bold;
+      }
+    }
+    .main_menu_wrap{
+      float: right;
+      li{
+        float: left;
+        margin-right: 18px;
+        a{
+          color: #fff;
+          font-size: 1.1vw;
+          letter-spacing: 0.5;
+        }
+      }
+      li:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
