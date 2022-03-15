@@ -1,0 +1,12 @@
+ $.ajax({
+          type:"GET",
+          url:"http://eworkbook.dothome.co.kr/board/delete.php",
+          data:"",
+          dataType:"json",
+          success: function(data) {
+           alert(data);
+          },
+          error: function(jqXHR,textStatus,errorThrown) {
+            alert(textStatus+", "+errorThrown);
+          }
+        });

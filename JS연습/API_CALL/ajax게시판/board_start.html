@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Board</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+      
+    </script>
+</head>
+<body>
+    <main role="main" class="container">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Board</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <form id="search_form" action="#" class="form-inline">
+                  <button type="button" class="btn btn-primary" id="modalBtn">등록</button>
+              </form>
+            </div>
+          </div>
+          <div class="table-responsive">
+              <table class="table" id="list">
+                <colgroup>
+                    <col width="15%" />
+                    <col width="*" />
+                    <col width="20%" />
+                    <col width="15%" />
+                </colgroup>
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">글번호</th>
+                    <th scope="col">제목</th>
+                    <th scope="col">날짜</th>
+                    <th scope="col">-</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="4" style="text-align:center;">등록 된 내용이 없습니다.</td>
+                  </tr>
+                  <!--
+                  <tr>
+                    <td>5</td>
+                    <td>테스트 5</td>
+                    <td>2022-02-02 16:51:02</td>
+                    <td>
+                      <button type="button" class="btn btn-success">수정</button> <button type="button" class="btn btn-danger">삭제</button>
+                    </td>
+                  </tr>
+                  -->
+                </tbody>
+              </table>
+              <form id="board_form" action="#" method="post" style="display:none;">
+                  <table class="table">
+                    <colgroup>
+                        <col width="15%" />
+                        <col width="35%" />
+                        <col width="15%" />
+                        <col width="35%" />
+                    </colgroup>
+                    <tbody class="thead-dark">
+                      <tr>
+                          <th>제목</th>
+                          <td colspan="3"><input type="input" name="title" class="form-control" /></td>
+                      </tr>
+                      <tr>
+                          <th>내용</th>
+                          <td colspan="3">
+                              <textarea name="content" class="form-control"></textarea>
+                          </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div style="text-align:center;margin:20px 0;">
+                      <button type="button" id="writeBtn" class="btn btn-primary">저장</button>
+                      <button type="button" id="listBtn" class="btn btn-secondary">목록</button>
+                  </div>
+              </form>
+          </div>
+
+    </main>
+</body>
+</html>
