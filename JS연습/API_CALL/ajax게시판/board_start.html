@@ -10,7 +10,33 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript">
-      
+      function getList () {
+        $.ajax({
+          type: 'GET',
+          url: 'https://api.instantwebtools.net/v1/airlines',
+          data: '',
+          dataType: 'json',
+          success: function(data){
+            // console.log(data)
+            $('#list tbody').empty()
+          },
+          error: function(jqXHR, textStatus, errorThrown){
+            console.log(textStatus+", "+errorThrown)
+          }
+        })
+      }
+      function deleteDate () {
+
+      }
+      function modifyDate () {
+
+      }
+      function insertDate () {
+
+      }
+      $(document).ready(function(){
+        getList();
+      })
     </script>
 </head>
 <body>
