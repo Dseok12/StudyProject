@@ -18,7 +18,23 @@
           dataType: 'json',
           success: function(data){
             // console.log(data)
-            $('#list tbody').empty()
+            $('#list tbody').empty();
+            var html = "<tr>"
+                html += "<td>5</td>"
+                html += "<td>테스트 5</td>"
+                html += '<td>2022-02-02 16:51:02</td>'
+                html += '<td>'
+                html += '<button type="button" class="btn btn-success">수정</button>'
+                html += '</td>'
+                html += '</tr>'
+            $('#list tbody').append(html)
+            // console.log(html)
+            $('#list tbody tr:last button:eq(0)').on('click', function(e){
+              e.preventDefault();
+              // console.log('true')
+              $('#list').hide();
+              $('#board_form').show();
+            })
           },
           error: function(jqXHR, textStatus, errorThrown){
             console.log(textStatus+", "+errorThrown)
@@ -32,10 +48,53 @@
 
       }
       function insertDate () {
+        var title = $.trim($('#board_form input[name="name"]').val());
+        var country = $.trim($('#board_form textarea[name="country"]').val());
+        // console.log(title, country)
+        if(title == '' || country == ''){
+          alert('데이터 입력을 확인해주세요.')
+          return
+        }
+
+        $.ajax({
+          type:"POST",
+          url:"https://api.instantwebtools.net/v1/airlines",
+          data:{
+            "id": null,
+            "name": name,
+            "country": country,
+            "logo": null,
+            "slogan": null,
+            "head_quaters": null,
+            "website": null,
+            "established": null
+          },
+          dataType:"json",
+          success: function(data) {
+            console.log(data.result)
+            // if(data)
+          },
+          error: function(jqXHR,textStatus,errorThrown) {
+            alert(textStatus+", "+errorThrown);
+          }
+        });
+
 
       }
       $(document).ready(function(){
         getList();
+
+        $('#modalBtn').on('click',function(e){
+          e.preventDefault();
+          $('#list').hide();
+          $('#board_form').show();
+        })
+
+        $('#writeBtn').text('저장').on('click',function(e){
+          e.preventDefault();
+          insertDate();
+        })
+
       })
     </script>
 </head>
@@ -60,8 +119,8 @@
                 <thead class="thead-dark">
                   <tr>
                     <th scope="col">글번호</th>
-                    <th scope="col">제목</th>
-                    <th scope="col">날짜</th>
+                    <th scope="col">이름</th>
+                    <th scope="col">국적</th>
                     <th scope="col">-</th>
                   </tr>
                 </thead>
@@ -91,13 +150,13 @@
                     </colgroup>
                     <tbody class="thead-dark">
                       <tr>
-                          <th>제목</th>
-                          <td colspan="3"><input type="input" name="title" class="form-control" /></td>
+                          <th>이름</th>
+                          <td colspan="3"><input type="input" name="name" class="form-control" /></td>
                       </tr>
                       <tr>
-                          <th>내용</th>
+                          <th>국적</th>
                           <td colspan="3">
-                              <textarea name="content" class="form-control"></textarea>
+                              <textarea name="country" class="form-control"></textarea>
                           </td>
                       </tr>
                     </tbody>
