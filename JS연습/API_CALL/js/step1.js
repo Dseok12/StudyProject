@@ -4,6 +4,14 @@ const _get = (target) => {
   return document.querySelector(target);
 }
 
+const nameBox = _get('.name_box');
+
+const nameLi = (data) => `<li class="name_box">
+  <p class="name">${data.name}</p>
+  <p class="country">${data.country}</p>
+  <p calss="slogan">${data.slogan}</p>
+</li>`
+
 const handleData = async () => {
   const res = await fetch(API)
   const data = res.json()
@@ -12,14 +20,13 @@ const handleData = async () => {
 }
 
 
-const createElem = `<p class="name"></p>`
 
-handleData().then((data) => {
-  console.log(data)
-  // createElem.innerHTML = data.name
+handleData().then((datas) => {
+  console.log(datas.name)
+  nameBox.innerHTML = datas.map((datas) => nameLi(datas)).join('')
 })
 .catch((err) => {
-  return console.log(err)
+  return console.error(err)
 })
 
 

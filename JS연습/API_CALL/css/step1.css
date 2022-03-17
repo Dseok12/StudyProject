@@ -1,7 +1,51 @@
 @charset "utf-8";
 
+.wrap{
+  width: 100%;
+  position: relative;
+}
+
+.inner{
+  width: 800px;
+  margin: 30px auto;
+  border: 1px solid #d9d9d9;
+  padding: 10px;
+}
+
+.inner h1{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.data_wrap{
+  width: 700px;
+  margin: 20px auto; 
+}
+
+.name_box{
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  margin-top: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
 .name{
   font-size: 16px;
   font-weight: bold;
-  color: darkblue;
+  color: rgb(0, 0, 187);
+}
+
+.country{
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(139, 79, 0);
+  margin-top: 10px;
+}
+
+.slogan{
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(139, 0, 132);
+  margin-top: 10px;
 }
