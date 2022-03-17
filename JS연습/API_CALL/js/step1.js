@@ -4,16 +4,24 @@ const _get = (target) => {
   return document.querySelector(target);
 }
 
-const handleLoadData = async () => {
-  await fetch(API)
-  .then((res) => res.json())
-  .then((data) => {
-    // console.table(data)
-    for( var i = 0; i <= 10; i++){
-      _get('.name').innerHTML = `${data[i].name}`
-      // document.write('<p class="name">' + data[i].name + '</p>')
-    }
-    })
-    .catch((err) => console.error(err))
+const handleData = async () => {
+  const res = await fetch(API)
+  const data = res.json()
+
+  return data;
 }
-handleLoadData();
+
+
+const createElem = `<p class="name"></p>`
+
+handleData().then((data) => {
+  console.log(data)
+  // createElem.innerHTML = data.name
+})
+.catch((err) => {
+  return console.log(err)
+})
+
+
+
+

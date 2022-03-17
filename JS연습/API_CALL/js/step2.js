@@ -9,9 +9,9 @@ const handleLoadData = async (e) => {
   e.preventDefault();
   
   const address = {
-    name,
-    trips,
-    airline
+    name: _get('.user_name').value,
+    trips: _get('.country').value
+    // airline
   }
 
   await fetch(API, {
