@@ -1,11 +1,83 @@
 @charset "utf-8";
 
-
-
-
-
-
-
+.wrap{
+  width: 100%;
+}
+.nav_box{
+  width: 100%;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+.main_menu{
+  width: 1200px;
+  margin: 0 auto;
+  height: 40px;
+}
+.main_menu > li{
+  float: left;
+  width: 120px;
+  line-height: 40px;
+  text-align: center;
+}
+.main_menu > li > a{
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+.main_menu > li .depth2_wrap{
+  width: 100%;
+  background-color: #d9d9d9;
+  padding: 20px 0;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  display: none;
+}
+.main_menu > li .depth2{
+  width: 90%;
+  margin: 0 auto;
+}
+.main_menu > li .depth2 > li{
+  /* float: left; */
+  width: 20%;
+  position: relative;
+}
+.main_menu > li .depth2 > li > a{
+  display: block;
+  width: 100px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #000;
+  color: orange;
+  font-weight: bold;
+}
+.main_menu > li .depth2 > li .depth3{
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  left: 300px;
+  top: 0;
+}
+.main_menu > li .depth2 > li .depth3 > li{
+  float: left;
+  margin-right: 20px;
+  position: relative;
+}
+.main_menu > li .depth2 > li .depth3 > li::after{
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  background-color: #000;
+  border-radius: 100%;
+  position: absolute;
+  left: -10px;
+  bottom: 50%;
+}
+.main_menu > li .depth2 > li .depth3 > li > a{
+  color: blueviolet;
+  font-weight: bold;
+}
 
 
 
