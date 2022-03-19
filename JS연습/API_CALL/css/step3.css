@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+.wrap{
+  width: 100%;
+  height: 100vh;
+}
+.box{
+  width: 500px;
+  margin: 50px auto;
+  padding: 50px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+}
+.wrap .list_box{
+  width: 450px;
+  margin: 0px auto;
+}
+.list_box > li{
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #fff;
+}
+.list_box > li h3{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.list_box > li .info_box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list_box > li .info_box .logo_box{
+  width: 150px;
+}
+.list_box > li .info_box .logo_box img{
+  width: 100%;
+}
+.list_box > li .info_box .info_list ul{
+  margin-left: 20px;
+}
+.list_box > li .info_box .info_list ul > li{
+  margin-bottom: 10px;
+  display: flex;
+}
+.list_box > li .info_box .info_list ul > li span{
+  font-weight: bold;
+  margin-right: 15px;
+}
+.list_box > li .info_box .info_list ul > li > a{
+  color: rgb(6, 6, 173);
+  text-decoration: underline;
+}
+
+.btn_box{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn_box li{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.btn_box li:first-child{
+  margin-left: 0;
+}
+.btn_box li:last-child{
+  margin-right: 0;
+}
+.btn_box li button{
+  width: 50px;
+  height: 30px;
+  background-color: rgb(2, 137, 226);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn_box li button:hover{
+  background-color: rgb(112, 190, 241);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
