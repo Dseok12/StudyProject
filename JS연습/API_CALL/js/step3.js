@@ -18,7 +18,7 @@ const fetchHandle = async () => {
 }
 
 fetchHandle().then((data) => {
-  return console.log(data)
+  console.log(data.airline)
 })
 
 
