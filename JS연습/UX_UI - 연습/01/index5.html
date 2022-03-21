@@ -6,10 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main5.css">
-  <title>Document</title>
+  <title>X스크롤</title>
 </head>
 <body>
-  
+  <div class="wrap">
+    <div class="clearfix box" onwheel="myFunction(event)">
+      <div class="text_box">
+        <div class="text text1"></div>
+        <div class="text text2"></div>
+        <div class="text text3"></div>
+        <div class="text text4"></div>
+      </div>
+    </div>
+    <p id="demo"></p>
+  </div>
   <script src="./js/jquery-3.6.0.min.js"></script>
   <script src="./js/index5.js"></script>
 </body>
