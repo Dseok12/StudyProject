@@ -75,7 +75,10 @@
 }
 @media screen and (max-width:769px){
   .skill_inner{
-    height: auto;
+    height: 100vh;
+  }
+  #myChart{
+    height: 500px;
   }
 }
 @media screen and (max-width:450px){
