@@ -8,14 +8,28 @@
   width: 400px;
   margin: 50px auto;
   border: 1px solid #000;
-  overflow: hidden;
+  overflow-x: scroll;
 }
+/* 스크롤 커스터마이징 시작 */
+.box::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.box::-webkit-scrollbar-thumb {
+  background-color: #2f3542;
+  border-radius: 10px;
+  box-shadow: -3px 0 5px rgb(250, 250, 250);
+}
+.box::-webkit-scrollbar-track {
+  background-color: grey;
+}
+/* 스크롤 커스터마이징 끝 */
 .text_box{
   float: left;
   display: flex;
 }
 .text{
-  width: 300px;
+  width: 400px;
   height: 200px;
 }
 .text1{
