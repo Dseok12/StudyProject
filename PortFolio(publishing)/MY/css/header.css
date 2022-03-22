@@ -203,6 +203,7 @@ nav .pc_menu li:hover a {
   }
   .m_box{
     display: block;
+    z-index: 40;
   }
   .on div{
     transition: all .2s;
@@ -243,6 +244,7 @@ nav .pc_menu li:hover a {
   }
   .m_box{
     display: block;
+    z-index: 40;
   }
   .on div:nth-of-type(3){
     margin-top: -13px;

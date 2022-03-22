@@ -30,6 +30,17 @@ address{
   font-style: normal;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: #ccc;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(4, 69, 165);
+  border-radius: 20px;
+}
+
 .inner{
   width: calc(100% - 290px);
   margin: 0 auto;
