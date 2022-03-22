@@ -1,13 +1,9 @@
-import Child from "./child";
+import MainPageComponent from "./main";
 
 function App() {
   return (
     <div>
-      <h1>안녕하세요</h1>
-      <Child />
-      <Child />
-      <Child />
-      <Child />
+      <MainPageComponent />
     </div>
   );
 }
