@@ -1,5 +1,8 @@
+import {useParams} from 'react-router-dom'
+
 function ProductPage () {
-  return <h1>상품 상세페이지</h1>
+  const {id} = useParams();
+  return <h1>상품 {id} 상세페이지</h1>
 }
 
 
