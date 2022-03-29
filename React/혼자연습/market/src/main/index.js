@@ -11,7 +11,7 @@ function MainPage () {
     function(){
       axios.get('https://c50bc3d7-0b3c-4a7e-98ba-182184c4fa3a.mock.pstmn.io/products')
         .then(function(result){
-          // console.log('데이터전송 성공: ', result)
+          console.log('데이터전송 성공: ', result)
           const products = result.data.products;
           setProducts(products)
           

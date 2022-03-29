@@ -1,31 +1,27 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 
-const MyComponent = ({ name, favoriteNumber, normalNumber, children }) => {
+const MyComponent = ({ name, favoriteNumber, children }) => {
+  // props를 밑에와 같이 묶어서 사용할 수 있다.
+  // 그렇게 되면 props.name / props.children과 같이 길게 쓸 필요가 없다.
+  // 이것을 비구조화 할당 문법이라고 한다.
+  // const { name, children } = props;
   return (
-  <div>
-    안녕하세요, 제 이름은 {name}입니다.<br />
-    children 값은 {children}
-    입니다.
-    <br/>
-    이거는 그냥 PropTypes로 숫자 받아온 것 = { normalNumber }
-    <br/>
-    제가 좋아하는 숫자는 { favoriteNumber }입니다.
-  </div>
-  )
+    <div>
+      안녕하세요. 제 이름은 { name }입니다.<br/>
+      children값은 { children }입니다.
+    </div>
+  );
 }
 
 MyComponent.defaultProps = {
-  name: '기본이름'
+  name: '기본 이름'
 }
+
 MyComponent.propTypes = {
   name: PropTypes.string,
-  normalNumber: PropTypes.number,
   favoriteNumber: PropTypes.number.isRequired
 }
-
-
-
 
 export default MyComponent;
