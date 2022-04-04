@@ -16,8 +16,33 @@ function ProductPage () {
       console.log(error)
     })
   }, [])
-  console.log(product)
-  return <h1>상품 {id} 상세페이지</h1>
+
+  if(product === null){
+    return <h1>상품정보를 받고있습니다...</h1>
+  }
+
+  return (
+    <div>
+      <div id="image_box">
+        <img src={'/' + product.imageUrl} />
+      </div>
+      <div id="profile_box">
+        <img src="/images/icons/avatar.png" />
+        <span>{ product.seller }</span>
+      </div>
+      <div id='contents_box'>
+        <div id='name'>
+          {product.name}
+        </div>
+        <div id='price'>
+          {product.price}원
+        </div>
+        <div id='description'>
+          {product.desctiption}
+        </div>
+      </div>
+    </div>
+  )
 }
 
 
