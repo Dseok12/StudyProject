@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 html, body, #root, #root > div {
   height: 100%;
 }
@@ -6,6 +10,19 @@ html, body, #root, #root > div {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #000;
+}
+#header-area{
+  width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header-area > img{
+  width: 128px;
+  height: 36px;
+  padding: 20px 0;
 }
 #body{
   width: 1024px;

@@ -37,7 +37,7 @@ function MainPage () {
               <Link className='product_link' to={`/products/${product.id}`}>
                 <div>
                   <img className='product_img'
-                  src={product.imageUrl} />
+                  src={product.imageUrl} alt='' />
                 </div>
                 <div className='product_contents'>
                   <span className='product_name'>
@@ -48,7 +48,7 @@ function MainPage () {
                   </span>
                   <div className='product_seller'>
                     <img className='product_avatar'
-                    src='images/icons/avatar.png' />
+                    src='images/icons/avatar.png' alt='' />
                     <span>
                       {product.seller}
                     </span>

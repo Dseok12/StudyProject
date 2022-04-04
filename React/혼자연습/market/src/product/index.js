@@ -1,6 +1,7 @@
 import {useParams} from 'react-router-dom';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import './index.css';
 
 function ProductPage () {
   const {id} = useParams();
@@ -24,10 +25,10 @@ function ProductPage () {
   return (
     <div>
       <div id="image_box">
-        <img src={'/' + product.imageUrl} />
+        <img src={'/' + product.imageUrl} alt='' />
       </div>
       <div id="profile_box">
-        <img src="/images/icons/avatar.png" />
+        <img src="/images/icons/avatar.png" alt='' />
         <span>{ product.seller }</span>
       </div>
       <div id='contents_box'>
@@ -37,6 +38,10 @@ function ProductPage () {
         <div id='price'>
           {product.price}원
         </div>
+        <div id='createAt'>
+          2022-04-04
+        </div>
+        
         <div id='description'>
           {product.desctiption}
         </div>
