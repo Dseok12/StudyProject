@@ -1,3 +1,7 @@
+#upload-container{
+  padding: 36px 0;
+}
+
 #upload-img-placeholder{
   width: 200px;
   height: 200px;
@@ -20,9 +24,21 @@
   color: rgb(195, 194, 204);
 }
 
+.upload_name{
+  width: 200px;
+}
 
+.upload_label{
+  font-size: 18px;
+  width: 80px;
+}
 
+#product-description{
+  height: 150px;
+}
 
-
+#submit-button{
+  float: right;
+}
 
 
