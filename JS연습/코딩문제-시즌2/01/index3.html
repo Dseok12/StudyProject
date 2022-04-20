@@ -29,8 +29,6 @@
     /*
     길이가 서로 다른 A, B, C 세 개의 막대 길이가 주어지면 이 세 막대로 삼각형을 만들 수 있
     으면 “YES"를 출력하고, 만들 수 없으면 ”NO"를 출력한다.
-    */
-
     function solution1(a, b, c) {
       let answer = '삼각형이 되었습니다.';
       let max;
@@ -58,6 +56,115 @@
       return answer;
     }
     console.log(solution1(6, 16, 11))
+    */
+
+
+
+    /*
+      연필 1 다스는 12자루입니다. 학생 1인당 연필을 1자루씩 나누어 준다고 할 때 N명이 학생수
+      를 입력하면 필요한 연필의 다스 수를 계산하는 프로그램을 작성하세요.
+      function solution2(n){
+        let answer; 
+    
+        answer = Math.ceil(n/12);
+    
+        return answer;
+      }
+    
+      console.log(solution2(178));
+    */
+
+
+    /*
+      자연수 N이 입력되면 1부터 N까지의 합을 출력하는 프로그램을 작성하세요. 
+      function solution3(n){
+        let answer = 0; 
+  
+        for(let i = 1; i < n+1; i++){
+          answer+=i;
+        }
+  
+        return answer;
+      }
+  
+      console.log(solution3(10));
+    */
+
+
+    /*
+      7개의 수가 주어지면 그 숫자 중 가장 작은 수를 출력하는 프로그램을 작성하세요.
+      ▣ 입력설명
+      첫 번째 줄에 7개의 수가 주어진다.
+      ▣ 출력설명
+      첫 번째 줄에 가장 작은 값을 출력한다.
+
+      ▣ 입력예제 1 
+      5 3 7 11 2 15 17
+      ▣ 출력예제 1
+      2
+    */
+    function solution4(arr){
+      let answer, min=Number.MAX_SAFE_INTEGER;
+
+      for(let i=0; i<arr.length; i++){
+          if(arr[i]<min) min=arr[i];
+      }
+      answer=min;
+      
+      return answer;
+    }
+
+    let arr = [5,3,7,1,11,2,15,7]
+
+    console.log(solution4(arr))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
+      
+    */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
+      
+    */
 
   </script>
 </body>
