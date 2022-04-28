@@ -1,6 +1,11 @@
 @charset "utf-8";
-
-
+.inner{width: 860px;margin: 0 auto; background-color: antiquewhite;}
+.slide01{
+  height: 339px;
+}
+.slide01 p{
+  margin-top: 20px;
+}
 
 
 
